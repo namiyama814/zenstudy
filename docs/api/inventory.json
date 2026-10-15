@@ -1,0 +1,5105 @@
+{
+  "generatedFrom": "Published web JavaScript only; not a complete server route list",
+  "observedOn": "2026-10-15",
+  "parser": "acorn AST; HTTP call expressions and API path literals; no JavaScript execution",
+  "scope": {
+    "mainUrl": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/app.6d7fb69bf5e69a32dbb5.js",
+    "javascriptChunks": 64,
+    "kokubanBundles": 3,
+    "parsedSources": 68
+  },
+  "limitations": [
+    "Static definition does not establish deployment, authorization, or current use.",
+    "Minified expressions and inferred api/papi labels require review.",
+    "Backend-only, mobile-only, and unreferenced endpoints are outside this source set.",
+    "No API endpoint is requested by this extractor."
+  ],
+  "sources": [
+    {
+      "file": "app.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/app.6d7fb69bf5e69a32dbb5.js",
+      "sha256": "f3fae394dcbccd0c78e8ebef6d507ebf1a9def63985d02164de11c5c2baf775a",
+      "bytes": 1492263
+    },
+    {
+      "file": "vendors-node_modules_tanstack_query-core_build_modern_queryObserver_js-node_modules_tanstack_-62f086.2b21bbe214b4c2615e4e.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/vendors-node_modules_tanstack_query-core_build_modern_queryObserver_js-node_modules_tanstack_-62f086.2b21bbe214b4c2615e4e.js",
+      "sha256": "2cbc23cef2553fd467e2fc16f908fae61979479735a2fcb61dff4dbe769d3b65",
+      "bytes": 10541
+    },
+    {
+      "file": "src_features_genre_components_CompletedSubjectsGenreRouter_tsx-src_features_genre_components_-2622aa.9f7126cb592068782dcd.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_features_genre_components_CompletedSubjectsGenreRouter_tsx-src_features_genre_components_-2622aa.9f7126cb592068782dcd.js",
+      "sha256": "e39f9f370db468b97be0e90692388ea41333eb191d7f4d10ab7b6fc4fc8fd9df",
+      "bytes": 19823
+    },
+    {
+      "file": "vendors-node_modules_tanstack_react-query_build_modern_useQuery_js-node_modules_date-fns__lib-4dd656.13a4d0fdafbb029e881d.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/vendors-node_modules_tanstack_react-query_build_modern_useQuery_js-node_modules_date-fns__lib-4dd656.13a4d0fdafbb029e881d.js",
+      "sha256": "934a29712ed5caf52bdf56738852ee30c388c11592a87838569c7402395a8bfb",
+      "bytes": 12674
+    },
+    {
+      "file": "vendors-node_modules_date-fns_differenceInMinutes_js-node_modules_date-fns_format_js-node_mod-ad6f13.cdf7db873d2cd9651a3d.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/vendors-node_modules_date-fns_differenceInMinutes_js-node_modules_date-fns_format_js-node_mod-ad6f13.cdf7db873d2cd9651a3d.js",
+      "sha256": "2056beab1c226da8ad833ab7ab500d9373ebff10d11e09fbefc5849acb5730d3",
+      "bytes": 15718
+    },
+    {
+      "file": "vendors-node_modules_react-slick_dist_react-slick_min_js.13538ae5c3c5a932594e.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/vendors-node_modules_react-slick_dist_react-slick_min_js.13538ae5c3c5a932594e.js",
+      "sha256": "25965a1edd705f8f298d1bcc5fc19ff406995485fe9e16508c001f64601de3be",
+      "bytes": 59993
+    },
+    {
+      "file": "vendors-node_modules_react-syntax-highlighter_dist_cjs_styles_prism_index_js-node_modules_rea-e4b8d9.47e25ced5027a4e1892b.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/vendors-node_modules_react-syntax-highlighter_dist_cjs_styles_prism_index_js-node_modules_rea-e4b8d9.47e25ced5027a4e1892b.js",
+      "sha256": "16773fde452408509ee645ddec30e106824d21df7602c6ea8318f5ffe773e24e",
+      "bytes": 802600
+    },
+    {
+      "file": "src_components_shared_atoms_ListTable_index_ts-src_components_shared_atoms_ListTableItem_inde-7ef5e2.cd39af3cf6a9d446fa61.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_components_shared_atoms_ListTable_index_ts-src_components_shared_atoms_ListTableItem_inde-7ef5e2.cd39af3cf6a9d446fa61.js",
+      "sha256": "134fa38541a21cee59f74ce06f3f6448d70fcbb0869a8d645e9bbb1d1466e921",
+      "bytes": 8826
+    },
+    {
+      "file": "src_components_shared_atoms_Divider_index_ts-src_components_shared_pages_NoMatchPage_NoMatchP-9a1b41.09215a0292501a84bfad.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_components_shared_atoms_Divider_index_ts-src_components_shared_pages_NoMatchPage_NoMatchP-9a1b41.09215a0292501a84bfad.js",
+      "sha256": "4e08ec8bd94c9b047255e9a61cf4ccd2a9e230f72ee550f0bb3cb7927fa75538",
+      "bytes": 18384
+    },
+    {
+      "file": "src_components_shared_atoms_Skeleton_Skeleton_tsx-src_routes_ForumRouter_tsx-src_features_for-d5b99c.742e00dd54f090145cb2.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_components_shared_atoms_Skeleton_Skeleton_tsx-src_routes_ForumRouter_tsx-src_features_for-d5b99c.742e00dd54f090145cb2.js",
+      "sha256": "980452e0942ea32d3ad98889b69136b8fe10d8eaf14297dfd951b08cf46d1a32",
+      "bytes": 156859
+    },
+    {
+      "file": "src_components_shared_atoms_ProgressBar_index_ts-src_components_shared_atoms_Skeleton_Skeleto-618f7a.77fe08b2ff80dbe8520e.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_components_shared_atoms_ProgressBar_index_ts-src_components_shared_atoms_Skeleton_Skeleto-618f7a.77fe08b2ff80dbe8520e.js",
+      "sha256": "11a0b69cb013a4323fca494f62ca2a14e39b033835d92ec15b79a1835b16749e",
+      "bytes": 15636
+    },
+    {
+      "file": "src_components_shared_atoms_MultiLineText_index_ts-src_components_shared_molecules_Assessment-ec581b.64e682d1b7b130b6eb5d.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_components_shared_atoms_MultiLineText_index_ts-src_components_shared_molecules_Assessment-ec581b.64e682d1b7b130b6eb5d.js",
+      "sha256": "729564b34dc5db4fefcfd6626df38e3eaff6575abe107f70291a038ab3e65ba1",
+      "bytes": 9534
+    },
+    {
+      "file": "src_routes_NoticeRouter_tsx-src_routes_ProgressOverviewRouter_tsx-src_routes_StudyPlansMonthR-cd3b7f.709848186d046df4bdf8.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_routes_NoticeRouter_tsx-src_routes_ProgressOverviewRouter_tsx-src_routes_StudyPlansMonthR-cd3b7f.709848186d046df4bdf8.js",
+      "sha256": "654724f085178353ea066e57a9e67c1ef2b9123596aa90062c6ea7f607c0a1c3",
+      "bytes": 26202
+    },
+    {
+      "file": "vendors-node_modules_react-helmet_es_Helmet_js.5f18b1315799184c5f8b.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/vendors-node_modules_react-helmet_es_Helmet_js.5f18b1315799184c5f8b.js",
+      "sha256": "20c15b876dbaeeff358704725a3bfec95f8e69991ad84be3f937e56cf2c58484",
+      "bytes": 15800
+    },
+    {
+      "file": "src_features_rules_DesktopRoot_tsx-src_features_rules_MobileRoot_tsx.2536b6ab583c3d19a114.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_features_rules_DesktopRoot_tsx-src_features_rules_MobileRoot_tsx.2536b6ab583c3d19a114.js",
+      "sha256": "66fce76ef4ea036f80449b57c117af342bc9c6ed5f7441caf334793570d11d9d",
+      "bytes": 20209
+    },
+    {
+      "file": "vendors-node_modules_lodash_clamp_js-node_modules_react-error-boundary_dist_react-error-bound-079b8c.bcec5cb8eda7632bb5a5.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/vendors-node_modules_lodash_clamp_js-node_modules_react-error-boundary_dist_react-error-bound-079b8c.bcec5cb8eda7632bb5a5.js",
+      "sha256": "09fc7859af1ad2209b7241be20926574b54cfac0986fa3ccb0f11a015f942afb",
+      "bytes": 411526
+    },
+    {
+      "file": "src_actions_actions_ts-src_components_shared_atoms_RobotoCondensedText_index_ts-src_features_-97ba84.ee4594239e349fd4d648.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_actions_actions_ts-src_components_shared_atoms_RobotoCondensedText_index_ts-src_features_-97ba84.ee4594239e349fd4d648.js",
+      "sha256": "18c0206e370bc8c4526290342e35bf6f016ced741e3f8e109429c0255bd85098",
+      "bytes": 30445
+    },
+    {
+      "file": "src_components_shared_atoms_Skeleton_Skeleton_tsx-src_routes_SettingDesktopRouter_tsx-src_ass-1b4290.5a8e80fbb53a6398d36c.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_components_shared_atoms_Skeleton_Skeleton_tsx-src_routes_SettingDesktopRouter_tsx-src_ass-1b4290.5a8e80fbb53a6398d36c.js",
+      "sha256": "24434863f0eabe322781e168eb8f31f3c924848af0782667dd6aebbaccceb21b",
+      "bytes": 75052
+    },
+    {
+      "file": "src_containers_shared_useTitle_ts-src_features_help_atoms_Hr_tsx-src_features_help_organisms_-1d862f.496335b87dd550466026.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_containers_shared_useTitle_ts-src_features_help_atoms_Hr_tsx-src_features_help_organisms_-1d862f.496335b87dd550466026.js",
+      "sha256": "e5dcac2707badf5475d15f8329e00c1da5990f668363b144f59750cfd1051109",
+      "bytes": 35293
+    },
+    {
+      "file": "src_features_help_MobileRoot_tsx.fd5f649d9cfae27a5adf.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_features_help_MobileRoot_tsx.fd5f649d9cfae27a5adf.js",
+      "sha256": "4cf0a5210ebdfc826cd7abf3897f6520656f31fd318f2a456b03158069e4174a",
+      "bytes": 51484
+    },
+    {
+      "file": "src_routes_PeriodicExamRouter_tsx.712d152e8683bcafee56.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_routes_PeriodicExamRouter_tsx.712d152e8683bcafee56.js",
+      "sha256": "c31d7ca970c411c4bbde06e4971fc1713c687b8221289f0c081cb2ff2d344eef",
+      "bytes": 13034
+    },
+    {
+      "file": "src_features_help_DesktopRoot_tsx.531279ca1f0bc46db79d.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_features_help_DesktopRoot_tsx.531279ca1f0bc46db79d.js",
+      "sha256": "cb143f54f1d81bd68d517b4e52c9e1646473ef99a46611cd8bebc877af6683b7",
+      "bytes": 51368
+    },
+    {
+      "file": "vendors-node_modules_formik_dist_formik_esm_js.92624e57826658f8e84b.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/vendors-node_modules_formik_dist_formik_esm_js.92624e57826658f8e84b.js",
+      "sha256": "38d6abeffb48b7fb383152bb433d2fb808472581bbbb118aac4fb3d59e95d112",
+      "bytes": 35263
+    },
+    {
+      "file": "vendors-node_modules_hls_js_dist_hls_min_js-node_modules_lodash_clamp_js-node_modules_react-u-2b09f8.288bae24d4ee17cfe721.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/vendors-node_modules_hls_js_dist_hls_min_js-node_modules_lodash_clamp_js-node_modules_react-u-2b09f8.288bae24d4ee17cfe721.js",
+      "sha256": "b10ec05ffcce5570ad3a344ace8498abaf021dbbded19635cabed3c6439092ff",
+      "bytes": 544808
+    },
+    {
+      "file": "src_components_shared_molecules_ForumButton_index_ts-src_components_shared_organisms_VideoPla-0c7155.fc1b4d0719ded8d44963.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_components_shared_molecules_ForumButton_index_ts-src_components_shared_organisms_VideoPla-0c7155.fc1b4d0719ded8d44963.js",
+      "sha256": "f43d840bdd89a3d4c8a18789e112b91bb37e655ea47939b56a630d577a2b35e3",
+      "bytes": 21470
+    },
+    {
+      "file": "src_components_shared_molecules_SectionHeader_SectionHeader_tsx-src_components_shared_organis-7a2ad4.ad55f03f677478da3575.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_components_shared_molecules_SectionHeader_SectionHeader_tsx-src_components_shared_organis-7a2ad4.ad55f03f677478da3575.js",
+      "sha256": "6dcdffea123376379d9ee5b7829d8fd44ae24dcc875b7e6068cdec4f1e3056ac",
+      "bytes": 18485
+    },
+    {
+      "file": "src_clients_papiFetchClient_ts-src_components_shared_organisms_Player_OverlayMenu_PlaybackRat-c8e296.f5315341da8eb5b4fb15.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_clients_papiFetchClient_ts-src_components_shared_organisms_Player_OverlayMenu_PlaybackRat-c8e296.f5315341da8eb5b4fb15.js",
+      "sha256": "b68c67c900f1d5e6c226375258ae7b098c2b77145efc4fa6e1960a3b979dfcb0",
+      "bytes": 15921
+    },
+    {
+      "file": "src_features_chapter_containers_MaterialMovie_Router_tsx-node_modules_tanstack_react-query_bu-13d296.64e3c5d545e02a17d926.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_features_chapter_containers_MaterialMovie_Router_tsx-node_modules_tanstack_react-query_bu-13d296.64e3c5d545e02a17d926.js",
+      "sha256": "54f3560548beea1d79e285e0b623cbdda495702f750026079d9ecb7b8d289315",
+      "bytes": 47175
+    },
+    {
+      "file": "vendors-node_modules_lodash__baseIteratee_js-node_modules_react-error-boundary_dist_react-err-6c4d9b.8b2eecb23383e5db73db.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/vendors-node_modules_lodash__baseIteratee_js-node_modules_react-error-boundary_dist_react-err-6c4d9b.8b2eecb23383e5db73db.js",
+      "sha256": "5a6f6ecf8f87455b9483f4a9ea81fb1ac6e3a1e93f82732deb68c5a06db4005a",
+      "bytes": 79377
+    },
+    {
+      "file": "vendors-node_modules_lodash_differenceBy_js-node_modules_lodash_isBoolean_js-node_modules_lod-a416e5.89c22fce4c4339aef354.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/vendors-node_modules_lodash_differenceBy_js-node_modules_lodash_isBoolean_js-node_modules_lod-a416e5.89c22fce4c4339aef354.js",
+      "sha256": "b0bb46a124539bd51447ac859683272993f678c718837d88114642c587f9bc79",
+      "bytes": 542915
+    },
+    {
+      "file": "src_components_shared_atoms_Skeleton_index_ts-src_components_shared_organisms_Breadcrumbs_bre-f2024f.5a779b6724b60f4d993a.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_components_shared_atoms_Skeleton_index_ts-src_components_shared_organisms_Breadcrumbs_bre-f2024f.5a779b6724b60f4d993a.js",
+      "sha256": "2807eaa85ee6b48d8e4849765cddecc2fe9977f363fe41000bd37f423f85eb24",
+      "bytes": 15805
+    },
+    {
+      "file": "src_components_shared_atoms_Progress_index_ts-src_components_shared_organisms_Pagination_inde-fd01f3.be90ddc4c34aa233f406.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_components_shared_atoms_Progress_index_ts-src_components_shared_organisms_Pagination_inde-fd01f3.be90ddc4c34aa233f406.js",
+      "sha256": "a941248f8f980ffdad20f03c5c8929a8fc5d30236a0ae8127ba24aa43d09520d",
+      "bytes": 15078
+    },
+    {
+      "file": "src_routes_LessonsRouter_tsx-src_assets_images_go_svg-src_assets_images_guides_lessons-show-1-fb901a.d486166f534a84b1bdb3.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_routes_LessonsRouter_tsx-src_assets_images_go_svg-src_assets_images_guides_lessons-show-1-fb901a.d486166f534a84b1bdb3.js",
+      "sha256": "797f5679270dae5f4b0f53b2fe535e96a42e892dd39d78dec301f23f42b5a1d1",
+      "bytes": 159501
+    },
+    {
+      "file": "src_routes_CourseRouter_tsx.9f23b544fcb1c5d58d2a.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_routes_CourseRouter_tsx.9f23b544fcb1c5d58d2a.js",
+      "sha256": "8ce06b5f18dbda1fb61be6dcd8905c37b85efc7d9ef664357d43dae704a29f55",
+      "bytes": 46626
+    },
+    {
+      "file": "vendors-node_modules_yup_index_esm_js.314d1bf21cc26f998562.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/vendors-node_modules_yup_index_esm_js.314d1bf21cc26f998562.js",
+      "sha256": "22a1b1b2cf7360367c72b26ffed4168559e03e6a789fdb8b5f34ae29e601981d",
+      "bytes": 44274
+    },
+    {
+      "file": "src_components_shared_utils_currentTimeContext_tsx-src_routes_ReportDesktopRouter_tsx-src_rou-e9e96d.26ac2c089ea40d176d83.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_components_shared_utils_currentTimeContext_tsx-src_routes_ReportDesktopRouter_tsx-src_rou-e9e96d.26ac2c089ea40d176d83.js",
+      "sha256": "c13892c05a4304d5b60eb7dfa0521eb3aa3dcf60a3e713256a81a8f85e65af44",
+      "bytes": 49587
+    },
+    {
+      "file": "src_features_login_pages_MobileLogin2024_tsx-src_routes_LoginDesktopRouter_tsx.50f1d5386c427498dd38.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_features_login_pages_MobileLogin2024_tsx-src_routes_LoginDesktopRouter_tsx.50f1d5386c427498dd38.js",
+      "sha256": "8b8e3140bd6272aa88d1aa8df6f29afb93fa0e74c4a6a1f4cda85de30fa1f20b",
+      "bytes": 11948
+    },
+    {
+      "file": "src_features_register_pages_DesktopRegister2024_tsx.f4030c033115bb7b1af8.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_features_register_pages_DesktopRegister2024_tsx.f4030c033115bb7b1af8.js",
+      "sha256": "8c6fb59828f6c7ff302b4e3e5701d0f334e073bd55168690a9a78d7ba6be7523",
+      "bytes": 7012
+    },
+    {
+      "file": "src_features_register_pages_MobileRegister2024_tsx.0a18def2c12d5054eb80.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_features_register_pages_MobileRegister2024_tsx.0a18def2c12d5054eb80.js",
+      "sha256": "9ec561e0c3f61be1b1cfbd50d8d7862b0e0d390940318b8ae68fd990d8df0caa",
+      "bytes": 4397
+    },
+    {
+      "file": "src_features_vrGuide_DesktopRoot_tsx.201b879448c67da84c95.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_features_vrGuide_DesktopRoot_tsx.201b879448c67da84c95.js",
+      "sha256": "22b9758529d54204389756998b09f49d507d90303c504edc3f6c8ee498d0aede",
+      "bytes": 5907
+    },
+    {
+      "file": "src_features_vrGuide_MobileRoot_tsx.419336bccfb2b91e222c.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_features_vrGuide_MobileRoot_tsx.419336bccfb2b91e222c.js",
+      "sha256": "af5d98981026d5747f6dda787428b14ca95b9698d4e91d32f7e8b0a1ccba398f",
+      "bytes": 5759
+    },
+    {
+      "file": "src_features_loginFromPayment_Router_tsx.d8c5e7b583e4358c2c5b.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_features_loginFromPayment_Router_tsx.d8c5e7b583e4358c2c5b.js",
+      "sha256": "18ca6da600c8c235b82296eb936d3d25f1bee7d84152d2446459527e8a021a59",
+      "bytes": 6916
+    },
+    {
+      "file": "src_components_shared_pages_NoMatchPage_NoMatchPage_tsx.6efe56dfe02a3fa6ba9e.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_components_shared_pages_NoMatchPage_NoMatchPage_tsx.6efe56dfe02a3fa6ba9e.js",
+      "sha256": "79c2e608ed522aa74b0e498c35c81e9966a8da1b5df8c9b3661a5e5ae2a59708",
+      "bytes": 1304
+    },
+    {
+      "file": "src_components_shared_pages_JumpPage_DesktopJumpPage_tsx.cf62a77879a3e02620e5.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_components_shared_pages_JumpPage_DesktopJumpPage_tsx.cf62a77879a3e02620e5.js",
+      "sha256": "04f1f51dedc6d81b68d2b2e5dd4ee96ec7568f04dae4c72cf8f7505ce055e397",
+      "bytes": 2803
+    },
+    {
+      "file": "src_components_shared_pages_JumpPage_MobileJumpPage_tsx.09a4354d00874eab9913.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_components_shared_pages_JumpPage_MobileJumpPage_tsx.09a4354d00874eab9913.js",
+      "sha256": "cf60660952273ecd52a4a3acf7010c988aee30a2793efd81c8bf345abfe6ef6a",
+      "bytes": 2740
+    },
+    {
+      "file": "src_components_shared_atoms_Blocker_Blocker_tsx-src_components_shared_atoms_Chip_index_ts-src-5928f9.64dbba40ec72d9af697a.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_components_shared_atoms_Blocker_Blocker_tsx-src_components_shared_atoms_Chip_index_ts-src-5928f9.64dbba40ec72d9af697a.js",
+      "sha256": "3ab163a8a516ae76d9ce1bf31ddf28d8d399651a9e4bcab6b51180484e24eee2",
+      "bytes": 16744
+    },
+    {
+      "file": "src_features_settings_ProfileSchool_DesktopProfileSchool_tsx-src_routes_ContactDesktopRouter_-c97ce2.b47535f7b510654071a6.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_features_settings_ProfileSchool_DesktopProfileSchool_tsx-src_routes_ContactDesktopRouter_-c97ce2.b47535f7b510654071a6.js",
+      "sha256": "4d22716d5ab2303f4458c1b2ee1396f463557c8c0d8cef0f3129aa0860e17fb5",
+      "bytes": 33725
+    },
+    {
+      "file": "vendors-node_modules_lodash_range_js-node_modules_react-use_esm_useDebounce_js-node_modules_t-5f3f0f.521f076462a6b446970f.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/vendors-node_modules_lodash_range_js-node_modules_react-use_esm_useDebounce_js-node_modules_t-5f3f0f.521f076462a6b446970f.js",
+      "sha256": "b1da8ca2bda668076005652e5e96f771e0ef3ceca4ff0d0afc39d7a0ae096229",
+      "bytes": 25545
+    },
+    {
+      "file": "src_features_settings_ProfilePrivate_DesktopProfilePrivate_tsx-src_routes_SettingMobileRouter-b0697a.687de3af9c6e27c200e7.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_features_settings_ProfilePrivate_DesktopProfilePrivate_tsx-src_routes_SettingMobileRouter-b0697a.687de3af9c6e27c200e7.js",
+      "sha256": "93237e51f90632a1fa64ba2f4b9c3d9c6d4aee886c096d867e1bb23c5a08e2e7",
+      "bytes": 38036
+    },
+    {
+      "file": "src_components_shared_organisms_ExerciseBox_index_ts-src_components_shared_organisms_IndexBox-07d5e7.569bbb5e61addb9806b2.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_components_shared_organisms_ExerciseBox_index_ts-src_components_shared_organisms_IndexBox-07d5e7.569bbb5e61addb9806b2.js",
+      "sha256": "56b27074d132739abcae2661349373f887c56b684642e6cb591503260dfe6153",
+      "bytes": 15382
+    },
+    {
+      "file": "src_routes_ShortTestRouter_tsx.de7f8ee0c2e331973883.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_routes_ShortTestRouter_tsx.de7f8ee0c2e331973883.js",
+      "sha256": "25f1a2c66af2f3d4ff45277b0ab1c7ee4dd8fb8e807093820ff7815dfebbf2b8",
+      "bytes": 11760
+    },
+    {
+      "file": "src_routes_AssessmentTestRouter_tsx.8881f56934f34f929ec4.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_routes_AssessmentTestRouter_tsx.8881f56934f34f929ec4.js",
+      "sha256": "5d62d44b78b2555e5f46aeec982c5643b76281f09ac95da31b725d8026ce9e84",
+      "bytes": 14537
+    },
+    {
+      "file": "src_containers_shared_GenreColumnLayout_tsx.06070cb55aac3e198949.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_containers_shared_GenreColumnLayout_tsx.06070cb55aac3e198949.js",
+      "sha256": "31892e6e1436c69c9d813f9322f38863a0e501f160382a8ae9137746b352d75e",
+      "bytes": 10778
+    },
+    {
+      "file": "src_routes_MyCourseRouter_tsx.0bc797544485c8ad220e.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_routes_MyCourseRouter_tsx.0bc797544485c8ad220e.js",
+      "sha256": "8dff2c26405d149b4acac84678a4e936886fd4beaed8d7a5bfbd835fd2481a31",
+      "bytes": 57612
+    },
+    {
+      "file": "vendors-node_modules_lodash_uniqBy_js-node_modules_tanstack_react-query_build_modern_useMutat-a95314.20be7591be44a875810d.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/vendors-node_modules_lodash_uniqBy_js-node_modules_tanstack_react-query_build_modern_useMutat-a95314.20be7591be44a875810d.js",
+      "sha256": "6237eacc3e589188fcdd2967f0c6ef5cc8f600b9947b90b8d421ab6e341fe06a",
+      "bytes": 9102
+    },
+    {
+      "file": "src_routes_HomeRouter_tsx.9e7d103d939d33348553.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_routes_HomeRouter_tsx.9e7d103d939d33348553.js",
+      "sha256": "4b3832d77c5368467acee3176b8b527414feb828e54282e1a78497b9ef2f84e8",
+      "bytes": 61608
+    },
+    {
+      "file": "src_features_kdEdu_pages_DeskTopEventCalendarPage_tsx.d55add85d3452d336b88.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_features_kdEdu_pages_DeskTopEventCalendarPage_tsx.d55add85d3452d336b88.js",
+      "sha256": "623210dfce5a9dc70dc76476e8051da29c8f0fe71f2bf9a0442fbb1a1dc2b386",
+      "bytes": 3206
+    },
+    {
+      "file": "src_features_kdEdu_pages_MobileEventCalendarPage_tsx.ddd34dde3837fa54172e.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_features_kdEdu_pages_MobileEventCalendarPage_tsx.ddd34dde3837fa54172e.js",
+      "sha256": "c42f44f52f0924bd9d03e3a36db26d23f5171ccc32a076137b13758e49117c2c",
+      "bytes": 2225
+    },
+    {
+      "file": "src_features_chapter_containers_index_tsx-src_features_chapter_molecules_GuideButton_chapters-6a4e13.1e1632cb8f8ec61f9dcf.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_features_chapter_containers_index_tsx-src_features_chapter_molecules_GuideButton_chapters-6a4e13.1e1632cb8f8ec61f9dcf.js",
+      "sha256": "c6adfde48075883f3e71641b4afc1bce293603da556d772baa44c8f072aa3cd9",
+      "bytes": 68793
+    },
+    {
+      "file": "src_routes_ShortTestsCoverRouter_tsx.782348292764e43debf9.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_routes_ShortTestsCoverRouter_tsx.782348292764e43debf9.js",
+      "sha256": "f763b9eba4e08678b703ad192ec949d00deca1acecf6cc47634d208448141f45",
+      "bytes": 24824
+    },
+    {
+      "file": "src_routes_AssessmentTestCoverRouter_tsx.7b735f947f2313ecf01b.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_routes_AssessmentTestCoverRouter_tsx.7b735f947f2313ecf01b.js",
+      "sha256": "dea15bd248fa94c7af16aa33e5072233beb09989f1b805425e2a8921da085a5e",
+      "bytes": 29548
+    },
+    {
+      "file": "src_routes_WithdrawalsDesktopRouter_tsx.e6342dbf40abc744b1eb.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_routes_WithdrawalsDesktopRouter_tsx.e6342dbf40abc744b1eb.js",
+      "sha256": "bfd6fa22134703e80cc989064ac79e4f7ee29cb253d18b6face3383f16de4bf2",
+      "bytes": 3753
+    },
+    {
+      "file": "src_routes_WithdrawalsMobileRouter_tsx.b2210ffdb13bb375efee.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_routes_WithdrawalsMobileRouter_tsx.b2210ffdb13bb375efee.js",
+      "sha256": "34d8c9542ee1c16af96b99f0b2c924b103e36352583f0fec1272a0f85db505d6",
+      "bytes": 3040
+    },
+    {
+      "file": "src_routes_PaymentsRouter_tsx-src_assets_images_payments_payment-types-au_svg-src_assets_imag-70ce8a.ffb7ea4c58824b678da2.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_routes_PaymentsRouter_tsx-src_assets_images_payments_payment-types-au_svg-src_assets_imag-70ce8a.ffb7ea4c58824b678da2.js",
+      "sha256": "ca9961b3790c47119dad2d8c62bfcbdafe44e816b3720c29c9d9ad45ef834d08",
+      "bytes": 10044
+    },
+    {
+      "file": "src_features_settings_ProfilePublic_index_ts.3defae2f3f9d7fbb75ce.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_features_settings_ProfilePublic_index_ts.3defae2f3f9d7fbb75ce.js",
+      "sha256": "919d9050a2bab367278f5d1abdb2c6498cbb214b14f4fe7639ffbcde87fbc49a",
+      "bytes": 11590
+    },
+    {
+      "file": "exercise.js",
+      "url": "https://cdn.nnn.ed.nico/kokuban/exercises/exercise-ed100af29148f12abda1.js",
+      "sha256": "608b1e428b18ed92b2194e0a834b033fc6e6f3d119b745f8ce10af314451284d",
+      "bytes": 1488046
+    },
+    {
+      "file": "evaluationTest.js",
+      "url": "https://cdn.nnn.ed.nico/kokuban/exercises/evaluationTest-ee707482cd22c50a61f9.js",
+      "sha256": "33648a2b4516bd02d24ece9a846d6a9cb621cae537448aaa9139627b2b393e8f",
+      "bytes": 1493692
+    },
+    {
+      "file": "essayTest.js",
+      "url": "https://cdn.nnn.ed.nico/kokuban/exercises/essayTest-b3f2bf0f6539daf11048.js",
+      "sha256": "3dced007b5bacbedbec9818dced3dfef36dc4949a52515c175efc3b23f4c384e",
+      "bytes": 1485776
+    }
+  ],
+  "reviewedExpansions": {
+    "note": "Reviewed against ohtomi app source. Expansion does not establish successful network behavior.",
+    "lessonPathHelper": {
+      "source": "app.js",
+      "offsetUtf16": 573197,
+      "export": "module 28001 export f8",
+      "advanced": "lessons/{id}",
+      "basicAndZenUniv": "n_school/courses/{id}/chapters/{id}/lessons/{id}"
+    },
+    "lessonOwners": [
+      "getLesson",
+      "getLessonLive",
+      "postComment",
+      "postLessonAskComment",
+      "postLessonSolution",
+      "putProgressStart",
+      "putProgressPassed"
+    ],
+    "essayOwner": "answerNSchoolEssayMaterial",
+    "essayResourceTypes": [
+      "essay_tests",
+      "essay_reports"
+    ]
+  },
+  "endpoints": [
+    {
+      "host": "api",
+      "method": "DELETE",
+      "path": "/v1/oauth/authorized_clients/{id}",
+      "category": "auth",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "DELETE",
+          "route": "/v1/oauth/authorized_clients/{id}",
+          "host": "api",
+          "category": "auth",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/oauth/authorized_clients/{e}",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "deleteAuthorizedClients",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 279905
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "POST",
+      "path": "/v1/tokens/csrf",
+      "category": "auth",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "POST",
+          "route": "/v1/tokens/csrf",
+          "host": "api",
+          "category": "auth",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/tokens/csrf",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "updateCsrfToken",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "void 0",
+          "source": "app.js",
+          "offsetUtf16": 289529
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "DELETE",
+      "path": "/v1/users/bindings",
+      "category": "auth",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "DELETE",
+          "route": "/v1/users/bindings",
+          "host": "api",
+          "category": "auth",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/users/bindings?target_type={e}",
+          "queryTemplate": "target_type={e}",
+          "expressions": [],
+          "owner": "deleteUsersBindings",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 278994
+        },
+        {
+          "method": "DELETE",
+          "route": "/v1/users/bindings",
+          "host": "api",
+          "category": "auth",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/users/bindings?target_type={e}",
+          "queryTemplate": "target_type={e}",
+          "expressions": [],
+          "owner": "deleteUsersBindings",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 284033
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/users/bindings",
+      "category": "auth",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/users/bindings",
+          "host": "api",
+          "category": "auth",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/users/bindings?revision=2",
+          "queryTemplate": "revision=2",
+          "expressions": [],
+          "owner": "getUsersBindings",
+          "parameters": [],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 283963
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/contact_types",
+      "category": "contact",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/contact_types",
+          "host": "api",
+          "category": "contact",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/contact_types",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getContactTyeps",
+          "parameters": [],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 281521
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "POST",
+      "path": "/v1/contacts",
+      "category": "contact",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "POST",
+          "route": "/v1/contacts",
+          "host": "api",
+          "category": "contact",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/contacts",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "postContacts",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "e",
+          "source": "app.js",
+          "offsetUtf16": 281572
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v2/dashboard/report_progresses",
+      "category": "dashboard",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v2/dashboard/report_progresses",
+          "host": "api",
+          "category": "dashboard",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v2/dashboard/report_progresses?{query}",
+          "queryTemplate": "{query}",
+          "expressions": [],
+          "owner": "getReportProgress",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 282282
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v2/dashboard/report_progresses/monthly/{id}/{id}",
+      "category": "dashboard",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v2/dashboard/report_progresses/monthly/{id}/{id}",
+          "host": "api",
+          "category": "dashboard",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v2/dashboard/report_progresses/monthly/{year}/{month}?service={service}",
+          "queryTemplate": "service={service}",
+          "expressions": [],
+          "owner": "getReportProgressesMonthly",
+          "parameters": [
+            "{service:e,year:t,month:r}"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 282419
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v2/learning_amounts",
+      "category": "dashboard",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v2/learning_amounts",
+          "host": "api",
+          "category": "dashboard",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v2/learning_amounts",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getLearningAmounts",
+          "parameters": [],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 283842
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v2/my_courses",
+      "category": "dashboard",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v2/my_courses",
+          "host": "api",
+          "category": "dashboard",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v2/my_courses",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getMyCourses",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "e",
+          "source": "app.js",
+          "offsetUtf16": 278892
+        },
+        {
+          "method": "GET",
+          "route": "/v2/my_courses",
+          "host": "api",
+          "category": "dashboard",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v2/my_courses",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getMyCourses",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "e",
+          "source": "app.js",
+          "offsetUtf16": 281398
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v3/dashboard/my_courses",
+      "category": "dashboard",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v3/dashboard/my_courses",
+          "host": "api",
+          "category": "dashboard",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v3/dashboard/my_courses",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getDashboardMyCourses",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "e",
+          "source": "app.js",
+          "offsetUtf16": 281457
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v3/dashboard/scale_scores",
+      "category": "dashboard",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v3/dashboard/scale_scores",
+          "host": "api",
+          "category": "dashboard",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v3/dashboard/scale_scores",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getDashboardScaleScores",
+          "parameters": [],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 282527
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v3/dashboard/study_progress",
+      "category": "dashboard",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v3/dashboard/study_progress",
+          "host": "api",
+          "category": "dashboard",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v3/dashboard/study_progress",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": null,
+          "parameters": [],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 542213
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "POST",
+      "path": "/v3/learning_events",
+      "category": "dashboard",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "POST",
+          "route": "/v3/learning_events",
+          "host": "api",
+          "category": "dashboard",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v3/learning_events",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "postLearningEvents",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "e",
+          "source": "app.js",
+          "offsetUtf16": 283902
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "POST",
+      "path": "/v3/learning_histories/search",
+      "category": "dashboard",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "POST",
+          "route": "/v3/learning_histories/search",
+          "host": "api",
+          "category": "dashboard",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v3/learning_histories/search",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": null,
+          "parameters": [],
+          "requestExpression": "{body:{sections:e.map((({courseId:e,chapterId:t,resourceType:r,sectionId:n})=>({course_id:e,chapter_id:t,material_type:r,material_id:n}))),lessons:t}}",
+          "source": "app.js",
+          "offsetUtf16": 542781
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v3/debug/school_term_learnings",
+      "category": "debug",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v3/debug/school_term_learnings",
+          "host": "api",
+          "category": "debug",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v3/debug/school_term_learnings",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getDebugSchoolTermLearnings",
+          "parameters": [],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 286591
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "POST",
+      "path": "/v3/debug/school_term_learnings",
+      "category": "debug",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "POST",
+          "route": "/v3/debug/school_term_learnings",
+          "host": "api",
+          "category": "debug",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v3/debug/school_term_learnings",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "postDebugSchoolTermLearnings",
+          "parameters": [],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 286509
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "PUT",
+      "path": "/v3/debug/school_term_learnings",
+      "category": "debug",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "PUT",
+          "route": "/v3/debug/school_term_learnings",
+          "host": "api",
+          "category": "debug",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v3/debug/school_term_learnings",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "putDebugSchoolTermLearnings",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "e",
+          "source": "app.js",
+          "offsetUtf16": 286671
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "PUT",
+      "path": "/v1/official_events/{id}/read",
+      "category": "events",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "PUT",
+          "route": "/v1/official_events/{id}/read",
+          "host": "api",
+          "category": "events",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/official_events/{e}/read",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "putOfficialEvent",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 281988
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/official_events/unreads",
+      "category": "events",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/official_events/unreads",
+          "host": "api",
+          "category": "events",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/official_events/unreads",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getUnreadOfficialEvents",
+          "parameters": [],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 281923
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/questions",
+      "category": "forum",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/questions",
+          "host": "api",
+          "category": "forum",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/questions",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getQuestions",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "e",
+          "source": "app.js",
+          "offsetUtf16": 277668
+        },
+        {
+          "method": "GET",
+          "route": "/v1/questions",
+          "host": "api",
+          "category": "forum",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/questions",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getQuestions",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "e",
+          "source": "app.js",
+          "offsetUtf16": 280482
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "POST",
+      "path": "/v1/questions",
+      "category": "forum",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "POST",
+          "route": "/v1/questions",
+          "host": "api",
+          "category": "forum",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/questions",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "postQuestions",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "{question:e}",
+          "source": "app.js",
+          "offsetUtf16": 277718
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "DELETE",
+      "path": "/v1/questions/{id}",
+      "category": "forum",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "DELETE",
+          "route": "/v1/questions/{id}",
+          "host": "api",
+          "category": "forum",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/questions/{e}",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "deleteQuestions",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 277782
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/questions/{id}",
+      "category": "forum",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/questions/{id}",
+          "host": "api",
+          "category": "forum",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/questions/{e}",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getQuestion",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 277343
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/questions/{id}/answers",
+      "category": "forum",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/questions/{id}/answers",
+          "host": "api",
+          "category": "forum",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/questions/{id}/answers",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getQuestionAnswers",
+          "parameters": [
+            "{id:e,from:t}"
+          ],
+          "requestExpression": "{from:t}",
+          "source": "app.js",
+          "offsetUtf16": 277415
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "POST",
+      "path": "/v1/questions/{id}/answers",
+      "category": "forum",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "POST",
+          "route": "/v1/questions/{id}/answers",
+          "host": "api",
+          "category": "forum",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/questions/{id}/answers",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "postQuestionAnswers",
+          "parameters": [
+            "{id:e,content:t,contentType:r,contentMetadata:n,from:o}"
+          ],
+          "requestExpression": "{answer:{content:t,contentType:r,contentMetadata:n},from:o}",
+          "source": "app.js",
+          "offsetUtf16": 277547
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/questions/{id}/balloons/{id}",
+      "category": "forum",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/questions/{id}/balloons/{id}",
+          "host": "api",
+          "category": "forum",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/questions/{questionId}/balloons/{balloonId}",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getQuestionBalloon",
+          "parameters": [
+            "{questionId:e,balloonId:t}"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 281264
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "PATCH",
+      "path": "/v1/questions/{id}/resolution",
+      "category": "forum",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "PATCH",
+          "route": "/v1/questions/{id}/resolution",
+          "host": "api",
+          "category": "forum",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/questions/{e}/resolution",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "patchQuestionsResolution",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "{question:{isResolved:!0}}",
+          "source": "app.js",
+          "offsetUtf16": 277849
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/questions/activity",
+      "category": "forum",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/questions/activity",
+          "host": "api",
+          "category": "forum",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/questions/activity",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getQuestionsActivity",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "e",
+          "source": "app.js",
+          "offsetUtf16": 277949
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/questions/search",
+      "category": "forum",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/questions/search",
+          "host": "api",
+          "category": "forum",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/questions/search",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getQuestionsSearch",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "e",
+          "source": "app.js",
+          "offsetUtf16": 278013
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "POST",
+      "path": "/v1/reports/infringement",
+      "category": "forum",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "POST",
+          "route": "/v1/reports/infringement",
+          "host": "api",
+          "category": "forum",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/reports/infringement",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "postReportsInfringement",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "e",
+          "source": "app.js",
+          "offsetUtf16": 281632
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/reports/reasons",
+      "category": "forum",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/reports/reasons",
+          "host": "api",
+          "category": "forum",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/reports/reasons?type={e}",
+          "queryTemplate": "type={e}",
+          "expressions": [],
+          "owner": "getReportsReasons",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 281335
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "POST",
+      "path": "/v1/reports/violation",
+      "category": "forum",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "POST",
+          "route": "/v1/reports/violation",
+          "host": "api",
+          "category": "forum",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/reports/violation",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "postReportsViolation",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "e",
+          "source": "app.js",
+          "offsetUtf16": 281701
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/tags/question",
+      "category": "forum",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/tags/question",
+          "host": "api",
+          "category": "forum",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/tags/question",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getTagsQuestion",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "{for:e}",
+          "source": "app.js",
+          "offsetUtf16": 278072
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v3/forum/channels/{id}/threads",
+      "category": "forum",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v3/forum/channels/{id}/threads",
+          "host": "api",
+          "category": "forum",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v3/forum/channels/{e}/threads?with_channel=true{expression0}",
+          "queryTemplate": "with_channel=true{expression0}",
+          "expressions": [
+            "\"\"===r?\"\":`&${r}`"
+          ],
+          "owner": "getForumChannelThreads",
+          "parameters": [
+            "e",
+            "t"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 284934
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v3/forum/material_relations/courses/{id}/chapters/{id}/{id}/{id}/threads",
+      "category": "forum",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v3/forum/material_relations/courses/{id}/chapters/{id}/{id}/{id}/threads",
+          "host": "api",
+          "category": "forum",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v3/forum/material_relations/courses/{courseId}/chapters/{chapterId}/{materialTypePath}/{materialId}/threads?{query}",
+          "queryTemplate": "{query}",
+          "expressions": [],
+          "owner": "getForumMaterialRelationThreads",
+          "parameters": [
+            "e",
+            "t"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 284479
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v3/forum/material_relations/courses/{id}/chapters/{id}/{id}/{id}/threads/count",
+      "category": "forum",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v3/forum/material_relations/courses/{id}/chapters/{id}/{id}/{id}/threads/count",
+          "host": "api",
+          "category": "forum",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v3/forum/material_relations/courses/{courseId}/chapters/{chapterId}/{materialTypePath}/{materialId}/threads/count",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getForumMaterialRelationsThreadsCount",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 284255
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v3/forum/material_relations/lessons/{id}/threads",
+      "category": "forum",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v3/forum/material_relations/lessons/{id}/threads",
+          "host": "api",
+          "category": "forum",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v3/forum/material_relations/lessons/{e}/threads?{query}",
+          "queryTemplate": "{query}",
+          "expressions": [],
+          "owner": "getForumMaterialRelationsLessonsThreads",
+          "parameters": [
+            "e",
+            "t"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 284726
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v3/forum/menu",
+      "category": "forum",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v3/forum/menu",
+          "host": "api",
+          "category": "forum",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v3/forum/menu",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getForumMenu",
+          "parameters": [],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 284831
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v3/forum/my_threads",
+      "category": "forum",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v3/forum/my_threads",
+          "host": "api",
+          "category": "forum",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v3/forum/my_threads?{query}",
+          "queryTemplate": "{query}",
+          "expressions": [],
+          "owner": "getForumMyThreads",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 285375
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "POST",
+      "path": "/v3/forum/reports/infringement",
+      "category": "forum",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "POST",
+          "route": "/v3/forum/reports/infringement",
+          "host": "api",
+          "category": "forum",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v3/forum/reports/infringement",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "postForumReportsInfringement",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "e",
+          "source": "app.js",
+          "offsetUtf16": 285622
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v3/forum/reports/reasons",
+      "category": "forum",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v3/forum/reports/reasons",
+          "host": "api",
+          "category": "forum",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v3/forum/reports/reasons?type={e}",
+          "queryTemplate": "type={e}",
+          "expressions": [],
+          "owner": "getForumReportsReasons",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 285460
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "POST",
+      "path": "/v3/forum/reports/violation",
+      "category": "forum",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "POST",
+          "route": "/v3/forum/reports/violation",
+          "host": "api",
+          "category": "forum",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v3/forum/reports/violation",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "postForumReportsViolation",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "e",
+          "source": "app.js",
+          "offsetUtf16": 285542
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v3/forum/thread_params",
+      "category": "forum",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v3/forum/thread_params",
+          "host": "api",
+          "category": "forum",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v3/forum/thread_params",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getForumThreadParams",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "e",
+          "source": "app.js",
+          "offsetUtf16": 284113
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "POST",
+      "path": "/v3/forum/threads",
+      "category": "forum",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "POST",
+          "route": "/v3/forum/threads",
+          "host": "api",
+          "category": "forum",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v3/forum/threads",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "postForumThreads",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "e",
+          "source": "app.js",
+          "offsetUtf16": 284176
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "DELETE",
+      "path": "/v3/forum/threads/{id}",
+      "category": "forum",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "DELETE",
+          "route": "/v3/forum/threads/{id}",
+          "host": "api",
+          "category": "forum",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v3/forum/threads/{e}",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "deleteForumThread",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 285181
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v3/forum/threads/{id}",
+      "category": "forum",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v3/forum/threads/{id}",
+          "host": "api",
+          "category": "forum",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v3/forum/threads/{e}",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getForumThread",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 285040
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "POST",
+      "path": "/v3/forum/threads/{id}/replies",
+      "category": "forum",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "POST",
+          "route": "/v3/forum/threads/{id}/replies",
+          "host": "api",
+          "category": "forum",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v3/forum/threads/{e}/replies",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "postForumThreadsIdReplies",
+          "parameters": [
+            "e",
+            "t"
+          ],
+          "requestExpression": "t",
+          "source": "app.js",
+          "offsetUtf16": 285257
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "PATCH",
+      "path": "/v3/forum/threads/{id}/resolved",
+      "category": "forum",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "PATCH",
+          "route": "/v3/forum/threads/{id}/resolved",
+          "host": "api",
+          "category": "forum",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v3/forum/threads/{e}/resolved",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "patchForumThreadsResolved",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 285109
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/lessons",
+      "category": "lessons",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/lessons",
+          "host": "api",
+          "category": "lessons",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/lessons",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getLessons",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "e",
+          "source": "app.js",
+          "offsetUtf16": 275434
+        },
+        {
+          "method": "GET",
+          "route": "/v1/lessons",
+          "host": "api",
+          "category": "lessons",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/lessons",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getLessons",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "e",
+          "source": "app.js",
+          "offsetUtf16": 280529
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/lessons/{id}",
+      "category": "lessons",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/lessons/{id}",
+          "host": "api",
+          "category": "lessons",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/{expression0}?{query}",
+          "queryTemplate": "{query}",
+          "expressions": [
+            "(0,h.f8)(e)"
+          ],
+          "owner": "getLesson",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 275557,
+          "expandedFrom": "/v1/{id}",
+          "expansionEvidence": {
+            "source": "app.js",
+            "offsetUtf16": 573197,
+            "export": "module 28001 export f8",
+            "advanced": "lessons/{id}",
+            "basicAndZenUniv": "n_school/courses/{id}/chapters/{id}/lessons/{id}"
+          }
+        },
+        {
+          "method": "GET",
+          "route": "/v1/lessons/{id}",
+          "host": "api",
+          "category": "lessons",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/lessons/{e}",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getAdvancedLesson",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 282656
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "POST",
+      "path": "/v1/lessons/{id}/ask_comments",
+      "category": "lessons",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "POST",
+          "route": "/v1/lessons/{id}/ask_comments",
+          "host": "api",
+          "category": "lessons",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/{expression0}/ask_comments?is_zane_user=true",
+          "queryTemplate": "is_zane_user=true",
+          "expressions": [
+            "(0,h.f8)(e)"
+          ],
+          "owner": "postLessonAskComment",
+          "parameters": [
+            "e",
+            "t"
+          ],
+          "requestExpression": "{message:t}",
+          "source": "app.js",
+          "offsetUtf16": 275827,
+          "expandedFrom": "/v1/{id}/ask_comments",
+          "expansionEvidence": {
+            "source": "app.js",
+            "offsetUtf16": 573197,
+            "export": "module 28001 export f8",
+            "advanced": "lessons/{id}",
+            "basicAndZenUniv": "n_school/courses/{id}/chapters/{id}/lessons/{id}"
+          }
+        },
+        {
+          "method": "POST",
+          "route": "/v1/lessons/{id}/ask_comments",
+          "host": "api",
+          "category": "lessons",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/lessons/{id}/ask_comments",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": null,
+          "parameters": [],
+          "requestExpression": "{params:{path:{id:String(e)}},body:{message:t}}",
+          "source": "app.js",
+          "offsetUtf16": 540426
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "POST",
+      "path": "/v1/lessons/{id}/comments",
+      "category": "lessons",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "POST",
+          "route": "/v1/lessons/{id}/comments",
+          "host": "api",
+          "category": "lessons",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/{expression0}/comments",
+          "queryTemplate": null,
+          "expressions": [
+            "(0,h.f8)(e)"
+          ],
+          "owner": "postComment",
+          "parameters": [
+            "{id:e,message:t}"
+          ],
+          "requestExpression": "{message:t}",
+          "source": "app.js",
+          "offsetUtf16": 275741,
+          "expandedFrom": "/v1/{id}/comments",
+          "expansionEvidence": {
+            "source": "app.js",
+            "offsetUtf16": 573197,
+            "export": "module 28001 export f8",
+            "advanced": "lessons/{id}",
+            "basicAndZenUniv": "n_school/courses/{id}/chapters/{id}/lessons/{id}"
+          }
+        },
+        {
+          "method": "POST",
+          "route": "/v1/lessons/{id}/comments",
+          "host": "api",
+          "category": "lessons",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/lessons/{id}/comments",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": null,
+          "parameters": [],
+          "requestExpression": "{params:{path:{id:String(e)}},body:{message:t}}",
+          "source": "app.js",
+          "offsetUtf16": 540174
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/lessons/{id}/live",
+      "category": "lessons",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/lessons/{id}/live",
+          "host": "api",
+          "category": "lessons",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/{expression0}/live",
+          "queryTemplate": null,
+          "expressions": [
+            "(0,h.f8)(e)"
+          ],
+          "owner": "getLessonLive",
+          "parameters": [
+            "e",
+            "t=\"all\"",
+            "r"
+          ],
+          "requestExpression": "{type:t,...null!=r?r:{}}",
+          "source": "app.js",
+          "offsetUtf16": 275643,
+          "expandedFrom": "/v1/{id}/live",
+          "expansionEvidence": {
+            "source": "app.js",
+            "offsetUtf16": 573197,
+            "export": "module 28001 export f8",
+            "advanced": "lessons/{id}",
+            "basicAndZenUniv": "n_school/courses/{id}/chapters/{id}/lessons/{id}"
+          }
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "PUT",
+      "path": "/v1/lessons/{id}/progress/passed",
+      "category": "lessons",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "PUT",
+          "route": "/v1/lessons/{id}/progress/passed",
+          "host": "api",
+          "category": "lessons",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/{expression0}/progress/passed",
+          "queryTemplate": null,
+          "expressions": [
+            "(0,h.f8)(e)"
+          ],
+          "owner": "putProgressPassed",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 277218,
+          "expandedFrom": "/v1/{id}/progress/passed",
+          "expansionEvidence": {
+            "source": "app.js",
+            "offsetUtf16": 573197,
+            "export": "module 28001 export f8",
+            "advanced": "lessons/{id}",
+            "basicAndZenUniv": "n_school/courses/{id}/chapters/{id}/lessons/{id}"
+          }
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "PUT",
+      "path": "/v1/lessons/{id}/progress/start",
+      "category": "lessons",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "PUT",
+          "route": "/v1/lessons/{id}/progress/start",
+          "host": "api",
+          "category": "lessons",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/{expression0}/progress/start",
+          "queryTemplate": null,
+          "expressions": [
+            "(0,h.f8)(e)"
+          ],
+          "owner": "putProgressStart",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 277038,
+          "expandedFrom": "/v1/{id}/progress/start",
+          "expansionEvidence": {
+            "source": "app.js",
+            "offsetUtf16": 573197,
+            "export": "module 28001 export f8",
+            "advanced": "lessons/{id}",
+            "basicAndZenUniv": "n_school/courses/{id}/chapters/{id}/lessons/{id}"
+          }
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "POST",
+      "path": "/v1/lessons/{id}/solution",
+      "category": "lessons",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "POST",
+          "route": "/v1/lessons/{id}/solution",
+          "host": "api",
+          "category": "lessons",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/{expression0}/solution?is_zane_user=true",
+          "queryTemplate": "is_zane_user=true",
+          "expressions": [
+            "(0,h.f8)(e)"
+          ],
+          "owner": "postLessonSolution",
+          "parameters": [
+            "e",
+            "t",
+            "r"
+          ],
+          "requestExpression": "{type:t,message:r}",
+          "source": "app.js",
+          "offsetUtf16": 275935,
+          "expandedFrom": "/v1/{id}/solution",
+          "expansionEvidence": {
+            "source": "app.js",
+            "offsetUtf16": 573197,
+            "export": "module 28001 export f8",
+            "advanced": "lessons/{id}",
+            "basicAndZenUniv": "n_school/courses/{id}/chapters/{id}/lessons/{id}"
+          }
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/lessons/search",
+      "category": "lessons",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/lessons/search",
+          "host": "api",
+          "category": "lessons",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/lessons/search",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getLessonsSearch",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "e",
+          "source": "app.js",
+          "offsetUtf16": 279190
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/media",
+      "category": "lessons",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/media",
+          "host": "api",
+          "category": "lessons",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/media",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getMedia",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "{ids:e}",
+          "source": "app.js",
+          "offsetUtf16": 276774
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "POST",
+      "path": "/v1/media",
+      "category": "lessons",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "POST",
+          "route": "/v1/media",
+          "host": "api",
+          "category": "lessons",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/media",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "postMedia",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "e",
+          "source": "app.js",
+          "offsetUtf16": 276880
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/n_school/courses/{id}/chapters/{id}/lessons/{id}",
+      "category": "lessons",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/n_school/courses/{id}/chapters/{id}/lessons/{id}",
+          "host": "api",
+          "category": "lessons",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/{expression0}?{query}",
+          "queryTemplate": "{query}",
+          "expressions": [
+            "(0,h.f8)(e)"
+          ],
+          "owner": "getLesson",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 275557,
+          "expandedFrom": "/v1/{id}",
+          "expansionEvidence": {
+            "source": "app.js",
+            "offsetUtf16": 573197,
+            "export": "module 28001 export f8",
+            "advanced": "lessons/{id}",
+            "basicAndZenUniv": "n_school/courses/{id}/chapters/{id}/lessons/{id}"
+          }
+        },
+        {
+          "method": "GET",
+          "route": "/v1/n_school/courses/{id}/chapters/{id}/lessons/{id}",
+          "host": "api",
+          "category": "lessons",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/n_school/courses/{courseId}/chapters/{chapterId}/lessons/{lessonId}?{query}",
+          "queryTemplate": "{query}",
+          "expressions": [],
+          "owner": "getNSchoolLesson",
+          "parameters": [
+            "{courseId:e,chapterId:t,lessonId:r,type:i}"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 282814
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "POST",
+      "path": "/v1/n_school/courses/{id}/chapters/{id}/lessons/{id}/ask_comments",
+      "category": "lessons",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "POST",
+          "route": "/v1/n_school/courses/{id}/chapters/{id}/lessons/{id}/ask_comments",
+          "host": "api",
+          "category": "lessons",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/{expression0}/ask_comments?is_zane_user=true",
+          "queryTemplate": "is_zane_user=true",
+          "expressions": [
+            "(0,h.f8)(e)"
+          ],
+          "owner": "postLessonAskComment",
+          "parameters": [
+            "e",
+            "t"
+          ],
+          "requestExpression": "{message:t}",
+          "source": "app.js",
+          "offsetUtf16": 275827,
+          "expandedFrom": "/v1/{id}/ask_comments",
+          "expansionEvidence": {
+            "source": "app.js",
+            "offsetUtf16": 573197,
+            "export": "module 28001 export f8",
+            "advanced": "lessons/{id}",
+            "basicAndZenUniv": "n_school/courses/{id}/chapters/{id}/lessons/{id}"
+          }
+        },
+        {
+          "method": "POST",
+          "route": "/v1/n_school/courses/{id}/chapters/{id}/lessons/{id}/ask_comments",
+          "host": "api",
+          "category": "lessons",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/n_school/courses/{course_id}/chapters/{chapter_id}/lessons/{id}/ask_comments",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": null,
+          "parameters": [],
+          "requestExpression": "{params:{path:{course_id:e,chapter_id:t,id:String(r)}},body:{message:n}}",
+          "source": "app.js",
+          "offsetUtf16": 541145
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "POST",
+      "path": "/v1/n_school/courses/{id}/chapters/{id}/lessons/{id}/comments",
+      "category": "lessons",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "POST",
+          "route": "/v1/n_school/courses/{id}/chapters/{id}/lessons/{id}/comments",
+          "host": "api",
+          "category": "lessons",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/{expression0}/comments",
+          "queryTemplate": null,
+          "expressions": [
+            "(0,h.f8)(e)"
+          ],
+          "owner": "postComment",
+          "parameters": [
+            "{id:e,message:t}"
+          ],
+          "requestExpression": "{message:t}",
+          "source": "app.js",
+          "offsetUtf16": 275741,
+          "expandedFrom": "/v1/{id}/comments",
+          "expansionEvidence": {
+            "source": "app.js",
+            "offsetUtf16": 573197,
+            "export": "module 28001 export f8",
+            "advanced": "lessons/{id}",
+            "basicAndZenUniv": "n_school/courses/{id}/chapters/{id}/lessons/{id}"
+          }
+        },
+        {
+          "method": "POST",
+          "route": "/v1/n_school/courses/{id}/chapters/{id}/lessons/{id}/comments",
+          "host": "api",
+          "category": "lessons",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/n_school/courses/{course_id}/chapters/{chapter_id}/lessons/{id}/comments",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": null,
+          "parameters": [],
+          "requestExpression": "{params:{path:{course_id:e,chapter_id:t,id:String(r)}},body:{message:n}}",
+          "source": "app.js",
+          "offsetUtf16": 540809
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/n_school/courses/{id}/chapters/{id}/lessons/{id}/live",
+      "category": "lessons",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/n_school/courses/{id}/chapters/{id}/lessons/{id}/live",
+          "host": "api",
+          "category": "lessons",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/{expression0}/live",
+          "queryTemplate": null,
+          "expressions": [
+            "(0,h.f8)(e)"
+          ],
+          "owner": "getLessonLive",
+          "parameters": [
+            "e",
+            "t=\"all\"",
+            "r"
+          ],
+          "requestExpression": "{type:t,...null!=r?r:{}}",
+          "source": "app.js",
+          "offsetUtf16": 275643,
+          "expandedFrom": "/v1/{id}/live",
+          "expansionEvidence": {
+            "source": "app.js",
+            "offsetUtf16": 573197,
+            "export": "module 28001 export f8",
+            "advanced": "lessons/{id}",
+            "basicAndZenUniv": "n_school/courses/{id}/chapters/{id}/lessons/{id}"
+          }
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "PUT",
+      "path": "/v1/n_school/courses/{id}/chapters/{id}/lessons/{id}/progress/passed",
+      "category": "lessons",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "PUT",
+          "route": "/v1/n_school/courses/{id}/chapters/{id}/lessons/{id}/progress/passed",
+          "host": "api",
+          "category": "lessons",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/{expression0}/progress/passed",
+          "queryTemplate": null,
+          "expressions": [
+            "(0,h.f8)(e)"
+          ],
+          "owner": "putProgressPassed",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 277218,
+          "expandedFrom": "/v1/{id}/progress/passed",
+          "expansionEvidence": {
+            "source": "app.js",
+            "offsetUtf16": 573197,
+            "export": "module 28001 export f8",
+            "advanced": "lessons/{id}",
+            "basicAndZenUniv": "n_school/courses/{id}/chapters/{id}/lessons/{id}"
+          }
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "PUT",
+      "path": "/v1/n_school/courses/{id}/chapters/{id}/lessons/{id}/progress/start",
+      "category": "lessons",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "PUT",
+          "route": "/v1/n_school/courses/{id}/chapters/{id}/lessons/{id}/progress/start",
+          "host": "api",
+          "category": "lessons",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/{expression0}/progress/start",
+          "queryTemplate": null,
+          "expressions": [
+            "(0,h.f8)(e)"
+          ],
+          "owner": "putProgressStart",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 277038,
+          "expandedFrom": "/v1/{id}/progress/start",
+          "expansionEvidence": {
+            "source": "app.js",
+            "offsetUtf16": 573197,
+            "export": "module 28001 export f8",
+            "advanced": "lessons/{id}",
+            "basicAndZenUniv": "n_school/courses/{id}/chapters/{id}/lessons/{id}"
+          }
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "POST",
+      "path": "/v1/n_school/courses/{id}/chapters/{id}/lessons/{id}/solution",
+      "category": "lessons",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "POST",
+          "route": "/v1/n_school/courses/{id}/chapters/{id}/lessons/{id}/solution",
+          "host": "api",
+          "category": "lessons",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/{expression0}/solution?is_zane_user=true",
+          "queryTemplate": "is_zane_user=true",
+          "expressions": [
+            "(0,h.f8)(e)"
+          ],
+          "owner": "postLessonSolution",
+          "parameters": [
+            "e",
+            "t",
+            "r"
+          ],
+          "requestExpression": "{type:t,message:r}",
+          "source": "app.js",
+          "offsetUtf16": 275935,
+          "expandedFrom": "/v1/{id}/solution",
+          "expansionEvidence": {
+            "source": "app.js",
+            "offsetUtf16": 573197,
+            "export": "module 28001 export f8",
+            "advanced": "lessons/{id}",
+            "basicAndZenUniv": "n_school/courses/{id}/chapters/{id}/lessons/{id}"
+          }
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/tags/lesson_search",
+      "category": "lessons",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/tags/lesson_search",
+          "host": "api",
+          "category": "lessons",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/tags/lesson_search",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getTagsLessonSearch",
+          "parameters": [],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 279130
+        },
+        {
+          "method": "GET",
+          "route": "/v1/tags/lesson_search",
+          "host": "api",
+          "category": "lessons",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/tags/lesson_search",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getTagsLessonSearch",
+          "parameters": [],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 280915
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v2/material/courses/{id}/chapters/{id}/lessons/{id}/playback",
+      "category": "lessons",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v2/material/courses/{id}/chapters/{id}/lessons/{id}/playback",
+          "host": "api",
+          "category": "lessons",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v2/material/courses/{courseId}/chapters/{chapterId}/lessons/{lessonId}/playback",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getLessonPlayback",
+          "parameters": [
+            "{courseId:e,chapterId:t,lessonId:r}"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 282962
+        }
+      ]
+    },
+    {
+      "host": "papi",
+      "method": "PUT",
+      "path": "/v2/material/courses/{id}/chapters/{id}/lessons/{id}/playback",
+      "category": "lessons",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "PUT",
+          "route": "/v2/material/courses/{id}/chapters/{id}/lessons/{id}/playback",
+          "host": "papi",
+          "category": "lessons",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v2/material/courses/{courseId}/chapters/{chapterId}/lessons/{lessonId}/playback",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "putLessonPlayPosition",
+          "parameters": [
+            "{courseId:e,chapterId:t,lessonId:n,position:r}"
+          ],
+          "requestExpression": "{position:r}",
+          "source": "src_clients_papiFetchClient_ts-src_components_shared_organisms_Player_OverlayMenu_PlaybackRat-c8e296.f5315341da8eb5b4fb15.js",
+          "offsetUtf16": 2094
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/material/{id}/{id}",
+      "category": "materials",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/material/{id}/{id}",
+          "host": "api",
+          "category": "materials",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/material/{type}/{id}",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getMaterial",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 278463
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "PUT",
+      "path": "/v1/material/{id}/{id}/progress",
+      "category": "materials",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "PUT",
+          "route": "/v1/material/{id}/{id}/progress",
+          "host": "api",
+          "category": "materials",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/material/{materialType}/{id}/progress",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "putMaterialProgress",
+          "parameters": [
+            "{id:e,materialType:t,level:r}"
+          ],
+          "requestExpression": "{level:r}",
+          "source": "app.js",
+          "offsetUtf16": 279539
+        },
+        {
+          "method": "PUT",
+          "route": "/v1/material/{id}/{id}/progress",
+          "host": "api",
+          "category": "materials",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/material/{type}/{id}/progress",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "progress",
+          "parameters": [
+            "e",
+            "t"
+          ],
+          "requestExpression": "{level:t}",
+          "source": "exercise.js",
+          "offsetUtf16": 888617
+        },
+        {
+          "method": "PUT",
+          "route": "/v1/material/{id}/{id}/progress",
+          "host": "api",
+          "category": "materials",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/material/{type}/{id}/progress",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "progress",
+          "parameters": [
+            "e",
+            "t"
+          ],
+          "requestExpression": "{level:t}",
+          "source": "evaluationTest.js",
+          "offsetUtf16": 1151747
+        },
+        {
+          "method": "PUT",
+          "route": "/v1/material/{id}/{id}/progress",
+          "host": "api",
+          "category": "materials",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/material/{type}/{id}/progress",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "progress",
+          "parameters": [
+            "e",
+            "t"
+          ],
+          "requestExpression": "{level:t}",
+          "source": "essayTest.js",
+          "offsetUtf16": 1090001
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "DELETE",
+      "path": "/v1/material/courses",
+      "category": "materials",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "DELETE",
+          "route": "/v1/material/courses",
+          "host": "api",
+          "category": "materials",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/material/courses",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "deleteAdvancedCourse",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "{id:e}",
+          "source": "app.js",
+          "offsetUtf16": 278328
+        },
+        {
+          "method": "DELETE",
+          "route": "/v1/material/courses",
+          "host": "api",
+          "category": "materials",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/material/courses",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "deleteAdvancedCourse",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "{id:e}",
+          "source": "app.js",
+          "offsetUtf16": 283132
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "PUT",
+      "path": "/v1/material/courses/",
+      "category": "materials",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "PUT",
+          "route": "/v1/material/courses/",
+          "host": "api",
+          "category": "materials",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/material/courses/",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "putAdvancedCourse",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "{id:e}",
+          "source": "app.js",
+          "offsetUtf16": 278258
+        },
+        {
+          "method": "PUT",
+          "route": "/v1/material/courses/",
+          "host": "api",
+          "category": "materials",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/material/courses/",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "putAdvancedCourse",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "{id:e}",
+          "source": "app.js",
+          "offsetUtf16": 283062
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "PUT",
+      "path": "/v1/n_school/courses/{id}/selected",
+      "category": "materials",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "PUT",
+          "route": "/v1/n_school/courses/{id}/selected",
+          "host": "api",
+          "category": "materials",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/n_school/courses/{e}/selected",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "putNSchoolCourse",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 278396
+        },
+        {
+          "method": "PUT",
+          "route": "/v1/n_school/courses/{id}/selected",
+          "host": "api",
+          "category": "materials",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/n_school/courses/{e}/selected",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "putNSchoolCourse",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 283200
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "POST",
+      "path": "/v2/material/actions",
+      "category": "materials",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "POST",
+          "route": "/v2/material/actions",
+          "host": "api",
+          "category": "materials",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v2/material/actions",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "postMaterialActions",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "e",
+          "source": "app.js",
+          "offsetUtf16": 279982
+        },
+        {
+          "method": "POST",
+          "route": "/v2/material/actions",
+          "host": "api",
+          "category": "materials",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v2/material/actions",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "postMaterialActions",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "e",
+          "source": "app.js",
+          "offsetUtf16": 282594
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v2/material/chapters",
+      "category": "materials",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v2/material/chapters",
+          "host": "api",
+          "category": "materials",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v2/material/chapters",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getChaptersBatch",
+          "parameters": [
+            "{queries:e}"
+          ],
+          "requestExpression": "{queries:e}",
+          "source": "app.js",
+          "offsetUtf16": 280133
+        },
+        {
+          "method": "GET",
+          "route": "/v2/material/chapters",
+          "host": "api",
+          "category": "materials",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v2/material/chapters",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getChaptersBatch",
+          "parameters": [
+            "{queries:e}"
+          ],
+          "requestExpression": "{queries:e}",
+          "source": "app.js",
+          "offsetUtf16": 280794
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v2/material/courses",
+      "category": "materials",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v2/material/courses",
+          "host": "api",
+          "category": "materials",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v2/material/courses",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getCoursesBatch",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "{mode:\"batch\",ids:e}",
+          "source": "app.js",
+          "offsetUtf16": 280042
+        },
+        {
+          "method": "GET",
+          "route": "/v2/material/courses",
+          "host": "api",
+          "category": "materials",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v2/material/courses",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getCoursesBatch",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "{mode:\"batch\",ids:e}",
+          "source": "app.js",
+          "offsetUtf16": 280703
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v2/material/courses/{id}",
+      "category": "materials",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v2/material/courses/{id}",
+          "host": "api",
+          "category": "materials",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v2/material/courses/{e}?revision=1",
+          "queryTemplate": "revision=1",
+          "expressions": [],
+          "owner": "getCourse",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 278183
+        },
+        {
+          "method": "GET",
+          "route": "/v2/material/courses/{id}",
+          "host": "api",
+          "category": "materials",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v2/material/courses/{e}?revision=1",
+          "queryTemplate": "revision=1",
+          "expressions": [],
+          "owner": "getCourse",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 282207
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v2/material/courses/{id}/chapters/{id}",
+      "category": "materials",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v2/material/courses/{id}/chapters/{id}",
+          "host": "api",
+          "category": "materials",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v2/material/courses/{courseId}/chapters/{chapterId}?revision=1",
+          "queryTemplate": "revision=1",
+          "expressions": [],
+          "owner": "getChapter",
+          "parameters": [
+            "{courseId:e,chapterId:t}"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 281827
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v2/material/packages",
+      "category": "materials",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v2/material/packages",
+          "host": "api",
+          "category": "materials",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v2/material/packages",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getPackages",
+          "parameters": [],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 278131
+        },
+        {
+          "method": "GET",
+          "route": "/v2/material/packages",
+          "host": "api",
+          "category": "materials",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v2/material/packages",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getPackages",
+          "parameters": [],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 280645
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v2/material/packages/{id}",
+      "category": "materials",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v2/material/packages/{id}",
+          "host": "api",
+          "category": "materials",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v2/material/packages/{id}",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": null,
+          "parameters": [],
+          "requestExpression": "{params:{path:{id:e}}}",
+          "source": "src_features_genre_components_CompletedSubjectsGenreRouter_tsx-src_features_genre_components_-2622aa.9f7126cb592068782dcd.js",
+          "offsetUtf16": 13734
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v2/material/recommendations",
+      "category": "materials",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v2/material/recommendations",
+          "host": "api",
+          "category": "materials",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v2/material/recommendations",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getRecommendations",
+          "parameters": [],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 280207
+        },
+        {
+          "method": "GET",
+          "route": "/v2/material/recommendations",
+          "host": "api",
+          "category": "materials",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v2/material/recommendations",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getRecommendations",
+          "parameters": [],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 280583
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v3/material/genres",
+      "category": "materials",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v3/material/genres",
+          "host": "api",
+          "category": "materials",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v3/material/genres",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getMaterialGenres",
+          "parameters": [],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 285695
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v3/material/genres/school_terms/{id}",
+      "category": "materials",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v3/material/genres/school_terms/{id}",
+          "host": "api",
+          "category": "materials",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v3/material/genres/school_terms/{e}",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getCurriculumBySchoolTermId",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 285763
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/notices",
+      "category": "notices",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/notices",
+          "host": "api",
+          "category": "notices",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/notices",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getNotices",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "e",
+          "source": "app.js",
+          "offsetUtf16": 278940
+        },
+        {
+          "method": "GET",
+          "route": "/v1/notices",
+          "host": "api",
+          "category": "notices",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/notices",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getNotices",
+          "parameters": [],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 282106
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "PUT",
+      "path": "/v1/notices/{id}/mark",
+      "category": "notices",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "PUT",
+          "route": "/v1/notices/{id}/mark",
+          "host": "api",
+          "category": "notices",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/notices/{e}/mark",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "putNoticeMark",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 279067
+        },
+        {
+          "method": "PUT",
+          "route": "/v1/notices/{id}/mark",
+          "host": "api",
+          "category": "notices",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/notices/{e}/mark",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "putNoticesIdMark",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 282155
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/notices/unreads",
+      "category": "notices",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/notices/unreads",
+          "host": "api",
+          "category": "notices",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/notices/unreads",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getUnreadNotices",
+          "parameters": [],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 277291
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v2/announcements",
+      "category": "notices",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v2/announcements",
+          "host": "api",
+          "category": "notices",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v2/announcements",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getAnnouncements",
+          "parameters": [],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 282056
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v3/notices/importants",
+      "category": "notices",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v3/notices/importants",
+          "host": "api",
+          "category": "notices",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v3/notices/importants",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getNoticesImportants",
+          "parameters": [],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 287365
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/products",
+      "category": "payments",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/products",
+          "host": "api",
+          "category": "payments",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/products",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getProducts",
+          "parameters": [],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 280861
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/products/payments",
+      "category": "payments",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/products/payments",
+          "host": "api",
+          "category": "payments",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/products/payments",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getPayments",
+          "parameters": [],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 280971
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/profiles/school",
+      "category": "profile",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/profiles/school",
+          "host": "api",
+          "category": "profile",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/profiles/school",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getProfilesSchool",
+          "parameters": [],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 283318
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "PUT",
+      "path": "/v1/profiles/update_school",
+      "category": "profile",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "PUT",
+          "route": "/v1/profiles/update_school",
+          "host": "api",
+          "category": "profile",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/profiles/update_school",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "putProfilesSchool",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "e",
+          "source": "app.js",
+          "offsetUtf16": 283376
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/schools",
+      "category": "profile",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/schools",
+          "host": "api",
+          "category": "profile",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/schools",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getSchools",
+          "parameters": [],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 283267
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/search/colleges",
+      "category": "profile",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/search/colleges",
+          "host": "api",
+          "category": "profile",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/search/colleges?q={e}",
+          "queryTemplate": "q={e}",
+          "expressions": [],
+          "owner": "getSearchColleges",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 278603
+        },
+        {
+          "method": "GET",
+          "route": "/v1/search/colleges",
+          "host": "api",
+          "category": "profile",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/search/colleges?q={e}",
+          "queryTemplate": "q={e}",
+          "expressions": [],
+          "owner": "getSearchColleges",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 283505
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/search/colleges/{id}",
+      "category": "profile",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/search/colleges/{id}",
+          "host": "api",
+          "category": "profile",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/search/colleges/{e}",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getSearchCollege",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 278667
+        },
+        {
+          "method": "GET",
+          "route": "/v1/search/colleges/{id}",
+          "host": "api",
+          "category": "profile",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/search/colleges/{e}",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getSearchCollege",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 283442
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/search/highschools",
+      "category": "profile",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/search/highschools",
+          "host": "api",
+          "category": "profile",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/search/highschools?q={e}",
+          "queryTemplate": "q={e}",
+          "expressions": [],
+          "owner": "getSearchHighschools",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 278535
+        },
+        {
+          "method": "GET",
+          "route": "/v1/search/highschools",
+          "host": "api",
+          "category": "profile",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/search/highschools?q={e}",
+          "queryTemplate": "q={e}",
+          "expressions": [],
+          "owner": "getSearchHighschools",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 283641
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/search/highschools/{id}",
+      "category": "profile",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/search/highschools/{id}",
+          "host": "api",
+          "category": "profile",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/search/highschools/{e}",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getSearchHighschool",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 283572
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "DELETE",
+      "path": "/v1/users",
+      "category": "profile",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "DELETE",
+          "route": "/v1/users",
+          "host": "api",
+          "category": "profile",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/users",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "deleteUser",
+          "parameters": [],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 281758
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/users",
+      "category": "profile",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/users",
+          "host": "api",
+          "category": "profile",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/users?{expression0}",
+          "queryTemplate": "{expression0}",
+          "expressions": [
+            "(0,i.stringify)({with:null==e?void 0:e.join(\",\"),revision:2})"
+          ],
+          "owner": "getUser",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 276029
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "PUT",
+      "path": "/v1/users",
+      "category": "profile",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "PUT",
+          "route": "/v1/users",
+          "host": "api",
+          "category": "profile",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/users?revision=2",
+          "queryTemplate": "revision=2",
+          "expressions": [],
+          "owner": "putUser",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "e",
+          "source": "app.js",
+          "offsetUtf16": 276132
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/users/private_profile",
+      "category": "profile",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/users/private_profile",
+          "host": "api",
+          "category": "profile",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/users/private_profile",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getUsersPrivateProfile",
+          "parameters": [],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 276199
+        },
+        {
+          "method": "GET",
+          "route": "/v1/users/private_profile",
+          "host": "api",
+          "category": "profile",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/users/private_profile",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getPrivateProfile",
+          "parameters": [],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 283710
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "PUT",
+      "path": "/v1/users/private_profile",
+      "category": "profile",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "PUT",
+          "route": "/v1/users/private_profile",
+          "host": "api",
+          "category": "profile",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/users/private_profile",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "putUsersPrivateProfile",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "e",
+          "source": "app.js",
+          "offsetUtf16": 276268
+        },
+        {
+          "method": "PUT",
+          "route": "/v1/users/private_profile",
+          "host": "api",
+          "category": "profile",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/users/private_profile",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "putPrivateProfile",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "e",
+          "source": "app.js",
+          "offsetUtf16": 283774
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v3/schools/genres/completed_subjects_genre",
+      "category": "profile",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v3/schools/genres/completed_subjects_genre",
+          "host": "api",
+          "category": "profile",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v3/schools/genres/completed_subjects_genre",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getCompletedSubjectsGenre",
+          "parameters": [],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 285848
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "POST",
+      "path": "/v3/recognition/faces/session",
+      "category": "recognition",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "POST",
+          "route": "/v3/recognition/faces/session",
+          "host": "api",
+          "category": "recognition",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v3/recognition/faces/session",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "postV3RecognitionFacesSession",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "e",
+          "source": "app.js",
+          "offsetUtf16": 285942
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "POST",
+      "path": "/v1/material/courses/{id}/chapters/{id}/essay_tests/{id}/answerings",
+      "category": "tests-reports",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "POST",
+          "route": "/v1/material/courses/{id}/chapters/{id}/essay_tests/{id}/answerings",
+          "host": "api",
+          "category": "tests-reports",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/material/courses/{courseId}/chapters/{n}/essay_tests/{id}/answerings",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "answerEssayExercise",
+          "parameters": [
+            "e",
+            "t"
+          ],
+          "requestExpression": "{answerings:t}",
+          "source": "exercise.js",
+          "offsetUtf16": 887535
+        },
+        {
+          "method": "POST",
+          "route": "/v1/material/courses/{id}/chapters/{id}/essay_tests/{id}/answerings",
+          "host": "api",
+          "category": "tests-reports",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/material/courses/{courseId}/chapters/{r}/essay_tests/{id}/answerings",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "answerEssayExercise",
+          "parameters": [
+            "e",
+            "t"
+          ],
+          "requestExpression": "{answerings:t}",
+          "source": "evaluationTest.js",
+          "offsetUtf16": 1150665
+        },
+        {
+          "method": "POST",
+          "route": "/v1/material/courses/{id}/chapters/{id}/essay_tests/{id}/answerings",
+          "host": "api",
+          "category": "tests-reports",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/material/courses/{courseId}/chapters/{r}/essay_tests/{id}/answerings",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "answerEssayExercise",
+          "parameters": [
+            "e",
+            "t"
+          ],
+          "requestExpression": "{answerings:t}",
+          "source": "essayTest.js",
+          "offsetUtf16": 1088919
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "POST",
+      "path": "/v1/material/exercises/{id}/answers",
+      "category": "tests-reports",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "POST",
+          "route": "/v1/material/exercises/{id}/answers",
+          "host": "api",
+          "category": "tests-reports",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/material/exercises/{e}/answers",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "answerExercise",
+          "parameters": [
+            "e",
+            "t"
+          ],
+          "requestExpression": "t",
+          "source": "exercise.js",
+          "offsetUtf16": 887341
+        },
+        {
+          "method": "POST",
+          "route": "/v1/material/exercises/{id}/answers",
+          "host": "api",
+          "category": "tests-reports",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/material/exercises/{e}/answers",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "answerExercise",
+          "parameters": [
+            "e",
+            "t"
+          ],
+          "requestExpression": "t",
+          "source": "evaluationTest.js",
+          "offsetUtf16": 1150471
+        },
+        {
+          "method": "POST",
+          "route": "/v1/material/exercises/{id}/answers",
+          "host": "api",
+          "category": "tests-reports",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/material/exercises/{e}/answers",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "answerExercise",
+          "parameters": [
+            "e",
+            "t"
+          ],
+          "requestExpression": "t",
+          "source": "essayTest.js",
+          "offsetUtf16": 1088725
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "POST",
+      "path": "/v1/material/short_test_sessions",
+      "category": "tests-reports",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "POST",
+          "route": "/v1/material/short_test_sessions",
+          "host": "api",
+          "category": "tests-reports",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/material/short_test_sessions",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "postStartShortTestSession",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": "e",
+          "source": "app.js",
+          "offsetUtf16": 276438
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/material/short_test_sessions/{id}",
+      "category": "tests-reports",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/material/short_test_sessions/{id}",
+          "host": "api",
+          "category": "tests-reports",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/material/short_test_sessions/{e}",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getShortTestSession",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 276514
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "POST",
+      "path": "/v1/material/short_test_sessions/{id}/answering",
+      "category": "tests-reports",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "POST",
+          "route": "/v1/material/short_test_sessions/{id}/answering",
+          "host": "api",
+          "category": "tests-reports",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/material/short_test_sessions/{e}/answering",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "postShortTestSessionAnswer",
+          "parameters": [
+            "e",
+            "t"
+          ],
+          "requestExpression": "t",
+          "source": "app.js",
+          "offsetUtf16": 276603
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/material/short_test_sessions/{id}/result",
+      "category": "tests-reports",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/material/short_test_sessions/{id}/result",
+          "host": "api",
+          "category": "tests-reports",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/material/short_test_sessions/{e}/result",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getShortTestSessionAnswer",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 276700
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/material/short_tests/{id}",
+      "category": "tests-reports",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/material/short_tests/{id}",
+          "host": "api",
+          "category": "tests-reports",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/material/short_tests/{id}?course_id={courseId}",
+          "queryTemplate": "course_id={courseId}",
+          "expressions": [],
+          "owner": "getShortTest",
+          "parameters": [
+            "{id:e,courseId:t}"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 276347
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "POST",
+      "path": "/v1/n_school/courses/{id}/chapters/{id}/essay_reports/{id}/answerings",
+      "category": "tests-reports",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "POST",
+          "route": "/v1/n_school/courses/{id}/chapters/{id}/essay_reports/{id}/answerings",
+          "host": "api",
+          "category": "tests-reports",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/n_school/courses/{courseId}/chapters/{r}/{e}/{id}/answerings",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "answerNSchoolEssayMaterial",
+          "parameters": [
+            "e",
+            "t",
+            "n"
+          ],
+          "requestExpression": "{answerings:n}",
+          "source": "exercise.js",
+          "offsetUtf16": 888320,
+          "expandedFrom": "/v1/n_school/courses/{id}/chapters/{id}/{id}/{id}/answerings",
+          "expansionEvidence": "essayTest bundle call sites of answerNSchoolEssayMaterial"
+        },
+        {
+          "method": "POST",
+          "route": "/v1/n_school/courses/{id}/chapters/{id}/essay_reports/{id}/answerings",
+          "host": "api",
+          "category": "tests-reports",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/n_school/courses/{courseId}/chapters/{n}/{e}/{id}/answerings",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "answerNSchoolEssayMaterial",
+          "parameters": [
+            "e",
+            "t",
+            "r"
+          ],
+          "requestExpression": "{answerings:r}",
+          "source": "evaluationTest.js",
+          "offsetUtf16": 1151450,
+          "expandedFrom": "/v1/n_school/courses/{id}/chapters/{id}/{id}/{id}/answerings",
+          "expansionEvidence": "essayTest bundle call sites of answerNSchoolEssayMaterial"
+        },
+        {
+          "method": "POST",
+          "route": "/v1/n_school/courses/{id}/chapters/{id}/essay_reports/{id}/answerings",
+          "host": "api",
+          "category": "tests-reports",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/n_school/courses/{courseId}/chapters/{n}/{e}/{id}/answerings",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "answerNSchoolEssayMaterial",
+          "parameters": [
+            "e",
+            "t",
+            "r"
+          ],
+          "requestExpression": "{answerings:r}",
+          "source": "essayTest.js",
+          "offsetUtf16": 1089704,
+          "expandedFrom": "/v1/n_school/courses/{id}/chapters/{id}/{id}/{id}/answerings",
+          "expansionEvidence": "essayTest bundle call sites of answerNSchoolEssayMaterial"
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "POST",
+      "path": "/v1/n_school/courses/{id}/chapters/{id}/essay_tests/{id}/answerings",
+      "category": "tests-reports",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "POST",
+          "route": "/v1/n_school/courses/{id}/chapters/{id}/essay_tests/{id}/answerings",
+          "host": "api",
+          "category": "tests-reports",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/n_school/courses/{courseId}/chapters/{r}/{e}/{id}/answerings",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "answerNSchoolEssayMaterial",
+          "parameters": [
+            "e",
+            "t",
+            "n"
+          ],
+          "requestExpression": "{answerings:n}",
+          "source": "exercise.js",
+          "offsetUtf16": 888320,
+          "expandedFrom": "/v1/n_school/courses/{id}/chapters/{id}/{id}/{id}/answerings",
+          "expansionEvidence": "essayTest bundle call sites of answerNSchoolEssayMaterial"
+        },
+        {
+          "method": "POST",
+          "route": "/v1/n_school/courses/{id}/chapters/{id}/essay_tests/{id}/answerings",
+          "host": "api",
+          "category": "tests-reports",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/n_school/courses/{courseId}/chapters/{n}/{e}/{id}/answerings",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "answerNSchoolEssayMaterial",
+          "parameters": [
+            "e",
+            "t",
+            "r"
+          ],
+          "requestExpression": "{answerings:r}",
+          "source": "evaluationTest.js",
+          "offsetUtf16": 1151450,
+          "expandedFrom": "/v1/n_school/courses/{id}/chapters/{id}/{id}/{id}/answerings",
+          "expansionEvidence": "essayTest bundle call sites of answerNSchoolEssayMaterial"
+        },
+        {
+          "method": "POST",
+          "route": "/v1/n_school/courses/{id}/chapters/{id}/essay_tests/{id}/answerings",
+          "host": "api",
+          "category": "tests-reports",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/n_school/courses/{courseId}/chapters/{n}/{e}/{id}/answerings",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "answerNSchoolEssayMaterial",
+          "parameters": [
+            "e",
+            "t",
+            "r"
+          ],
+          "requestExpression": "{answerings:r}",
+          "source": "essayTest.js",
+          "offsetUtf16": 1089704,
+          "expandedFrom": "/v1/n_school/courses/{id}/chapters/{id}/{id}/{id}/answerings",
+          "expansionEvidence": "essayTest bundle call sites of answerNSchoolEssayMaterial"
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "POST",
+      "path": "/v1/n_school/courses/{id}/chapters/{id}/evaluation_reports/{id}/answerings",
+      "category": "tests-reports",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "POST",
+          "route": "/v1/n_school/courses/{id}/chapters/{id}/evaluation_reports/{id}/answerings",
+          "host": "api",
+          "category": "tests-reports",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/n_school/courses/{courseId}/chapters/{n}/evaluation_reports/{id}/answerings",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "answerEvaluationReport",
+          "parameters": [
+            "e",
+            "t"
+          ],
+          "requestExpression": "{answerings:t}",
+          "source": "exercise.js",
+          "offsetUtf16": 888029
+        },
+        {
+          "method": "POST",
+          "route": "/v1/n_school/courses/{id}/chapters/{id}/evaluation_reports/{id}/answerings",
+          "host": "api",
+          "category": "tests-reports",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/n_school/courses/{courseId}/chapters/{r}/evaluation_reports/{id}/answerings",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "answerEvaluationReport",
+          "parameters": [
+            "e",
+            "t"
+          ],
+          "requestExpression": "{answerings:t}",
+          "source": "evaluationTest.js",
+          "offsetUtf16": 1151159
+        },
+        {
+          "method": "POST",
+          "route": "/v1/n_school/courses/{id}/chapters/{id}/evaluation_reports/{id}/answerings",
+          "host": "api",
+          "category": "tests-reports",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/n_school/courses/{courseId}/chapters/{r}/evaluation_reports/{id}/answerings",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "answerEvaluationReport",
+          "parameters": [
+            "e",
+            "t"
+          ],
+          "requestExpression": "{answerings:t}",
+          "source": "essayTest.js",
+          "offsetUtf16": 1089413
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "POST",
+      "path": "/v1/n_school/courses/{id}/chapters/{id}/evaluation_tests/{id}/answerings",
+      "category": "tests-reports",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "POST",
+          "route": "/v1/n_school/courses/{id}/chapters/{id}/evaluation_tests/{id}/answerings",
+          "host": "api",
+          "category": "tests-reports",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/n_school/courses/{courseId}/chapters/{n}/evaluation_tests/{id}/answerings",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "answerEvaluationTest",
+          "parameters": [
+            "e",
+            "t"
+          ],
+          "requestExpression": "{answerings:t}",
+          "source": "exercise.js",
+          "offsetUtf16": 887729
+        },
+        {
+          "method": "POST",
+          "route": "/v1/n_school/courses/{id}/chapters/{id}/evaluation_tests/{id}/answerings",
+          "host": "api",
+          "category": "tests-reports",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/n_school/courses/{courseId}/chapters/{r}/evaluation_tests/{id}/answerings",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "answerEvaluationTest",
+          "parameters": [
+            "e",
+            "t"
+          ],
+          "requestExpression": "{answerings:t}",
+          "source": "evaluationTest.js",
+          "offsetUtf16": 1150859
+        },
+        {
+          "method": "POST",
+          "route": "/v1/n_school/courses/{id}/chapters/{id}/evaluation_tests/{id}/answerings",
+          "host": "api",
+          "category": "tests-reports",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/n_school/courses/{courseId}/chapters/{r}/evaluation_tests/{id}/answerings",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "answerEvaluationTest",
+          "parameters": [
+            "e",
+            "t"
+          ],
+          "requestExpression": "{answerings:t}",
+          "source": "essayTest.js",
+          "offsetUtf16": 1089113
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v1/n_school/periodic_exam_sessions/{id}/result",
+      "category": "tests-reports",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v1/n_school/periodic_exam_sessions/{id}/result",
+          "host": "api",
+          "category": "tests-reports",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/n_school/periodic_exam_sessions/{e}/result",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getNSchoolPeriodicExamsId",
+          "parameters": [
+            "e"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 278811
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v2/n_school/periodic_exams",
+      "category": "tests-reports",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v2/n_school/periodic_exams",
+          "host": "api",
+          "category": "tests-reports",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v2/n_school/periodic_exams",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getNSchoolPeriodicExams",
+          "parameters": [],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 278737
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v3/schools/courses/{id}/assessment_test_sessions/{id}",
+      "category": "tests-reports",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v3/schools/courses/{id}/assessment_test_sessions/{id}",
+          "host": "api",
+          "category": "tests-reports",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v3/schools/courses/{courseId}/assessment_test_sessions/{id}",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getAssessmentTestSession",
+          "parameters": [
+            "{courseId:e,id:t}"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 286141
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "POST",
+      "path": "/v3/schools/courses/{id}/assessment_test_sessions/{id}/answering",
+      "category": "tests-reports",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "POST",
+          "route": "/v3/schools/courses/{id}/assessment_test_sessions/{id}/answering",
+          "host": "api",
+          "category": "tests-reports",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v3/schools/courses/{courseId}/assessment_test_sessions/{id}/answering",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "postAssessmentTestSessionAnswers",
+          "parameters": [
+            "e",
+            "t"
+          ],
+          "requestExpression": "t",
+          "source": "app.js",
+          "offsetUtf16": 286379
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v3/schools/courses/{id}/assessment_tests/{id}",
+      "category": "tests-reports",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v3/schools/courses/{id}/assessment_tests/{id}",
+          "host": "api",
+          "category": "tests-reports",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v3/schools/courses/{courseId}/assessment_tests/{id}",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getAssessmentTest",
+          "parameters": [
+            "{courseId:e,id:t}"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 286031
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "POST",
+      "path": "/v3/schools/courses/{id}/assessment_tests/{id}/sessions",
+      "category": "tests-reports",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "POST",
+          "route": "/v3/schools/courses/{id}/assessment_tests/{id}/sessions",
+          "host": "api",
+          "category": "tests-reports",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v3/schools/courses/{courseId}/assessment_tests/{id}/sessions",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "postStartAssessmentTestSession",
+          "parameters": [
+            "{courseId:e,id:t}"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 286265
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "PUT",
+      "path": "/v1/n_school/courses/{id}/chapters/{id}/movies/{id}/progress/passed",
+      "category": "video",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "PUT",
+          "route": "/v1/n_school/courses/{id}/chapters/{id}/movies/{id}/progress/passed",
+          "host": "api",
+          "category": "video",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/n_school/courses/{courseId}/chapters/{chapterId}/movies/{id}/progress/passed",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "putMovieProgressPassed",
+          "parameters": [
+            "{courseId:e,chapterId:t,id:r}"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 279793
+        },
+        {
+          "method": "PUT",
+          "route": "/v1/n_school/courses/{id}/chapters/{id}/movies/{id}/progress/passed",
+          "host": "api",
+          "category": "video",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/n_school/courses/{courseId}/chapters/{chapterId}/movies/{id}/progress/passed?{query}",
+          "queryTemplate": "{query}",
+          "expressions": [],
+          "owner": "putMovieProgressPassed",
+          "parameters": [
+            "{courseId:e,chapterId:t,id:r,studyContextId:i}"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 286858
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "PUT",
+      "path": "/v1/n_school/courses/{id}/chapters/{id}/movies/{id}/progress/start",
+      "category": "video",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "PUT",
+          "route": "/v1/n_school/courses/{id}/chapters/{id}/movies/{id}/progress/start",
+          "host": "api",
+          "category": "video",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/n_school/courses/{courseId}/chapters/{chapterId}/movies/{id}/progress/start",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "putMovieProgressStart",
+          "parameters": [
+            "{courseId:e,chapterId:t,id:r}"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 279653
+        },
+        {
+          "method": "PUT",
+          "route": "/v1/n_school/courses/{id}/chapters/{id}/movies/{id}/progress/start",
+          "host": "api",
+          "category": "video",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v1/n_school/courses/{courseId}/chapters/{chapterId}/movies/{id}/progress/start?{query}",
+          "queryTemplate": "{query}",
+          "expressions": [],
+          "owner": "putMovieProgressStart",
+          "parameters": [
+            "{courseId:e,chapterId:t,id:r,queryParams:i}"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 287079
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v2/material/courses/{id}/chapters/{id}/movies/{id}",
+      "category": "video",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v2/material/courses/{id}/chapters/{id}/movies/{id}",
+          "host": "api",
+          "category": "video",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v2/material/courses/{courseId}/chapters/{chapterId}/movies/{id}?revision=1",
+          "queryTemplate": "revision=1",
+          "expressions": [],
+          "owner": "getMaterialCoursesChaptersMovie",
+          "parameters": [
+            "{id:e,dataSet:t,courseId:r,chapterId:n}"
+          ],
+          "requestExpression": "{dataSet:t}",
+          "source": "app.js",
+          "offsetUtf16": 279303
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v2/material/courses/{id}/chapters/{id}/movies/{id}/playback",
+      "category": "video",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v2/material/courses/{id}/chapters/{id}/movies/{id}/playback",
+          "host": "api",
+          "category": "video",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v2/material/courses/{courseId}/chapters/{chapterId}/movies/{id}/playback",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getMaterialCourseChapterMoviePosition",
+          "parameters": [
+            "{courseId:e,chapterId:t,id:r,dataSet:n,studyContextId:o}"
+          ],
+          "requestExpression": "{dataSet:n,studyContextId:o}",
+          "source": "app.js",
+          "offsetUtf16": 281108
+        }
+      ]
+    },
+    {
+      "host": "papi",
+      "method": "POST",
+      "path": "/v2/material/courses/{id}/chapters/{id}/movies/{id}/playback",
+      "category": "video",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "POST",
+          "route": "/v2/material/courses/{id}/chapters/{id}/movies/{id}/playback",
+          "host": "papi",
+          "category": "video",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "{expression0}/v2/material/courses/{e}/chapters/{t}/movies/{r}/playback",
+          "queryTemplate": null,
+          "expressions": [
+            "(0,ye.XE)(pt.A.tenjinPapiEndpoint)"
+          ],
+          "owner": null,
+          "parameters": [],
+          "requestExpression": "i",
+          "source": "src_features_chapter_containers_MaterialMovie_Router_tsx-node_modules_tanstack_react-query_bu-13d296.64e3c5d545e02a17d926.js",
+          "offsetUtf16": 28670
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "PUT",
+      "path": "/v2/material/courses/{id}/chapters/{id}/movies/{id}/playback",
+      "category": "video",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "PUT",
+          "route": "/v2/material/courses/{id}/chapters/{id}/movies/{id}/playback",
+          "host": "api",
+          "category": "video",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v2/material/courses/{courseId}/chapters/{chapterId}/movies/{id}/playback",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "putMaterialCourseChapterMoviePosition",
+          "parameters": [
+            "{id:e,courseId:t,chapterId:r,position:n}"
+          ],
+          "requestExpression": "{position:n}",
+          "source": "app.js",
+          "offsetUtf16": 181691
+        }
+      ]
+    },
+    {
+      "host": "papi",
+      "method": "PUT",
+      "path": "/v2/material/courses/{id}/chapters/{id}/movies/{id}/playback",
+      "category": "video",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "PUT",
+          "route": "/v2/material/courses/{id}/chapters/{id}/movies/{id}/playback",
+          "host": "papi",
+          "category": "video",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v2/material/courses/{courseId}/chapters/{chapterId}/movies/{id}/playback",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "putMoviePlayPosition",
+          "parameters": [
+            "{courseId:e,chapterId:t,id:n,position:r,clearSession:s,studyContextId:o}"
+          ],
+          "requestExpression": "{position:r,clear_session:s,study_context_id:o}",
+          "source": "src_clients_papiFetchClient_ts-src_components_shared_organisms_Player_OverlayMenu_PlaybackRat-c8e296.f5315341da8eb5b4fb15.js",
+          "offsetUtf16": 2316
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "GET",
+      "path": "/v2/material/movies/{id}",
+      "category": "video",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "GET",
+          "route": "/v2/material/movies/{id}",
+          "host": "api",
+          "category": "video",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v2/material/movies/{id}",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "getMaterialMovie",
+          "parameters": [
+            "{id:e,dataSet:t}"
+          ],
+          "requestExpression": "{dataSet:t}",
+          "source": "app.js",
+          "offsetUtf16": 279432
+        }
+      ]
+    },
+    {
+      "host": "api",
+      "method": "DELETE",
+      "path": "/v3/material/courses/{id}/chapters/{id}/{id}/{id}/session",
+      "category": "video",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "DELETE",
+          "route": "/v3/material/courses/{id}/chapters/{id}/{id}/{id}/session",
+          "host": "api",
+          "category": "video",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "/v3/material/courses/{courseId}/chapters/{chapterId}/{materialType}/{materialId}/session",
+          "queryTemplate": null,
+          "expressions": [],
+          "owner": "deleteMaterialSession",
+          "parameters": [
+            "{courseId:e,chapterId:t,materialType:r,materialId:n}"
+          ],
+          "requestExpression": null,
+          "source": "app.js",
+          "offsetUtf16": 287262
+        }
+      ]
+    },
+    {
+      "host": "papi",
+      "method": "POST",
+      "path": "/v3/material/courses/{id}/chapters/{id}/{id}/{id}/session/terminate",
+      "category": "video",
+      "verification": "source_only",
+      "unresolved": false,
+      "definitions": [
+        {
+          "method": "POST",
+          "route": "/v3/material/courses/{id}/chapters/{id}/{id}/{id}/session/terminate",
+          "host": "papi",
+          "category": "video",
+          "verification": "source_only",
+          "unresolved": false,
+          "template": "{expression0}/v3/material/courses/{courseId}/chapters/{chapterId}/{materialType}/{materialId}/session/terminate",
+          "queryTemplate": null,
+          "expressions": [
+            "(0,ye.XE)(pt.A.tenjinPapiEndpoint)"
+          ],
+          "owner": null,
+          "parameters": [],
+          "requestExpression": "t",
+          "source": "src_features_chapter_containers_MaterialMovie_Router_tsx-node_modules_tanstack_react-query_bu-13d296.64e3c5d545e02a17d926.js",
+          "offsetUtf16": 31968
+        }
+      ]
+    }
+  ],
+  "unclassifiedPathLiterals": [
+    {
+      "path": "/v3/material/genres/school_terms",
+      "source": "src_routes_PaymentsRouter_tsx-src_assets_images_payments_payment-types-au_svg-src_assets_imag-70ce8a.ffb7ea4c58824b678da2.js",
+      "offsetUtf16": 6746
+    }
+  ]
+}

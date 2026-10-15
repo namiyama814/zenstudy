@@ -1,0 +1,13 @@
+{
+  "note": "Reviewed against ohtomi app source. Expansion does not establish successful network behavior.",
+  "lessonPathHelper": {
+    "source": "app.js",
+    "offsetUtf16": 573197,
+    "export": "module 28001 export f8",
+    "advanced": "lessons/{id}",
+    "basicAndZenUniv": "n_school/courses/{id}/chapters/{id}/lessons/{id}"
+  },
+  "lessonOwners": ["getLesson", "getLessonLive", "postComment", "postLessonAskComment", "postLessonSolution", "putProgressStart", "putProgressPassed"],
+  "essayOwner": "answerNSchoolEssayMaterial",
+  "essayResourceTypes": ["essay_tests", "essay_reports"]
+}

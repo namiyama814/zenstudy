@@ -1,0 +1,896 @@
+{
+  "observedOn": "2026-10-15",
+  "timezone": "Asia/Tokyo",
+  "scope": "Additional read-only coverage after static web API inventory",
+  "notes": [
+    "All requests in this file are GET. Debug routes, account deletion, profile writes, payments, submissions, posts and reports were not executed.",
+    "403/404 are session-specific observations, not claims that a route is absent or universally denied.",
+    "Only value types are retained in responseShape; array item shape samples the first item.",
+    "Question/profile/grade/comment values, cookies, signed URLs and tokens are omitted.",
+    "source_get_probe means an explicit read of a path already found in published JavaScript; ui_network means actual screen-generated traffic."
+  ],
+  "requests": [
+    {
+      "path": "/v1/contact_types",
+      "status": 200,
+      "contentType": "application/json",
+      "responseShape": {
+        "contact_types": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "description": "string"
+          }
+        }
+      },
+      "method": "GET",
+      "host": "https://api.nnn.ed.nico",
+      "source": "source_get_probe",
+      "shapeSource": "browser_type_extraction"
+    },
+    {
+      "path": "/v1/products",
+      "status": 200,
+      "contentType": "application/json",
+      "responseShape": {
+        "products": {
+          "type": "array",
+          "items": {
+            "id": "string",
+            "name": "string",
+            "appleProductId": "string",
+            "amountList": {
+              "type": "array",
+              "items": {
+                "taxExcludedAmount": {
+                  "default": "number",
+                  "min": "number",
+                  "max": "number"
+                },
+                "taxIncludedAmount": {
+                  "default": "number",
+                  "min": "number",
+                  "max": "number"
+                },
+                "currency": "string"
+              }
+            },
+            "transaction": "number",
+            "isActive": "boolean"
+          }
+        }
+      },
+      "method": "GET",
+      "host": "https://api.nnn.ed.nico",
+      "source": "source_get_probe",
+      "shapeSource": "browser_type_extraction"
+    },
+    {
+      "path": "/v1/products/payments",
+      "status": 403,
+      "contentType": "application/json",
+      "responseShape": {
+        "error": {
+          "type": "string",
+          "code": "number",
+          "message": "string"
+        }
+      },
+      "method": "GET",
+      "host": "https://api.nnn.ed.nico",
+      "source": "source_get_probe",
+      "shapeSource": "browser_type_extraction"
+    },
+    {
+      "path": "/v1/schools",
+      "status": 200,
+      "contentType": "application/json",
+      "responseShape": {
+        "jobs": {
+          "type": "array",
+          "items": {
+            "id": "number",
+            "name": "string"
+          }
+        }
+      },
+      "method": "GET",
+      "host": "https://api.nnn.ed.nico",
+      "source": "source_get_probe",
+      "shapeSource": "browser_type_extraction"
+    },
+    {
+      "path": "/v1/profiles/school",
+      "status": 200,
+      "contentType": "application/json",
+      "responseShape": {
+        "zane_user_id": "number",
+        "job_or_grade_id": "number",
+        "highschool_id": "string",
+        "first_choice_college_id": "string",
+        "first_choice_faculty": "string",
+        "second_choice_college_id": "string",
+        "second_choice_faculty": "string",
+        "third_choice_college_id": "null",
+        "third_choice_faculty": "null",
+        "desired_course_id": "number",
+        "will_continue_to_college": "boolean",
+        "persisted": "boolean"
+      },
+      "method": "GET",
+      "host": "https://api.nnn.ed.nico",
+      "source": "source_get_probe",
+      "shapeSource": "browser_type_extraction"
+    },
+    {
+      "path": "/v3/dashboard/study_progress",
+      "status": 403,
+      "contentType": "application/problem+json",
+      "responseShape": {
+        "type": "string",
+        "status": "number",
+        "title": "string",
+        "detail": "string",
+        "instance": "string",
+        "error": {
+          "code": "number",
+          "message": "string",
+          "meta": {}
+        },
+        "metadata": {}
+      },
+      "method": "GET",
+      "host": "https://api.nnn.ed.nico",
+      "source": "source_get_probe",
+      "shapeSource": "browser_type_extraction"
+    },
+    {
+      "path": "/v3/material/genres/school_terms",
+      "status": 404,
+      "contentType": "application/json",
+      "responseShape": {
+        "error": {
+          "code": "number",
+          "message": "string"
+        }
+      },
+      "method": "GET",
+      "host": "https://api.nnn.ed.nico",
+      "source": "source_get_probe",
+      "shapeSource": "browser_type_extraction"
+    },
+    {
+      "path": "/v3/schools/genres/completed_subjects_genre",
+      "status": 403,
+      "contentType": "application/problem+json",
+      "responseShape": {
+        "type": "string",
+        "status": "number",
+        "title": "string",
+        "detail": "string",
+        "instance": "string",
+        "error": {
+          "code": "number",
+          "message": "string",
+          "meta": {}
+        },
+        "metadata": {}
+      },
+      "method": "GET",
+      "host": "https://api.nnn.ed.nico",
+      "source": "source_get_probe",
+      "shapeSource": "browser_type_extraction"
+    },
+    {
+      "path": "/v3/forum/my_threads",
+      "status": 200,
+      "contentType": "application/json",
+      "responseShape": {
+        "cursors": {
+          "next": "null"
+        },
+        "total_thread_count": "number",
+        "threads": {
+          "type": "array",
+          "items": "unobserved"
+        }
+      },
+      "method": "GET",
+      "host": "https://api.nnn.ed.nico",
+      "source": "source_get_probe",
+      "shapeSource": "browser_type_extraction"
+    },
+    {
+      "path": "/v1/questions/activity",
+      "status": 404,
+      "contentType": "application/json",
+      "responseShape": {
+        "error": {
+          "code": "number",
+          "message": "string"
+        }
+      },
+      "method": "GET",
+      "host": "https://api.nnn.ed.nico",
+      "source": "source_get_probe",
+      "shapeSource": "browser_type_extraction"
+    },
+    {
+      "path": "/v1/tags/question",
+      "status": 404,
+      "contentType": "application/json",
+      "responseShape": {
+        "error": {
+          "code": "number",
+          "message": "string"
+        }
+      },
+      "method": "GET",
+      "host": "https://api.nnn.ed.nico",
+      "source": "source_get_probe",
+      "shapeSource": "browser_type_extraction"
+    },
+    {
+      "path": "/v2/material/packages",
+      "status": 200,
+      "contentType": "application/json",
+      "responseShape": {
+        "services": {
+          "type": "array",
+          "items": {
+            "name": "string",
+            "packages": {
+              "type": "array",
+              "items": {
+                "id": "number",
+                "title": "string",
+                "outline": "string",
+                "resource_type": "string",
+                "type": "string",
+                "subject_category_total": "number"
+              }
+            }
+          }
+        }
+      },
+      "method": "GET",
+      "host": "https://api.nnn.ed.nico",
+      "source": "source_get_probe",
+      "shapeSource": "browser_type_extraction"
+    },
+    {
+      "path": "/v2/my_courses",
+      "status": 200,
+      "contentType": "application/json",
+      "responseShape": {
+        "services": {
+          "type": "array",
+          "items": {
+            "name": "string",
+            "course_total": "number",
+            "courses": {
+              "type": "array",
+              "items": {
+                "id": "number",
+                "type": "string",
+                "title": "string",
+                "selected": "boolean",
+                "progress": {
+                  "total_count": "number",
+                  "passed_count": "number",
+                  "total_chapters": "number",
+                  "passed_chapters": "number",
+                  "total_assessment_test": "number",
+                  "passed_assessment_test_count": "number",
+                  "total_materials": "number",
+                  "passed_materials": "number",
+                  "on_calculation": "boolean"
+                },
+                "thumbnail_url": "string",
+                "outline": "string"
+              }
+            }
+          }
+        }
+      },
+      "method": "GET",
+      "host": "https://api.nnn.ed.nico",
+      "source": "source_get_probe",
+      "shapeSource": "browser_type_extraction"
+    },
+    {
+      "path": "/v3/forum/thread_params",
+      "status": 200,
+      "contentType": "application/json",
+      "responseShape": {
+        "channels": {
+          "type": "array",
+          "items": {
+            "id": "number",
+            "name": "string",
+            "type": "string",
+            "category_tags": {
+              "type": "array",
+              "items": "string"
+            },
+            "category_descriptions": {
+              "type": "array",
+              "items": {
+                "category_tag": "string",
+                "description": "string"
+              }
+            },
+            "recommended_tags": {
+              "type": "array",
+              "items": "string"
+            },
+            "icon_url": "string"
+          }
+        },
+        "locked_channel_ids": {
+          "type": "array",
+          "items": "unobserved"
+        },
+        "tags": {
+          "type": "array",
+          "items": "string"
+        },
+        "locked_tags": {
+          "type": "array",
+          "items": "unobserved"
+        },
+        "material_titles": {}
+      },
+      "method": "GET",
+      "host": "https://api.nnn.ed.nico",
+      "source": "source_get_probe",
+      "shapeSource": "browser_type_extraction"
+    },
+    {
+      "path": "/v1/questions",
+      "status": 200,
+      "contentType": "application/json",
+      "responseShape": {
+        "total": "number",
+        "questions": {
+          "type": "array",
+          "items": {
+            "id": "number",
+            "title": "string",
+            "urgency": "number",
+            "is_resolved": "boolean",
+            "views_count": "number",
+            "answers_count": "number",
+            "thumbnail": "string",
+            "created_at": "number",
+            "user": {
+              "zane_user_id": "number",
+              "is_teacher": "boolean",
+              "is_staff": "boolean",
+              "name": "string",
+              "icon": "string"
+            },
+            "tags": {
+              "type": "array",
+              "items": "unobserved"
+            },
+            "group": "string",
+            "total_count": "number",
+            "questions": {
+              "type": "array",
+              "items": {
+                "id": "number",
+                "user": {
+                  "zane_user_id": "number",
+                  "is_teacher": "boolean",
+                  "is_staff": "boolean",
+                  "name": "string",
+                  "icon": "string"
+                },
+                "content_type": "string",
+                "content_metadata": "null",
+                "content": "string",
+                "is_deleted": "boolean",
+                "report_url": "string",
+                "created_at": "number"
+              }
+            },
+            "answers": {
+              "type": "array",
+              "items": "unobserved"
+            }
+          }
+        }
+      },
+      "method": "GET",
+      "host": "https://api.nnn.ed.nico",
+      "source": "source_get_probe",
+      "shapeSource": "browser_type_extraction"
+    },
+    {
+      "path": "/v1/questions/search?q=数学",
+      "status": 404,
+      "contentType": "application/json",
+      "responseShape": {
+        "error": {
+          "code": "number",
+          "message": "string"
+        }
+      },
+      "method": "GET",
+      "host": "https://api.nnn.ed.nico",
+      "source": "source_get_probe",
+      "shapeSource": "browser_type_extraction"
+    },
+    {
+      "path": "/v1/search/colleges?q=東京",
+      "status": 200,
+      "contentType": "application/json",
+      "responseShape": {
+        "total": "number",
+        "colleges": {
+          "type": "array",
+          "items": {
+            "id": "string",
+            "name": "string"
+          }
+        }
+      },
+      "method": "GET",
+      "host": "https://api.nnn.ed.nico",
+      "source": "source_get_probe",
+      "shapeSource": "browser_type_extraction"
+    },
+    {
+      "path": "/v1/search/highschools?q=東京",
+      "status": 200,
+      "contentType": "application/json",
+      "responseShape": {
+        "total": "number",
+        "highschools": {
+          "type": "array",
+          "items": {
+            "id": "string",
+            "name": "string"
+          }
+        }
+      },
+      "method": "GET",
+      "host": "https://api.nnn.ed.nico",
+      "source": "source_get_probe",
+      "shapeSource": "browser_type_extraction"
+    },
+    {
+      "pageId": 2,
+      "reqid": 64,
+      "method": "GET",
+      "host": "https://api.nnn.ed.nico",
+      "path": "/v2/material/courses?mode=batch&ids%5B%5D=2459&ids%5B%5D=2140",
+      "status": 200,
+      "source": "ui_network",
+      "responseShape": {
+        "courses": {
+          "type": "array",
+          "items": {
+            "id": "number",
+            "type": "string",
+            "title": "string",
+            "selected": "boolean",
+            "progress": {
+              "total_count": "number",
+              "passed_count": "number",
+              "total_chapters": "number",
+              "passed_chapters": "number",
+              "total_assessment_test": "number",
+              "passed_assessment_test_count": "number",
+              "total_materials": "number",
+              "passed_materials": "number",
+              "on_calculation": "boolean"
+            },
+            "thumbnail_url": "string",
+            "outline": "string",
+            "subject_category": {
+              "title": "string"
+            },
+            "chapters": {
+              "type": "array",
+              "items": {
+                "id": "number",
+                "title": "string",
+                "thumbnail_url": "null",
+                "outline": "string",
+                "progress": {
+                  "total_count": "number",
+                  "passed_count": "number",
+                  "on_calculation": "boolean",
+                  "status": "string"
+                },
+                "resource_type": "string",
+                "label": "string"
+              }
+            }
+          }
+        }
+      },
+      "shapeSource": "authenticated_get_replay"
+    },
+    {
+      "pageId": 2,
+      "reqid": 65,
+      "method": "GET",
+      "host": "https://api.nnn.ed.nico",
+      "path": "/v2/material/chapters?queries%5B%5D%5Bcourse_id%5D=2459&queries%5B%5D%5Bchapter_id%5D=32018&queries%5B%5D%5Bcourse_id%5D=2140&queries%5B%5D%5Bchapter_id%5D=27051",
+      "status": 200,
+      "source": "ui_network",
+      "responseShape": {
+        "chapters": {
+          "type": "array",
+          "items": {
+            "id": "number",
+            "title": "string",
+            "outline": "string",
+            "thumbnail_url": "null",
+            "open_section_index": "number",
+            "progress": {
+              "total_count": "number",
+              "passed_count": "number",
+              "status": "string"
+            },
+            "sections": {
+              "type": "array",
+              "items": {
+                "resource_type": "string",
+                "id": "number",
+                "title": "string",
+                "passed": "boolean",
+                "textbook_info": "string",
+                "length": "number",
+                "content_url": "string",
+                "material_type": "string",
+                "thumbnail_url": "null",
+                "vr_rank": "string",
+                "vr_length": "number",
+                "permissions": {
+                  "vr_use": {
+                    "active": "boolean"
+                  }
+                },
+                "playback_position": "number"
+              }
+            },
+            "course_type": "string"
+          }
+        }
+      },
+      "shapeSource": "authenticated_get_replay"
+    },
+    {
+      "pageId": 2,
+      "reqid": 66,
+      "method": "GET",
+      "host": "https://api.nnn.ed.nico",
+      "path": "/v1/lessons?mode=batch&ids%5B%5D=482533614",
+      "status": 200,
+      "source": "ui_network",
+      "responseShape": {
+        "lessons": {
+          "type": "array",
+          "items": {
+            "id": "number",
+            "title": "string",
+            "outline": "string",
+            "thumbnail_url": "string",
+            "tags": {
+              "type": "array",
+              "items": "string"
+            },
+            "permissions": {
+              "lesson_use": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "post_comment": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "post_ask_comment": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "join_research": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "join_quiz": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "join_correction": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              }
+            },
+            "thumbnail_wide_url": "string",
+            "released_at": "number",
+            "minute": "number",
+            "archive": {
+              "total_audience": "number",
+              "second": "number",
+              "start_offset": "number",
+              "show_comment": "boolean"
+            },
+            "teacher_name": "string",
+            "start_at": "number",
+            "planned_start_at": "number",
+            "real_start_at": "number",
+            "broadcast_status": "string",
+            "broadcast_opening_minute": "number",
+            "broadcast_ending_minute": "number",
+            "viewer_count": "number",
+            "permission_label": "string",
+            "permission_url": "string",
+            "permission_text": "string",
+            "content_permission_label": "null",
+            "status_label": "string"
+          }
+        }
+      },
+      "shapeSource": "network_response"
+    },
+    {
+      "pageId": 5,
+      "reqid": 410,
+      "method": "GET",
+      "host": "https://api.nnn.ed.nico",
+      "path": "/v1/users/private_profile",
+      "status": 200,
+      "source": "ui_network",
+      "responseShape": {
+        "zane_user_id": "number",
+        "birthday": "string",
+        "sex": "string"
+      },
+      "shapeSource": "authenticated_get_replay"
+    },
+    {
+      "pageId": 8,
+      "reqid": 323,
+      "method": "GET",
+      "host": "https://api.nnn.ed.nico",
+      "path": "/v3/forum/thread_params",
+      "status": 200,
+      "source": "ui_network",
+      "responseShape": {
+        "channels": {
+          "type": "array",
+          "items": {
+            "id": "number",
+            "name": "string",
+            "type": "string",
+            "category_tags": {
+              "type": "array",
+              "items": "string"
+            },
+            "category_descriptions": {
+              "type": "array",
+              "items": {
+                "category_tag": "string",
+                "description": "string"
+              }
+            },
+            "recommended_tags": {
+              "type": "array",
+              "items": "string"
+            },
+            "icon_url": "string"
+          }
+        },
+        "locked_channel_ids": {
+          "type": "array",
+          "items": "unobserved"
+        },
+        "tags": {
+          "type": "array",
+          "items": "string"
+        },
+        "locked_tags": {
+          "type": "array",
+          "items": "unobserved"
+        },
+        "material_titles": {}
+      },
+      "shapeSource": "network_response"
+    },
+    {
+      "pageId": 9,
+      "reqid": 326,
+      "method": "GET",
+      "host": "https://api.nnn.ed.nico",
+      "path": "/v2/n_school/periodic_exams",
+      "status": 200,
+      "source": "ui_network",
+      "responseShape": {
+        "periodic_exams": {
+          "type": "array",
+          "items": "unobserved"
+        }
+      },
+      "shapeSource": "network_response"
+    },
+    {
+      "pageId": 6,
+      "reqid": 139,
+      "method": "GET",
+      "host": "https://api.nnn.ed.nico",
+      "path": "/v2/material/packages/110",
+      "status": 200,
+      "source": "ui_network",
+      "responseShape": {
+        "package": {
+          "id": "number",
+          "title": "string",
+          "outline": "string",
+          "type": "string",
+          "subject_categories": {
+            "type": "array",
+            "items": {
+              "id": "number",
+              "title": "string",
+              "courses": {
+                "type": "array",
+                "items": {
+                  "id": "number",
+                  "type": "string",
+                  "title": "string",
+                  "selected": "boolean",
+                  "progress": {
+                    "total_count": "number",
+                    "passed_count": "number",
+                    "total_chapters": "number",
+                    "passed_chapters": "number",
+                    "total_assessment_test": "number",
+                    "passed_assessment_test_count": "number",
+                    "total_materials": "number",
+                    "passed_materials": "number",
+                    "on_calculation": "boolean"
+                  },
+                  "thumbnail_url": "string",
+                  "outline": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "shapeSource": "authenticated_get_replay"
+    },
+    {
+      "path": "/v3/forum/channels/6/threads?with_channel=true&query=%E6%95%B0%E5%AD%A6",
+      "status": 200,
+      "responseShape": {
+        "channel_threads": {
+          "cursors": {
+            "next": "string"
+          },
+          "total_thread_count": "number",
+          "threads": {
+            "type": "array",
+            "items": {
+              "id": "number",
+              "title": "string",
+              "user": {
+                "zane_user_id": "number",
+                "name": "string",
+                "icon": "string",
+                "teacher": "boolean",
+                "staff": "boolean"
+              },
+              "resolved": "boolean",
+              "resolved_at": "null",
+              "views_count": "number",
+              "reply_count": "number",
+              "thumbnails": {
+                "type": "array",
+                "items": "string"
+              },
+              "belonging_channels": {
+                "type": "array",
+                "items": {
+                  "id": "number",
+                  "name": "string",
+                  "type": "string",
+                  "category_tags": {
+                    "type": "array",
+                    "items": "string"
+                  },
+                  "icon_url": "null"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": "string"
+              },
+              "posted_at": "string",
+              "group": "string",
+              "main_message": {
+                "id": "number",
+                "user": {
+                  "zane_user_id": "number",
+                  "name": "string",
+                  "icon": "string",
+                  "teacher": "boolean",
+                  "staff": "boolean"
+                },
+                "role": "string",
+                "owner_posted": "boolean",
+                "posted_at": "string"
+              },
+              "hidden": "boolean"
+            }
+          },
+          "channel": {
+            "id": "number",
+            "name": "string",
+            "type": "string",
+            "category_tags": {
+              "type": "array",
+              "items": "string"
+            },
+            "category_descriptions": {
+              "type": "array",
+              "items": {
+                "category_tag": "string",
+                "description": "string"
+              }
+            },
+            "recommended_tags": {
+              "type": "array",
+              "items": "string"
+            },
+            "icon_url": "null"
+          },
+          "tags": {
+            "type": "array",
+            "items": "string"
+          }
+        }
+      },
+      "pageId": 8,
+      "reqid": 373,
+      "method": "GET",
+      "host": "https://api.nnn.ed.nico",
+      "source": "ui_network",
+      "shapeSource": "authenticated_get_replay"
+    },
+    {
+      "method": "GET",
+      "host": "https://api.nnn.ed.nico",
+      "path": "/v1/search/colleges/{collegeId}",
+      "status": 200,
+      "source": "ui_network",
+      "pageId": 5,
+      "reqid": 344,
+      "responseShape": {
+        "capture": "body not retained; identifier replaced to avoid recording profile selection"
+      }
+    },
+    {
+      "method": "GET",
+      "host": "https://api.nnn.ed.nico",
+      "path": "/v1/search/highschools/{highschoolId}",
+      "status": 200,
+      "source": "ui_network",
+      "pageId": 5,
+      "reqid": 346,
+      "responseShape": {
+        "capture": "body not retained; identifier replaced to avoid recording profile selection"
+      }
+    }
+  ]
+}

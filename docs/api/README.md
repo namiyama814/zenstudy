@@ -1,6 +1,8 @@
 # ZEN Study API調査
 
-2026-10-15（日本時間）に Chrome DevTools MCP で画面とネットワーク通信を調べ、初回調査で29種類のAPIルートを確認した。クエリ・ステータス違いを含む43件の観測を [observations.json](observations.json) に記録している。追加の動画再生調査は [video.md](video.md) と [video-observations.json](video-observations.json) にまとめた。
+2026-10-15（日本時間）に画面の実通信と公開Webソースを調べ、[総索引](catalog.md) に134種類のAPIルートを整理した。68本のJavaScriptを解析し、成功観測50種類・エラー／送信観測9種類・コードのみ75種類を区別している。調査対象と限界は [coverage.md](coverage.md) を参照。
+
+初回調査の29種類・43件の観測は [observations.json](observations.json) に保存している。追加の動画再生調査は [video.md](video.md) と [video-observations.json](video-observations.json) にまとめた。全体ではAPI実通信92件と教材HTML等14件を索引に照合した。
 
 確認テスト・レポートは [tests-reports.md](tests-reports.md) に追記した。問題と結果のHTML取得、埋め込みデータ、コード上の送信APIを区別している。
 
@@ -10,6 +12,12 @@
 
 | 資料 | 内容 |
 | --- | --- |
+| [catalog.md](catalog.md) | 全134種類の機能別総索引と確認状況 |
+| [coverage.md](coverage.md) | 網羅調査の対象、集計方法、未確認範囲 |
+| [platform.md](platform.md) | アカウント、学校検索、一括取得、履歴、投稿、アップロード、決済 |
+| [inventory.json](inventory.json) | 68本のソース情報、133種類の定義、引数・クエリ式・出典位置 |
+| [catalog.json](catalog.json) | 全索引と実通信の対応。各観測ファイルへの参照 |
+| [coverage-observations.json](coverage-observations.json) | 網羅調査で追加した28件のGET観測 |
 | [endpoints.md](endpoints.md) | メソッド、パス、クエリ、画面との対応、認証の確認範囲 |
 | [models.md](models.md) | 教材・進捗・授業・フォーラムの主要フィールド |
 | [video.md](video.md) | 動画詳細、再生位置保存、再開、HLS、セッション制御 |
@@ -43,7 +51,7 @@ Access-Control-Max-Age: 7200
 Vary: Origin
 ```
 
-変更系の通信では、先に `POST /v1/tokens/csrf` が201を返し、後続の通常リクエストが `csrf-token` ヘッダーを送っていた。動画のBeacon通信では本文の `token` に入る。トークン応答は `{ token: string, expire_time: number }`。`expire_time` の単位と更新条件は未確認。
+変更系の通信では、先に `POST /v1/tokens/csrf` が201を返し、後続の通常リクエストが `csrf-token` ヘッダーを送っていた。動画のBeacon通信では本文の `token` に入る。トークン応答は `{ token: string, expire_time: number }`。クライアント内の `expireTime` はUnix秒として期限判定するコードを確認した。教材UIではHTML由来のトークンと422時の更新処理もあり、詳細は [tests-reports.md](tests-reports.md) を参照。
 
 ## エラーと利用権限
 
