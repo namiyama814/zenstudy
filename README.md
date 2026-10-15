@@ -8,6 +8,7 @@ ZEN Study のブラウザ通信と公開Webソースを調べたAPI資料です�
 - [初回の実通信一覧](docs/api/endpoints.md)
 - [アカウント・検索・履歴・フォーラム・周辺API](docs/api/platform.md)
 - [動画再生・再生位置保存](docs/api/video.md)
+- [必修動画の早送り・倍速制限](docs/api/playback-restrictions.md)
 - [確認テスト・レポート](docs/api/tests-reports.md)
 - [レスポンスの読み方](docs/api/models.md)
 - [調査手順・確認範囲](docs/api/investigation.md)

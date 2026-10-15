@@ -4,6 +4,8 @@
 
 根拠は [video-observations.json](video-observations.json) の20件の通信記録と再現チェック。以下では、実通信で確認した内容と、配信中のJavaScriptから読み取った内容を区別する。
 
+必修本編のシーク上限・1倍への補正・終端判定は、追加調査の [必修動画の早送り・倍速制限](playback-restrictions.md) にまとめた。未完了本編の操作試験は行っておらず、制限ロジックは配信コードから確認している。
+
 ## 画面から再生URLへたどる
 
 ```text

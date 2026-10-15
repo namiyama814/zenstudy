@@ -1,0 +1,133 @@
+{
+  "observedOn": "2026-10-15",
+  "release": "ohtomi@9.21.0",
+  "method": "Static inspection of published JavaScript; not backend source or an enforcement bypass test",
+  "sources": {
+    "router": {
+      "file": "src_features_chapter_containers_MaterialMovie_Router_tsx-node_modules_tanstack_react-query_bu-13d296.64e3c5d545e02a17d926.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_features_chapter_containers_MaterialMovie_Router_tsx-node_modules_tanstack_react-query_bu-13d296.64e3c5d545e02a17d926.js",
+      "sha256": "54f3560548beea1d79e285e0b623cbdda495702f750026079d9ecb7b8d289315",
+      "bytes": 47175
+    },
+    "player": {
+      "file": "src_components_shared_molecules_SectionHeader_SectionHeader_tsx-src_components_shared_organis-7a2ad4.ad55f03f677478da3575.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_components_shared_molecules_SectionHeader_SectionHeader_tsx-src_components_shared_organis-7a2ad4.ad55f03f677478da3575.js",
+      "sha256": "6dcdffea123376379d9ee5b7829d8fd44ae24dcc875b7e6068cdec4f1e3056ac",
+      "bytes": 18485
+    },
+    "rates": {
+      "file": "src_components_shared_molecules_ForumButton_index_ts-src_components_shared_organisms_VideoPla-0c7155.fc1b4d0719ded8d44963.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_components_shared_molecules_ForumButton_index_ts-src_components_shared_organisms_VideoPla-0c7155.fc1b4d0719ded8d44963.js",
+      "sha256": "f43d840bdd89a3d4c8a18789e112b91bb37e655ea47939b56a630d577a2b35e3",
+      "bytes": 21470
+    },
+    "app": {
+      "file": "app.js",
+      "url": "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/app.6d7fb69bf5e69a32dbb5.js",
+      "sha256": "f3fae394dcbccd0c78e8ebef6d507ebf1a9def63985d02164de11c5c2baf775a",
+      "bytes": 1492263
+    }
+  },
+  "anchors": [
+    {
+      "id": "eligibility",
+      "source": "router",
+      "utf16Offset": 22881,
+      "anchor": "function lt("
+    },
+    {
+      "id": "sessionEligibility",
+      "source": "router",
+      "utf16Offset": 2187,
+      "anchor": "S=({profileType:"
+    },
+    {
+      "id": "hidePlaybackRate",
+      "source": "router",
+      "utf16Offset": 14540,
+      "anchor": "e.state.isRestricted?null:"
+    },
+    {
+      "id": "initializeSeekLimit",
+      "source": "router",
+      "utf16Offset": 32828,
+      "anchor": "Y=(0,n.useCallback)"
+    },
+    {
+      "id": "positionError",
+      "source": "router",
+      "utf16Offset": 3370,
+      "anchor": "PLAYBACK_POSITION:\"urn:zane:"
+    },
+    {
+      "id": "completionFlow",
+      "source": "router",
+      "utf16Offset": 35280,
+      "anchor": "re=(0,n.useCallback)"
+    },
+    {
+      "id": "sessionGuard",
+      "source": "router",
+      "utf16Offset": 30177,
+      "anchor": "function jt("
+    },
+    {
+      "id": "seekCorrection",
+      "source": "player",
+      "utf16Offset": 8181,
+      "anchor": "const h=(0,r.useCallback)((t=>{e.current&&e.current.currentTime"
+    },
+    {
+      "id": "playerControls",
+      "source": "player",
+      "utf16Offset": 8856,
+      "anchor": "seek:t=>"
+    },
+    {
+      "id": "timeupdateAndRatechange",
+      "source": "player",
+      "utf16Offset": 11433,
+      "anchor": "S=(0,r.useCallback)((()=>{if(!e.current)return;const t=(0,u.b1)(e.current.currentTime)"
+    },
+    {
+      "id": "endedGuard",
+      "source": "player",
+      "utf16Offset": 10632,
+      "anchor": "R=(0,r.useCallback)((()=>{e.current&&function("
+    },
+    {
+      "id": "tolerance",
+      "source": "player",
+      "utf16Offset": 14431,
+      "anchor": "const h=(0,u.b1)(5)"
+    },
+    {
+      "id": "allowedRates",
+      "source": "rates",
+      "utf16Offset": 4291,
+      "anchor": "const o=[.5,.75,1,1.25,1.5,1.75,2]"
+    },
+    {
+      "id": "units",
+      "source": "app",
+      "utf16Offset": 571204,
+      "anchor": "3782:(e,t,r)=>"
+    },
+    {
+      "id": "contextStorage",
+      "source": "app",
+      "utf16Offset": 550095,
+      "anchor": "const f=\"zane:multiTab\""
+    }
+  ],
+  "scope": {
+    "newPlaybackExperiments": false,
+    "serverErrorsIntentionallyTriggered": false,
+    "completionSubmitted": false
+  },
+  "limitations": [
+    "Restrictions on an unpassed basic movie were not exercised in the browser.",
+    "Server timing rules, thresholds, and validation implementation are not observable from these sources.",
+    "No tokens, signed media URLs, student answers, grades, or session identifier values are retained."
+  ]
+}

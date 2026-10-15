@@ -21,6 +21,8 @@
 | [endpoints.md](endpoints.md) | メソッド、パス、クエリ、画面との対応、認証の確認範囲 |
 | [models.md](models.md) | 教材・進捗・授業・フォーラムの主要フィールド |
 | [video.md](video.md) | 動画詳細、再生位置保存、再開、HLS、セッション制御 |
+| [playback-restrictions.md](playback-restrictions.md) | 必修本編のシーク上限、倍速制御、完了判定、視聴セッション |
+| [playback-restrictions-evidence.json](playback-restrictions-evidence.json) | 制限ロジックのソース情報と検索用アンカー |
 | [video-observations.json](video-observations.json) | 動画調査20件の通信記録と再現チェック |
 | [tests-reports.md](tests-reports.md) | 確認テスト・レポートの取得、結果データ、送信形式、一時保存 |
 | [tests-reports-observations.json](tests-reports-observations.json) | テスト・レポート調査15件のGET記録とコード上の送信候補 |
