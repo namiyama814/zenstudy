@@ -1,0 +1,831 @@
+{
+  "observedOn": "2026-10-15",
+  "timezone": "Asia/Tokyo",
+  "scope": "Confirmation tests, selected/written reports, essay tests/reports, and short-test cover",
+  "notes": [
+    "No answers were entered, graded, submitted, or resubmitted. No timed session was started.",
+    "Question text, model answers, submitted answers, grades, teacher comment contents and CSRF values are omitted.",
+    "HTML embedded payloads are represented by observed field types only; arrays sample the first item.",
+    "Source-inferred POST routes are not observed network successes and must not be treated as verified contracts.",
+    "The submitted essay-test base route returned isResult=true; removing /result does not guarantee an editable view."
+  ],
+  "requests": [
+    {
+      "pageId": 3,
+      "reqid": 739,
+      "method": "GET",
+      "host": "https://www.nnn.ed.nico",
+      "path": "/contents/courses/2459/chapters/32018/evaluation_tests/7660/result?content_type=monka&se_volume=100&enable_layout_2026_phase1=true",
+      "status": "200",
+      "source": "ui_network",
+      "contentType": "text/html; charset=utf-8",
+      "bootstrapShape": {
+        "understand": "string",
+        "csrfToken": "string",
+        "tenjinApiPrefix": "string",
+        "tags": {
+          "type": "array",
+          "items": "unobserved"
+        },
+        "isLink": "boolean",
+        "isResult": "boolean",
+        "courseId": "number",
+        "chapterId": "number",
+        "isNSchool": "boolean",
+        "material": {
+          "title": "string",
+          "tags": {
+            "type": "array",
+            "items": "unobserved"
+          },
+          "link": "boolean",
+          "type": "string",
+          "id": "number",
+          "writingMode": "string"
+        }
+      },
+      "embeddedParams": {
+        "attribute": "data-evaluation-test-params",
+        "shape": {
+          "passed": "boolean",
+          "result": {
+            "first": {
+              "passed": "boolean",
+              "score": "number",
+              "answered_at": "number"
+            },
+            "latest": {
+              "passed": "boolean",
+              "score": "number",
+              "answered_at": "number"
+            }
+          },
+          "answerings": {
+            "type": "array",
+            "items": "string"
+          },
+          "correctnesses": {
+            "type": "array",
+            "items": "boolean"
+          },
+          "total_score": "number"
+        }
+      }
+    },
+    {
+      "pageId": 3,
+      "reqid": 815,
+      "method": "GET",
+      "host": "https://www.nnn.ed.nico",
+      "path": "/contents/courses/2459/chapters/32018/evaluation_reports/1809/result?content_type=monka&se_volume=100&enable_layout_2026_phase1=true",
+      "status": "200",
+      "source": "ui_network",
+      "contentType": "text/html; charset=utf-8",
+      "bootstrapShape": {
+        "understand": "string",
+        "csrfToken": "string",
+        "tenjinApiPrefix": "string",
+        "tags": {
+          "type": "array",
+          "items": "unobserved"
+        },
+        "isLink": "boolean",
+        "isResult": "boolean",
+        "courseId": "number",
+        "chapterId": "number",
+        "isNSchool": "boolean",
+        "material": {
+          "title": "string",
+          "tags": {
+            "type": "array",
+            "items": "unobserved"
+          },
+          "link": "boolean",
+          "type": "string",
+          "id": "number",
+          "writingMode": "string"
+        }
+      },
+      "embeddedParams": {
+        "attribute": "data-evaluation-report-params",
+        "shape": {
+          "passed": "boolean",
+          "result": {
+            "first": {
+              "passed": "boolean",
+              "score": "number",
+              "answered_at": "number"
+            },
+            "latest": {
+              "passed": "boolean",
+              "score": "number",
+              "answered_at": "number"
+            }
+          },
+          "answerings": {
+            "type": "array",
+            "items": "string"
+          },
+          "correctnesses": {
+            "type": "array",
+            "items": "boolean"
+          },
+          "total_score": "number"
+        }
+      }
+    },
+    {
+      "pageId": 3,
+      "reqid": 891,
+      "method": "GET",
+      "host": "https://www.nnn.ed.nico",
+      "path": "/contents/courses/2459/chapters/32018/essay_reports/1812/result?content_type=monka&se_volume=100&enable_layout_2026_phase1=true",
+      "status": "200",
+      "source": "ui_network",
+      "contentType": "text/html; charset=utf-8",
+      "bootstrapShape": {
+        "understand": "string",
+        "csrfToken": "string",
+        "tenjinApiPrefix": "string",
+        "tags": {
+          "type": "array",
+          "items": "unobserved"
+        },
+        "isLink": "boolean",
+        "isResult": "boolean",
+        "courseId": "number",
+        "chapterId": "number",
+        "isNSchool": "boolean",
+        "material": {
+          "title": "string",
+          "tags": {
+            "type": "array",
+            "items": "unobserved"
+          },
+          "link": "boolean",
+          "type": "string",
+          "id": "number",
+          "writingMode": "string"
+        }
+      },
+      "embeddedParams": {
+        "attribute": "data-essay-report-params",
+        "shape": {
+          "result": {
+            "answered_at": "number",
+            "score": "number"
+          },
+          "answerings": {
+            "type": "array",
+            "items": "string"
+          },
+          "teacherComments": {
+            "type": "array",
+            "items": "string"
+          },
+          "total_score": "number"
+        }
+      }
+    },
+    {
+      "pageId": 3,
+      "reqid": 966,
+      "method": "GET",
+      "host": "https://www.nnn.ed.nico",
+      "path": "/contents/courses/2459/chapters/32018/essay_tests/3487/result?content_type=monka&se_volume=100&enable_layout_2026_phase1=true",
+      "status": "200",
+      "source": "ui_network",
+      "contentType": "text/html; charset=utf-8",
+      "bootstrapShape": {
+        "understand": "string",
+        "csrfToken": "string",
+        "tenjinApiPrefix": "string",
+        "tags": {
+          "type": "array",
+          "items": "unobserved"
+        },
+        "isLink": "boolean",
+        "isResult": "boolean",
+        "courseId": "number",
+        "chapterId": "number",
+        "isNSchool": "boolean",
+        "material": {
+          "title": "string",
+          "tags": {
+            "type": "array",
+            "items": "unobserved"
+          },
+          "link": "boolean",
+          "type": "string",
+          "id": "number",
+          "writingMode": "string"
+        }
+      },
+      "embeddedParams": {
+        "attribute": "data-essay-test-params",
+        "shape": {
+          "result": {
+            "answered_at": "number",
+            "score": "null"
+          },
+          "answerings": {
+            "type": "array",
+            "items": "string"
+          },
+          "total_score": "number"
+        }
+      }
+    },
+    {
+      "pageId": 3,
+      "reqid": 1109,
+      "method": "GET",
+      "host": "https://www.nnn.ed.nico",
+      "path": "/contents/courses/2459/chapters/32018/evaluation_tests/7660?content_type=monka&se_volume=100&enable_layout_2026_phase1=true",
+      "status": "200",
+      "source": "ui_network",
+      "contentType": "text/html; charset=utf-8",
+      "bootstrapShape": {
+        "understand": "string",
+        "csrfToken": "string",
+        "tenjinApiPrefix": "string",
+        "tags": {
+          "type": "array",
+          "items": "unobserved"
+        },
+        "isLink": "boolean",
+        "isResult": "boolean",
+        "courseId": "number",
+        "chapterId": "number",
+        "isNSchool": "boolean",
+        "material": {
+          "title": "string",
+          "tags": {
+            "type": "array",
+            "items": "unobserved"
+          },
+          "link": "boolean",
+          "type": "string",
+          "id": "number",
+          "writingMode": "string"
+        }
+      },
+      "embeddedParams": {
+        "attribute": "data-evaluation-test-params",
+        "shape": {
+          "passed": "boolean",
+          "result": {
+            "first": {
+              "passed": "boolean",
+              "score": "number",
+              "answered_at": "number"
+            },
+            "latest": {
+              "passed": "boolean",
+              "score": "number",
+              "answered_at": "number"
+            }
+          },
+          "answerings": {
+            "type": "array",
+            "items": "string"
+          },
+          "correctnesses": {
+            "type": "array",
+            "items": "boolean"
+          },
+          "total_score": "number"
+        }
+      },
+      "bootstrapIsResult": false
+    },
+    {
+      "pageId": 7,
+      "reqid": 1147,
+      "method": "GET",
+      "host": "https://www.nnn.ed.nico",
+      "path": "/contents/courses/2459/chapters/32018/evaluation_tests/7660/result",
+      "status": "200",
+      "source": "browser_get_replay",
+      "contentType": "text/html; charset=utf-8",
+      "bootstrapShape": {
+        "understand": "string",
+        "csrfToken": "string",
+        "tenjinApiPrefix": "string",
+        "tags": {
+          "type": "array",
+          "items": "unobserved"
+        },
+        "isLink": "boolean",
+        "isResult": "boolean",
+        "courseId": "number",
+        "chapterId": "number",
+        "isNSchool": "boolean",
+        "material": {
+          "title": "string",
+          "tags": {
+            "type": "array",
+            "items": "unobserved"
+          },
+          "link": "boolean",
+          "type": "string",
+          "id": "number",
+          "writingMode": "string"
+        }
+      },
+      "embeddedParams": {
+        "attribute": "data-evaluation-test-params",
+        "shape": {
+          "passed": "boolean",
+          "result": {
+            "first": {
+              "passed": "boolean",
+              "score": "number",
+              "answered_at": "number"
+            },
+            "latest": {
+              "passed": "boolean",
+              "score": "number",
+              "answered_at": "number"
+            }
+          },
+          "answerings": {
+            "type": "array",
+            "items": "string"
+          },
+          "correctnesses": {
+            "type": "array",
+            "items": "boolean"
+          },
+          "total_score": "number"
+        }
+      }
+    },
+    {
+      "pageId": 7,
+      "reqid": 1148,
+      "method": "GET",
+      "host": "https://www.nnn.ed.nico",
+      "path": "/contents/courses/2459/chapters/32018/evaluation_reports/1809/result",
+      "status": "200",
+      "source": "browser_get_replay",
+      "contentType": "text/html; charset=utf-8",
+      "bootstrapShape": {
+        "understand": "string",
+        "csrfToken": "string",
+        "tenjinApiPrefix": "string",
+        "tags": {
+          "type": "array",
+          "items": "unobserved"
+        },
+        "isLink": "boolean",
+        "isResult": "boolean",
+        "courseId": "number",
+        "chapterId": "number",
+        "isNSchool": "boolean",
+        "material": {
+          "title": "string",
+          "tags": {
+            "type": "array",
+            "items": "unobserved"
+          },
+          "link": "boolean",
+          "type": "string",
+          "id": "number",
+          "writingMode": "string"
+        }
+      },
+      "embeddedParams": {
+        "attribute": "data-evaluation-report-params",
+        "shape": {
+          "passed": "boolean",
+          "result": {
+            "first": {
+              "passed": "boolean",
+              "score": "number",
+              "answered_at": "number"
+            },
+            "latest": {
+              "passed": "boolean",
+              "score": "number",
+              "answered_at": "number"
+            }
+          },
+          "answerings": {
+            "type": "array",
+            "items": "string"
+          },
+          "correctnesses": {
+            "type": "array",
+            "items": "boolean"
+          },
+          "total_score": "number"
+        }
+      }
+    },
+    {
+      "pageId": 7,
+      "reqid": 1149,
+      "method": "GET",
+      "host": "https://www.nnn.ed.nico",
+      "path": "/contents/courses/2459/chapters/32018/essay_tests/3487/result",
+      "status": "200",
+      "source": "browser_get_replay",
+      "contentType": "text/html; charset=utf-8",
+      "bootstrapShape": {
+        "understand": "string",
+        "csrfToken": "string",
+        "tenjinApiPrefix": "string",
+        "tags": {
+          "type": "array",
+          "items": "unobserved"
+        },
+        "isLink": "boolean",
+        "isResult": "boolean",
+        "courseId": "number",
+        "chapterId": "number",
+        "isNSchool": "boolean",
+        "material": {
+          "title": "string",
+          "tags": {
+            "type": "array",
+            "items": "unobserved"
+          },
+          "link": "boolean",
+          "type": "string",
+          "id": "number",
+          "writingMode": "string"
+        }
+      },
+      "embeddedParams": {
+        "attribute": "data-essay-test-params",
+        "shape": {
+          "result": {
+            "answered_at": "number",
+            "score": "null"
+          },
+          "answerings": {
+            "type": "array",
+            "items": "string"
+          },
+          "total_score": "number"
+        }
+      }
+    },
+    {
+      "pageId": 7,
+      "reqid": 1150,
+      "method": "GET",
+      "host": "https://www.nnn.ed.nico",
+      "path": "/contents/courses/2459/chapters/32018/essay_reports/1812/result",
+      "status": "200",
+      "source": "browser_get_replay",
+      "contentType": "text/html; charset=utf-8",
+      "bootstrapShape": {
+        "understand": "string",
+        "csrfToken": "string",
+        "tenjinApiPrefix": "string",
+        "tags": {
+          "type": "array",
+          "items": "unobserved"
+        },
+        "isLink": "boolean",
+        "isResult": "boolean",
+        "courseId": "number",
+        "chapterId": "number",
+        "isNSchool": "boolean",
+        "material": {
+          "title": "string",
+          "tags": {
+            "type": "array",
+            "items": "unobserved"
+          },
+          "link": "boolean",
+          "type": "string",
+          "id": "number",
+          "writingMode": "string"
+        }
+      },
+      "embeddedParams": {
+        "attribute": "data-essay-report-params",
+        "shape": {
+          "result": {
+            "answered_at": "number",
+            "score": "number"
+          },
+          "answerings": {
+            "type": "array",
+            "items": "string"
+          },
+          "teacherComments": {
+            "type": "array",
+            "items": "string"
+          },
+          "total_score": "number"
+        }
+      }
+    },
+    {
+      "pageId": 9,
+      "reqid": 241,
+      "method": "GET",
+      "host": "https://www.nnn.ed.nico",
+      "path": "/courses/2000/short_tests/728",
+      "status": "200",
+      "source": "ui_network"
+    },
+    {
+      "pageId": 9,
+      "reqid": 256,
+      "method": "GET",
+      "host": "https://api.nnn.ed.nico",
+      "path": "/v1/material/short_tests/728?course_id=2000",
+      "status": "200",
+      "source": "ui_network",
+      "responseShape": {
+        "short_test": {
+          "id": "number",
+          "title": "string",
+          "outline": "string",
+          "resource_type": "string",
+          "content_url": "string",
+          "permissions": {
+            "section_use": {
+              "active": "boolean",
+              "reason": "string",
+              "meta": {}
+            }
+          },
+          "total_question": "number",
+          "time_limit": "number",
+          "released_at": "number",
+          "permission_label": "string",
+          "permission_url": "string",
+          "permission_text": "string",
+          "content_permission_label": "null"
+        }
+      }
+    },
+    {
+      "pageId": 9,
+      "reqid": 259,
+      "method": "GET",
+      "host": "https://www.nnn.ed.nico",
+      "path": "/contents/courses/2000/short_tests/728",
+      "status": "200",
+      "source": "ui_network"
+    },
+    {
+      "pageId": 7,
+      "reqid": 1155,
+      "method": "GET",
+      "host": "https://www.nnn.ed.nico",
+      "path": "/contents/courses/2459/chapters/32018/evaluation_reports/1809",
+      "status": "200",
+      "source": "browser_get_probe_of_known_resource_route",
+      "contentType": "text/html; charset=utf-8",
+      "bootstrapShape": {
+        "understand": "string",
+        "csrfToken": "string",
+        "tenjinApiPrefix": "string",
+        "tags": {
+          "type": "array",
+          "items": "unobserved"
+        },
+        "isLink": "boolean",
+        "isResult": "boolean",
+        "courseId": "number",
+        "chapterId": "number",
+        "isNSchool": "boolean",
+        "material": {
+          "title": "string",
+          "tags": {
+            "type": "array",
+            "items": "unobserved"
+          },
+          "link": "boolean",
+          "type": "string",
+          "id": "number",
+          "writingMode": "string"
+        }
+      },
+      "bootstrapIsResult": false,
+      "embeddedParams": {
+        "attribute": "data-evaluation-report-params",
+        "shape": {
+          "passed": "boolean",
+          "result": {
+            "first": {
+              "passed": "boolean",
+              "score": "number",
+              "answered_at": "number"
+            },
+            "latest": {
+              "passed": "boolean",
+              "score": "number",
+              "answered_at": "number"
+            }
+          },
+          "answerings": {
+            "type": "array",
+            "items": "string"
+          },
+          "correctnesses": {
+            "type": "array",
+            "items": "boolean"
+          },
+          "total_score": "number",
+          "missed": "boolean"
+        }
+      },
+      "questionFieldTypes": [
+        "text"
+      ]
+    },
+    {
+      "pageId": 7,
+      "reqid": 1156,
+      "method": "GET",
+      "host": "https://www.nnn.ed.nico",
+      "path": "/contents/courses/2459/chapters/32018/essay_tests/3487",
+      "status": "200",
+      "source": "browser_get_probe_of_known_resource_route",
+      "contentType": "text/html; charset=utf-8",
+      "bootstrapShape": {
+        "understand": "string",
+        "csrfToken": "string",
+        "tenjinApiPrefix": "string",
+        "tags": {
+          "type": "array",
+          "items": "unobserved"
+        },
+        "isLink": "boolean",
+        "isResult": "boolean",
+        "courseId": "number",
+        "chapterId": "number",
+        "isNSchool": "boolean",
+        "material": {
+          "title": "string",
+          "tags": {
+            "type": "array",
+            "items": "unobserved"
+          },
+          "link": "boolean",
+          "type": "string",
+          "id": "number",
+          "writingMode": "string"
+        }
+      },
+      "bootstrapIsResult": true,
+      "embeddedParams": {
+        "attribute": "data-essay-test-params",
+        "shape": {
+          "result": {
+            "answered_at": "number",
+            "score": "null"
+          },
+          "answerings": {
+            "type": "array",
+            "items": "string"
+          },
+          "total_score": "number"
+        }
+      },
+      "questionFieldTypes": [
+        "textarea"
+      ]
+    },
+    {
+      "pageId": 7,
+      "reqid": 1157,
+      "method": "GET",
+      "host": "https://www.nnn.ed.nico",
+      "path": "/contents/courses/2459/chapters/32018/essay_reports/1812",
+      "status": "200",
+      "source": "browser_get_probe_of_known_resource_route",
+      "contentType": "text/html; charset=utf-8",
+      "bootstrapShape": {
+        "understand": "string",
+        "csrfToken": "string",
+        "tenjinApiPrefix": "string",
+        "tags": {
+          "type": "array",
+          "items": "unobserved"
+        },
+        "isLink": "boolean",
+        "isResult": "boolean",
+        "courseId": "number",
+        "chapterId": "number",
+        "isNSchool": "boolean",
+        "material": {
+          "title": "string",
+          "tags": {
+            "type": "array",
+            "items": "unobserved"
+          },
+          "link": "boolean",
+          "type": "string",
+          "id": "number",
+          "writingMode": "string"
+        }
+      },
+      "bootstrapIsResult": false,
+      "embeddedParams": {
+        "attribute": "data-essay-report-params",
+        "shape": {
+          "missed": "boolean"
+        }
+      },
+      "questionFieldTypes": [
+        "textarea"
+      ]
+    }
+  ],
+  "sourceInspection": {
+    "sources": [
+      "https://cdn.nnn.ed.nico/kokuban/exercises/exercise-ed100af29148f12abda1.js",
+      "https://cdn.nnn.ed.nico/kokuban/exercises/evaluationTest-ee707482cd22c50a61f9.js",
+      "https://cdn.nnn.ed.nico/kokuban/exercises/essayTest-b3f2bf0f6539daf11048.js",
+      "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/app.6d7fb69bf5e69a32dbb5.js"
+    ],
+    "candidates": [
+      {
+        "method": "POST",
+        "host": "https://api.nnn.ed.nico",
+        "path": "/v1/n_school/courses/{courseId}/chapters/{chapterId}/evaluation_tests/{id}/answerings",
+        "requestBodyShape": {
+          "answerings": {
+            "type": "array",
+            "items": "string"
+          }
+        },
+        "verification": "source_only; no request sent; response and success status unverified"
+      },
+      {
+        "method": "POST",
+        "host": "https://api.nnn.ed.nico",
+        "path": "/v1/n_school/courses/{courseId}/chapters/{chapterId}/evaluation_reports/{id}/answerings",
+        "requestBodyShape": {
+          "answerings": {
+            "type": "array",
+            "items": "string"
+          }
+        },
+        "verification": "source_only; no request sent; response and success status unverified"
+      },
+      {
+        "method": "POST",
+        "host": "https://api.nnn.ed.nico",
+        "path": "/v1/n_school/courses/{courseId}/chapters/{chapterId}/essay_tests/{id}/answerings",
+        "requestBodyShape": {
+          "answerings": {
+            "type": "array",
+            "items": "string"
+          }
+        },
+        "verification": "source_only; no request sent; response and success status unverified"
+      },
+      {
+        "method": "POST",
+        "host": "https://api.nnn.ed.nico",
+        "path": "/v1/n_school/courses/{courseId}/chapters/{chapterId}/essay_reports/{id}/answerings",
+        "requestBodyShape": {
+          "answerings": {
+            "type": "array",
+            "items": "string"
+          }
+        },
+        "verification": "source_only; no request sent; response and success status unverified"
+      },
+      {
+        "method": "POST",
+        "host": "https://api.nnn.ed.nico",
+        "path": "/v1/material/exercises/{exerciseId}/answers",
+        "requestBodyShape": {
+          "answers": {
+            "type": "array",
+            "items": {
+              "position": "number",
+              "content": {
+                "type": "array",
+                "items": "number"
+              }
+            }
+          }
+        },
+        "verification": "source_only for the observed choice exercise; no request sent"
+      }
+    ],
+    "localDraftStorageKey": "tempSavedAnswer",
+    "localDraftShape": {
+      "courseId": "number",
+      "chapterId": "number",
+      "resourceType": "string",
+      "sectionId": "number",
+      "answers": {
+        "type": "array",
+        "items": "resource-dependent"
+      }
+    }
+  }
+}

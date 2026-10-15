@@ -1,0 +1,869 @@
+{
+  "observedOn": "2026-10-15",
+  "timezone": "Asia/Tokyo",
+  "scope": "Additional investigation of movie materials and lesson archives",
+  "notes": [
+    "Only field names and observed types are retained. Array schemas sample the first item, not all variants.",
+    "Context identifiers, CSRF values, cookies, signed URLs and user profile/grade values are excluded.",
+    "HTTP 204 plus ERR_ABORTED was observed for keepalive playback writes; subsequent reads independently confirmed advanced playback persistence.",
+    "Failed beacon request capture is not proof of delivery failure. One POST beacon persistence was confirmed by a subsequent GET."
+  ],
+  "requests": [
+    {
+      "pageId": 7,
+      "reqid": 285,
+      "host": "https://api.nnn.ed.nico",
+      "path": "/v2/material/courses/2140/chapters/27051/movies/44241?revision=1",
+      "method": "GET",
+      "status": "200",
+      "responseShape": {
+        "id": "number",
+        "profile_type": "string",
+        "title": "string",
+        "tags": {
+          "type": "array",
+          "items": "string"
+        },
+        "writing_mode": "string",
+        "length": "number",
+        "thumbnail_url": "null",
+        "playback_position": "number",
+        "playback_settings": {
+          "periodic_record_interval": "number",
+          "api_cooldown": "number",
+          "record_diff_condition": "number",
+          "resume_adjustment": "number"
+        },
+        "progress_status": "string",
+        "permissions": {
+          "section_use": {
+            "active": "boolean"
+          }
+        },
+        "references": {
+          "type": "array",
+          "items": {
+            "reference_type": "string",
+            "content_urls": {
+              "type": "array",
+              "items": "string"
+            }
+          }
+        },
+        "trial": "null",
+        "videos": {
+          "type": "array",
+          "items": {
+            "video_type": "string",
+            "stereoview": "boolean",
+            "files": {
+              "hls": {
+                "url": "string"
+              },
+              "mp4": {
+                "url": "string"
+              }
+            }
+          }
+        }
+      },
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ]
+    },
+    {
+      "pageId": 7,
+      "reqid": 543,
+      "host": "https://api.nnn.ed.nico",
+      "path": "/v2/material/courses/2140/chapters/27051/movies/44241/playback?study_context_id={contextId}",
+      "method": "GET",
+      "status": "200",
+      "responseShape": {
+        "id": "number",
+        "playback_position": "number",
+        "playback_at": "string",
+        "playback_settings": {
+          "periodic_record_interval": "number",
+          "api_cooldown": "number",
+          "record_diff_condition": "number",
+          "resume_adjustment": "number"
+        }
+      },
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ]
+    },
+    {
+      "pageId": 7,
+      "reqid": 551,
+      "host": "https://papi.nnn.ed.nico",
+      "path": "/prod/v2/material/courses/2140/chapters/27051/movies/44241/playback",
+      "method": "PUT",
+      "status": "204",
+      "requestBodyShape": {
+        "position": "number",
+        "study_context_id": "string"
+      },
+      "responseShape": {
+        "capture": "empty_or_unavailable"
+      },
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "sec-ch-ua",
+        "content-type",
+        "csrf-token",
+        "sec-ch-ua-mobile",
+        "accept",
+        "accept-encoding",
+        "accept-language",
+        "content-length",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "transportNote": "DevTools also reported net::ERR_ABORTED; persistence checked separately where documented"
+    },
+    {
+      "pageId": 7,
+      "reqid": 629,
+      "host": "https://api.nnn.ed.nico",
+      "path": "/v2/material/courses/2140/chapters/27051/movies/44241?revision=1",
+      "method": "GET",
+      "status": "200",
+      "responseShape": {
+        "id": "number",
+        "profile_type": "string",
+        "title": "string",
+        "tags": {
+          "type": "array",
+          "items": "string"
+        },
+        "writing_mode": "string",
+        "length": "number",
+        "thumbnail_url": "null",
+        "playback_position": "number",
+        "playback_at": "string",
+        "playback_settings": {
+          "periodic_record_interval": "number",
+          "api_cooldown": "number",
+          "record_diff_condition": "number",
+          "resume_adjustment": "number"
+        },
+        "progress_status": "string",
+        "permissions": {
+          "section_use": {
+            "active": "boolean"
+          }
+        },
+        "references": {
+          "type": "array",
+          "items": {
+            "reference_type": "string",
+            "content_urls": {
+              "type": "array",
+              "items": "string"
+            }
+          }
+        },
+        "trial": "null",
+        "videos": {
+          "type": "array",
+          "items": {
+            "video_type": "string",
+            "stereoview": "boolean",
+            "files": {
+              "hls": {
+                "url": "string"
+              },
+              "mp4": {
+                "url": "string"
+              }
+            }
+          }
+        }
+      },
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ]
+    },
+    {
+      "pageId": 3,
+      "reqid": 384,
+      "host": "https://api.nnn.ed.nico",
+      "path": "/v2/material/courses/2459/chapters/32018/movies/53456?revision=1",
+      "method": "GET",
+      "status": "200",
+      "responseShape": {
+        "id": "number",
+        "profile_type": "string",
+        "title": "string",
+        "textbook_info": "string",
+        "tags": {
+          "type": "array",
+          "items": "unobserved"
+        },
+        "writing_mode": "string",
+        "length": "number",
+        "thumbnail_url": "null",
+        "vr_length": "number",
+        "vr_rank": "string",
+        "playback_position": "number",
+        "playback_settings": {
+          "periodic_record_interval": "number",
+          "api_cooldown": "number",
+          "record_diff_condition": "number",
+          "resume_adjustment": "number"
+        },
+        "progress_status": "string",
+        "permissions": {
+          "vr_use": {
+            "active": "boolean"
+          }
+        },
+        "references": {
+          "type": "array",
+          "items": {
+            "reference_type": "string",
+            "content_urls": {
+              "type": "array",
+              "items": "string"
+            }
+          }
+        },
+        "trial": "null",
+        "videos": {
+          "type": "array",
+          "items": {
+            "video_type": "string",
+            "stereoview": "boolean",
+            "files": {
+              "hls": {
+                "url": "string"
+              },
+              "mp4": {
+                "url": "string"
+              }
+            }
+          }
+        }
+      },
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ]
+    },
+    {
+      "pageId": 3,
+      "reqid": 390,
+      "host": "https://api.nnn.ed.nico",
+      "path": "/v3/learning_events",
+      "method": "POST",
+      "status": "201",
+      "requestBodyShape": {
+        "learning_material_type": "string",
+        "learning_material_id": "string",
+        "service": "string",
+        "course_id": "number",
+        "chapter_id": "number"
+      },
+      "responseShape": {},
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "sec-ch-ua",
+        "csrf-token",
+        "sec-ch-ua-mobile",
+        "user-agent",
+        "accept",
+        "content-type",
+        "accept-encoding",
+        "accept-language",
+        "content-length",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ]
+    },
+    {
+      "pageId": 3,
+      "reqid": 396,
+      "host": "https://api.nnn.ed.nico",
+      "path": "/v1/n_school/courses/2459/chapters/32018/movies/53456/progress/start?new_session=false&study_context_id={contextId}",
+      "method": "PUT",
+      "status": "204",
+      "requestBodyShape": {},
+      "responseShape": {
+        "capture": "empty_or_unavailable"
+      },
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "sec-ch-ua",
+        "csrf-token",
+        "sec-ch-ua-mobile",
+        "user-agent",
+        "accept",
+        "content-type",
+        "accept-encoding",
+        "accept-language",
+        "content-length",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ]
+    },
+    {
+      "pageId": 3,
+      "reqid": 397,
+      "host": "https://papi.nnn.ed.nico",
+      "path": "/prod/v2/material/courses/2459/chapters/32018/movies/53456/playback",
+      "method": "PUT",
+      "status": "204",
+      "requestBodyShape": {
+        "position": "number",
+        "study_context_id": "string"
+      },
+      "responseShape": {
+        "capture": "empty_or_unavailable"
+      },
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "sec-ch-ua",
+        "content-type",
+        "csrf-token",
+        "sec-ch-ua-mobile",
+        "accept",
+        "accept-encoding",
+        "accept-language",
+        "content-length",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "transportNote": "DevTools also reported net::ERR_ABORTED; persistence checked separately where documented"
+    },
+    {
+      "pageId": 3,
+      "reqid": 489,
+      "host": "https://papi.nnn.ed.nico",
+      "path": "/prod/v2/material/courses/2459/chapters/32018/movies/53456/playback",
+      "method": "PUT",
+      "status": "204",
+      "requestBodyShape": {
+        "position": "number",
+        "study_context_id": "string"
+      },
+      "responseShape": {
+        "capture": "empty_or_unavailable"
+      },
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "sec-ch-ua",
+        "content-type",
+        "csrf-token",
+        "sec-ch-ua-mobile",
+        "accept",
+        "accept-encoding",
+        "accept-language",
+        "content-length",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "transportNote": "DevTools also reported net::ERR_ABORTED; persistence checked separately where documented"
+    },
+    {
+      "pageId": 3,
+      "reqid": 506,
+      "host": "https://papi.nnn.ed.nico",
+      "path": "/prod/v3/material/courses/2459/chapters/32018/movies/53456/session/terminate",
+      "method": "POST",
+      "status": "net::ERR_ABORTED",
+      "requestBodyShape": {
+        "token": "string",
+        "study_context_id": "string"
+      },
+      "responseShape": {
+        "capture": "unavailable"
+      },
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "sec-ch-ua",
+        "content-type",
+        "sec-ch-ua-mobile"
+      ],
+      "transportNote": "DevTools also reported net::ERR_ABORTED; persistence checked separately where documented"
+    },
+    {
+      "pageId": 3,
+      "reqid": 527,
+      "host": "https://api.nnn.ed.nico",
+      "path": "/v2/material/courses/2459/chapters/32018/movies/53457?revision=1",
+      "method": "GET",
+      "status": "200",
+      "responseShape": {
+        "id": "number",
+        "profile_type": "string",
+        "title": "string",
+        "textbook_info": "string",
+        "tags": {
+          "type": "array",
+          "items": "unobserved"
+        },
+        "writing_mode": "string",
+        "length": "number",
+        "thumbnail_url": "null",
+        "vr_length": "number",
+        "vr_rank": "string",
+        "playback_position": "number",
+        "playback_at": "string",
+        "playback_settings": {
+          "periodic_record_interval": "number",
+          "api_cooldown": "number",
+          "record_diff_condition": "number",
+          "resume_adjustment": "number"
+        },
+        "progress_status": "string",
+        "permissions": {
+          "vr_use": {
+            "active": "boolean"
+          }
+        },
+        "references": {
+          "type": "array",
+          "items": {
+            "reference_type": "string",
+            "content_urls": {
+              "type": "array",
+              "items": "string"
+            }
+          }
+        },
+        "trial": "null",
+        "videos": {
+          "type": "array",
+          "items": {
+            "video_type": "string",
+            "stereoview": "boolean",
+            "files": {
+              "hls": {
+                "url": "string"
+              },
+              "mp4": {
+                "url": "string"
+              }
+            }
+          }
+        }
+      },
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ]
+    },
+    {
+      "pageId": 3,
+      "reqid": 540,
+      "host": "https://papi.nnn.ed.nico",
+      "path": "/prod/v2/material/courses/2459/chapters/32018/movies/53457/playback",
+      "method": "PUT",
+      "status": "204",
+      "requestBodyShape": {
+        "position": "number",
+        "study_context_id": "string"
+      },
+      "responseShape": {
+        "capture": "empty_or_unavailable"
+      },
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "sec-ch-ua",
+        "content-type",
+        "csrf-token",
+        "sec-ch-ua-mobile",
+        "accept",
+        "accept-encoding",
+        "accept-language",
+        "content-length",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "transportNote": "DevTools also reported net::ERR_ABORTED; persistence checked separately where documented"
+    },
+    {
+      "pageId": 3,
+      "reqid": 634,
+      "host": "https://papi.nnn.ed.nico",
+      "path": "/prod/v2/material/courses/2459/chapters/32018/movies/53457/playback",
+      "method": "PUT",
+      "status": "204",
+      "requestBodyShape": {
+        "position": "number",
+        "study_context_id": "string"
+      },
+      "responseShape": {
+        "capture": "empty_or_unavailable"
+      },
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "sec-ch-ua",
+        "content-type",
+        "csrf-token",
+        "sec-ch-ua-mobile",
+        "accept",
+        "accept-encoding",
+        "accept-language",
+        "content-length",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "transportNote": "DevTools also reported net::ERR_ABORTED; persistence checked separately where documented"
+    },
+    {
+      "pageId": 7,
+      "reqid": 638,
+      "host": "https://api.nnn.ed.nico",
+      "path": "/v3/forum/material_relations/courses/2140/chapters/27051/movies/44241/threads/count",
+      "method": "GET",
+      "status": "200",
+      "responseShape": {
+        "thread_count": "number"
+      },
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ]
+    },
+    {
+      "pageId": 7,
+      "reqid": 875,
+      "host": "https://papi.nnn.ed.nico",
+      "path": "/prod/v2/material/courses/2140/chapters/27051/movies/44241/playback",
+      "method": "PUT",
+      "status": "204",
+      "requestBodyShape": {
+        "position": "number",
+        "study_context_id": "string"
+      },
+      "responseShape": {
+        "capture": "empty_or_unavailable"
+      },
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "sec-ch-ua",
+        "content-type",
+        "csrf-token",
+        "sec-ch-ua-mobile",
+        "accept",
+        "accept-encoding",
+        "accept-language",
+        "content-length",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "transportNote": "DevTools also reported net::ERR_ABORTED; persistence checked separately where documented"
+    },
+    {
+      "pageId": 7,
+      "reqid": 893,
+      "host": "https://api.nnn.ed.nico",
+      "path": "/v2/material/courses/2140/chapters/27051/movies/44241/playback?study_context_id={contextId}",
+      "method": "GET",
+      "status": "200",
+      "responseShape": {
+        "id": "number",
+        "playback_position": "number",
+        "playback_at": "string",
+        "playback_settings": {
+          "periodic_record_interval": "number",
+          "api_cooldown": "number",
+          "record_diff_condition": "number",
+          "resume_adjustment": "number"
+        }
+      },
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ]
+    },
+    {
+      "pageId": 7,
+      "reqid": 911,
+      "host": "https://papi.nnn.ed.nico",
+      "path": "/prod/v2/material/courses/2140/chapters/27051/movies/44241/playback",
+      "method": "PUT",
+      "status": "204",
+      "requestBodyShape": {
+        "position": "number",
+        "study_context_id": "string"
+      },
+      "responseShape": {
+        "capture": "empty_or_unavailable"
+      },
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "sec-ch-ua",
+        "content-type",
+        "csrf-token",
+        "sec-ch-ua-mobile",
+        "accept",
+        "accept-encoding",
+        "accept-language",
+        "content-length",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "transportNote": "DevTools also reported net::ERR_ABORTED; persistence checked separately where documented"
+    },
+    {
+      "pageId": 7,
+      "reqid": 981,
+      "host": "https://papi.nnn.ed.nico",
+      "path": "/prod/v2/material/courses/2140/chapters/27051/movies/44241/playback",
+      "method": "POST",
+      "status": "net::ERR_ABORTED",
+      "requestBodyShape": {
+        "position": "number",
+        "clear_session": "boolean",
+        "token": "string",
+        "study_context_id": "string"
+      },
+      "responseShape": {
+        "capture": "unavailable"
+      }
+    },
+    {
+      "pageId": 10,
+      "reqid": 185,
+      "host": "https://api.nnn.ed.nico",
+      "path": "/v3/forum/material_relations/courses/2140/chapters/27051/lessons/482533614/threads/count",
+      "method": "GET",
+      "status": "200",
+      "responseShape": {
+        "thread_count": "number"
+      }
+    },
+    {
+      "pageId": 10,
+      "reqid": 188,
+      "host": "https://api.nnn.ed.nico",
+      "path": "/v3/learning_events",
+      "method": "POST",
+      "status": "201",
+      "requestBodyShape": {
+        "learning_material_type": "string",
+        "learning_material_id": "string",
+        "service": "string",
+        "course_id": "number",
+        "chapter_id": "number"
+      },
+      "responseShape": {}
+    }
+  ],
+  "checks": [
+    {
+      "name": "milliseconds_and_resume",
+      "movieId": 44241,
+      "savedPosition": 130000,
+      "resumeAdjustment": 5000,
+      "reloadedPlayerTimeApproxSeconds": 125,
+      "result": "confirmed by GET and media currentTime after reload"
+    },
+    {
+      "name": "navigation_beacon",
+      "movieId": 44241,
+      "requestPosition": 241000,
+      "subsequentDetailPosition": 241000,
+      "result": "persisted despite net::ERR_ABORTED in DevTools"
+    },
+    {
+      "name": "playback_rate",
+      "value": 1.5,
+      "localStorageKey": "zane:video-playback-rate",
+      "restoredValue": 1,
+      "result": "UI button changed HTMLMediaElement.playbackRate; no dedicated rate API observed"
+    }
+  ],
+  "hls": {
+    "movieSample": {
+      "pageId": 7,
+      "reqid": 648,
+      "variants": [
+        {
+          "bandwidth": 1104000,
+          "width": 480,
+          "height": 270
+        },
+        {
+          "bandwidth": 1825000,
+          "width": 640,
+          "height": 360
+        },
+        {
+          "bandwidth": 3350000,
+          "width": 1280,
+          "height": 720
+        }
+      ]
+    },
+    "variantPlaylist": {
+      "pageId": 7,
+      "reqid": 827,
+      "version": 3,
+      "targetDuration": 6,
+      "segmentFormat": "ts"
+    },
+    "lessonSample": {
+      "pageId": 10,
+      "reqid": 44,
+      "widths": [
+        480,
+        640,
+        1280
+      ]
+    }
+  },
+  "sourceInspection": {
+    "distVersion": "ohtomi@9.21.0",
+    "sources": [
+      "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_components_shared_molecules_ForumButton_index_ts-src_components_shared_organisms_VideoPla-0c7155.fc1b4d0719ded8d44963.js",
+      "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_clients_papiFetchClient_ts-src_components_shared_organisms_Player_OverlayMenu_PlaybackRat-c8e296.f5315341da8eb5b4fb15.js",
+      "https://cdn.nnn.ed.nico/tenjin_pc/assets/ohtomi/src_features_chapter_containers_MaterialMovie_Router_tsx-node_modules_tanstack_react-query_bu-13d296.64e3c5d545e02a17d926.js"
+    ],
+    "status": "Source-inferred routes, limits, sentinel values and error branches are documented separately from successful network observations."
+  }
+}

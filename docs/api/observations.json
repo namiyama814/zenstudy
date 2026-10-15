@@ -1,0 +1,2590 @@
+{
+  "observedOn": "2026-10-15",
+  "timezone": "Asia/Tokyo",
+  "baseUrl": "https://api.nnn.ed.nico",
+  "source": "Chrome DevTools MCP network observation; selected observed GET requests replayed in browser for structural extraction",
+  "schemaNotes": [
+    "These are observed value types, not JSON Schema or a guaranteed API contract.",
+    "Array items describe the first observed item only; later variants may differ.",
+    "unobserved means the array was empty; null means only null was sampled.",
+    "No cookies, token values, user profile values, post bodies, grades, or signed media URLs are included.",
+    "pageId and reqid are session-local locators and cannot be reused after the browser session."
+  ],
+  "requests": [
+    {
+      "pageId": 10,
+      "reqid": 26,
+      "method": "GET",
+      "path": "/v1/users?revision=2",
+      "status": 200,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {
+        "zane_user_id": "number",
+        "name": "string",
+        "icon": "string",
+        "sex": "number",
+        "authority": {
+          "type": "array",
+          "items": "string"
+        },
+        "payment": "boolean",
+        "payments": {
+          "type": "array",
+          "items": "unobserved"
+        },
+        "is_chargeable": "boolean",
+        "is_personal_information_needed": "boolean",
+        "capabilities": {
+          "type": "array",
+          "items": "string"
+        }
+      },
+      "shapeSource": "network_response"
+    },
+    {
+      "pageId": 9,
+      "reqid": 130,
+      "method": "GET",
+      "path": "/v1/notices/unreads",
+      "status": 200,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {
+        "notices": {
+          "type": "array",
+          "items": {
+            "id": "number",
+            "notice_type": "string",
+            "target_id": "number",
+            "target_type": "string",
+            "title": "string",
+            "description": "string",
+            "resource": "string",
+            "created_at": "number"
+          }
+        }
+      },
+      "shapeSource": "network_response"
+    },
+    {
+      "pageId": 3,
+      "reqid": 315,
+      "method": "GET",
+      "path": "/v2/dashboard/report_progresses/monthly/2026/10?service=basic",
+      "status": 200,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {
+        "service": "string",
+        "year": "number",
+        "month": "number",
+        "thumbnail_url": "string",
+        "total_chapter_count": "number",
+        "passed_chapter_count": "number",
+        "total_material_count": "number",
+        "passed_material_count": "number",
+        "total_assessment_test": "number",
+        "passed_assessment_test_count": "number",
+        "deadline_groups": {
+          "type": "array",
+          "items": "unobserved"
+        },
+        "completed_chapters": {
+          "type": "array",
+          "items": {
+            "course_id": "number",
+            "chapter_id": "number",
+            "subject_category_title": "string",
+            "course_title": "string",
+            "chapter_title": "string",
+            "total_count": "number",
+            "passed_count": "number",
+            "exempted": "boolean"
+          }
+        },
+        "passed_assessment_tests": {
+          "type": "array",
+          "items": "unobserved"
+        }
+      },
+      "shapeSource": "network_response"
+    },
+    {
+      "pageId": 4,
+      "reqid": 331,
+      "method": "GET",
+      "path": "/v1/lessons?mode=schedule&taken=false&limit=5",
+      "status": 200,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {
+        "lessons": {
+          "type": "array",
+          "items": {
+            "id": "number",
+            "title": "string",
+            "thumbnail_url": "string",
+            "tags": {
+              "type": "array",
+              "items": "string"
+            },
+            "permissions": {
+              "lesson_use": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "post_comment": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "post_ask_comment": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "join_research": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "join_quiz": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "join_correction": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              }
+            },
+            "released_at": "number",
+            "minute": "number",
+            "teacher_name": "string",
+            "start_at": "number",
+            "broadcast_status": "string",
+            "broadcast_opening_minute": "number",
+            "broadcast_ending_minute": "number",
+            "thumbnail_wide_url": "string",
+            "permission_label": "string",
+            "permission_url": "string",
+            "permission_text": "string",
+            "content_permission_label": "null",
+            "status_label": "string",
+            "real_start_at": "null",
+            "planned_start_at": "number",
+            "viewer_count": "number"
+          }
+        }
+      },
+      "shapeSource": "network_response"
+    },
+    {
+      "pageId": 4,
+      "reqid": 332,
+      "method": "GET",
+      "path": "/v1/lessons?mode=after&taken=false&limit=15",
+      "status": 200,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {
+        "lessons": {
+          "type": "array",
+          "items": {
+            "id": "number",
+            "title": "string",
+            "outline": "string",
+            "thumbnail_url": "string",
+            "tags": {
+              "type": "array",
+              "items": "string"
+            },
+            "permissions": {
+              "lesson_use": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "post_comment": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "post_ask_comment": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "join_research": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "join_quiz": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "join_correction": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              }
+            },
+            "released_at": "number",
+            "minute": "number",
+            "archive": {
+              "total_audience": "number",
+              "second": "number",
+              "start_offset": "number",
+              "show_comment": "boolean"
+            },
+            "teacher_name": "string",
+            "start_at": "number",
+            "broadcast_status": "string",
+            "broadcast_opening_minute": "number",
+            "broadcast_ending_minute": "number",
+            "thumbnail_wide_url": "string",
+            "permission_label": "string",
+            "permission_url": "string",
+            "permission_text": "string",
+            "content_permission_label": "null",
+            "status_label": "string",
+            "real_start_at": "number",
+            "planned_start_at": "number",
+            "viewer_count": "number"
+          }
+        }
+      },
+      "shapeSource": "authenticated_get_replay",
+      "replayStatus": 200
+    },
+    {
+      "pageId": 4,
+      "reqid": 348,
+      "method": "GET",
+      "path": "/v2/material/recommendations",
+      "status": 200,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {
+        "recommendations": {
+          "type": "array",
+          "items": {
+            "header": "string",
+            "courses": {
+              "type": "array",
+              "items": {
+                "id": "number",
+                "type": "string",
+                "title": "string",
+                "released_at": "number",
+                "permission_label": "string",
+                "permission_url": "string",
+                "permission_text": "string",
+                "content_permission_label": {
+                  "type": "string",
+                  "label": "string",
+                  "icon_url": "string",
+                  "icon_alt": "string"
+                },
+                "permissions": {
+                  "section_use": {
+                    "active": "boolean",
+                    "reason": "string",
+                    "meta": {}
+                  },
+                  "package_select": {
+                    "active": "boolean",
+                    "reason": "string",
+                    "meta": {}
+                  }
+                },
+                "selected": "boolean",
+                "progress": {
+                  "on_calculation": "boolean",
+                  "comprehension": {
+                    "limit": "number",
+                    "bad": "number",
+                    "good": "number",
+                    "perfect": "number"
+                  },
+                  "checkpoint": {
+                    "total": "number",
+                    "clear": "number"
+                  }
+                },
+                "short_test": {
+                  "total_short_test": "number",
+                  "total_passed_short_test": "number"
+                },
+                "thumbnail_url": "string",
+                "subject_category": {
+                  "title": "string"
+                },
+                "chapters": {
+                  "type": "array",
+                  "items": "unobserved"
+                }
+              }
+            }
+          }
+        }
+      },
+      "shapeSource": "authenticated_get_replay",
+      "replayStatus": 200
+    },
+    {
+      "pageId": 4,
+      "reqid": 345,
+      "method": "GET",
+      "path": "/v3/notices/importants",
+      "status": 200,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {
+        "importants": {
+          "type": "array",
+          "items": "unobserved"
+        }
+      },
+      "shapeSource": "network_response"
+    },
+    {
+      "pageId": 6,
+      "reqid": 71,
+      "method": "GET",
+      "path": "/v2/announcements",
+      "status": 200,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {
+        "announcements": {
+          "type": "array",
+          "items": "unobserved"
+        }
+      },
+      "shapeSource": "network_response"
+    },
+    {
+      "pageId": 6,
+      "reqid": 18,
+      "method": "GET",
+      "path": "/v3/material/genres",
+      "status": 200,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {
+        "genres": {
+          "advanced": {
+            "title": "string",
+            "packages": {
+              "type": "array",
+              "items": {
+                "id": "number",
+                "type": "string",
+                "title": "string"
+              }
+            }
+          },
+          "basic": {
+            "title": "string",
+            "packages": {
+              "type": "array",
+              "items": {
+                "id": "number",
+                "type": "string",
+                "title": "string"
+              }
+            }
+          }
+        }
+      },
+      "shapeSource": "authenticated_get_replay",
+      "replayStatus": 200
+    },
+    {
+      "pageId": 4,
+      "reqid": 349,
+      "method": "GET",
+      "path": "/v1/official_events/unreads",
+      "status": 200,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {
+        "official_events": {
+          "type": "array",
+          "items": "unobserved"
+        }
+      },
+      "shapeSource": "network_response"
+    },
+    {
+      "pageId": 5,
+      "reqid": 255,
+      "method": "GET",
+      "path": "/v1/users?with=authorized_clients&revision=2",
+      "status": 200,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {
+        "zane_user_id": "number",
+        "name": "string",
+        "icon": "string",
+        "sex": "number",
+        "authority": {
+          "type": "array",
+          "items": "string"
+        },
+        "payment": "boolean",
+        "payments": {
+          "type": "array",
+          "items": "unobserved"
+        },
+        "is_chargeable": "boolean",
+        "is_personal_information_needed": "boolean",
+        "capabilities": {
+          "type": "array",
+          "items": "string"
+        },
+        "authorized_clients": {
+          "type": "array",
+          "items": {
+            "id": "number",
+            "name": "string",
+            "icon_url": "string",
+            "icon_large_url": "string"
+          }
+        }
+      },
+      "shapeSource": "network_response"
+    },
+    {
+      "pageId": 5,
+      "reqid": 258,
+      "method": "GET",
+      "path": "/v2/learning_amounts",
+      "status": 200,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {
+        "total_amount": "number",
+        "daily_amount": {
+          "type": "array",
+          "items": {
+            "date": "string",
+            "amount": "number"
+          }
+        },
+        "average_amount": "number"
+      },
+      "shapeSource": "network_response"
+    },
+    {
+      "pageId": 5,
+      "reqid": 259,
+      "method": "GET",
+      "path": "/v2/dashboard/report_progresses",
+      "status": 200,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {
+        "service": "string",
+        "alert": {
+          "last_report_deadline": "null",
+          "last_report_deadline_at": "string",
+          "required_course_count": "number",
+          "taking_course_count": "number"
+        },
+        "monthly_summaries": {
+          "type": "array",
+          "items": {
+            "year": "number",
+            "month": "number",
+            "earliest_report_deadline": "string",
+            "total_chapter_count": "number",
+            "passed_chapter_count": "number",
+            "total_assessment_test": "number",
+            "passed_assessment_test_count": "number"
+          }
+        }
+      },
+      "shapeSource": "network_response"
+    },
+    {
+      "pageId": 5,
+      "reqid": 260,
+      "method": "GET",
+      "path": "/v1/users/bindings?revision=2",
+      "status": 200,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {
+        "bindings": {
+          "type": "array",
+          "items": {
+            "target_type": "string",
+            "nickname": "null",
+            "display_name": "string",
+            "id": "string"
+          }
+        }
+      },
+      "shapeSource": "network_response"
+    },
+    {
+      "pageId": 5,
+      "reqid": 261,
+      "method": "GET",
+      "path": "/v3/dashboard/scale_scores",
+      "status": 200,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {
+        "kyoukas": {
+          "type": "array",
+          "items": {
+            "id": "number",
+            "name": "string",
+            "latest_level_image_url": "string",
+            "latest_level_name": "string",
+            "latest_event_id": "string",
+            "latest_percentage": "number",
+            "latest_scale_score": "number",
+            "former_percentage": "number",
+            "former_scale_score": "number"
+          }
+        }
+      },
+      "shapeSource": "network_response"
+    },
+    {
+      "pageId": 9,
+      "reqid": 26,
+      "method": "GET",
+      "path": "/v1/users?revision=2",
+      "status": 401,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {
+        "error": {
+          "code": "number",
+          "message": "string",
+          "meta": {
+            "dialog": "string"
+          }
+        }
+      },
+      "shapeSource": "earlier_network_response"
+    },
+    {
+      "pageId": 9,
+      "reqid": 31,
+      "method": "GET",
+      "path": "/v1/notices/unreads",
+      "status": 401,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {
+        "error": {
+          "code": "number",
+          "message": "string",
+          "meta": {
+            "dialog": "string"
+          }
+        }
+      },
+      "shapeSource": "earlier_network_response"
+    },
+    {
+      "pageId": 6,
+      "reqid": 20,
+      "method": "GET",
+      "path": "/v2/material/packages/2",
+      "status": 200,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {
+        "package": {
+          "id": "number",
+          "title": "string",
+          "type": "string",
+          "permissions": {
+            "section_use": {
+              "active": "boolean",
+              "reason": "string",
+              "meta": {}
+            }
+          },
+          "subject_categories": {
+            "type": "array",
+            "items": {
+              "id": "number",
+              "title": "string",
+              "outline": "string",
+              "courses": {
+                "type": "array",
+                "items": {
+                  "id": "number",
+                  "title": "string",
+                  "outline": "string",
+                  "thumbnail_url": "string",
+                  "permissions": {
+                    "section_use": {
+                      "active": "boolean",
+                      "reason": "string",
+                      "meta": {}
+                    },
+                    "package_select": {
+                      "active": "boolean",
+                      "reason": "string",
+                      "meta": {}
+                    }
+                  },
+                  "progress": {
+                    "on_calculation": "boolean",
+                    "comprehension": {
+                      "limit": "number",
+                      "bad": "number",
+                      "good": "number",
+                      "perfect": "number"
+                    },
+                    "checkpoint": {
+                      "total": "number",
+                      "clear": "number"
+                    }
+                  },
+                  "selected": "boolean",
+                  "short_test": {
+                    "total_short_test": "number",
+                    "total_passed_short_test": "number"
+                  },
+                  "permission_label": "string",
+                  "permission_url": "string",
+                  "permission_text": "string",
+                  "content_permission_label": "null",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "shapeSource": "authenticated_get_replay",
+      "replayStatus": 200
+    },
+    {
+      "pageId": 6,
+      "reqid": 78,
+      "method": "GET",
+      "path": "/v2/dashboard/report_progresses?service=basic",
+      "status": 200,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {
+        "service": "string",
+        "alert": {
+          "last_report_deadline": "null",
+          "last_report_deadline_at": "string",
+          "required_course_count": "number",
+          "taking_course_count": "number"
+        },
+        "monthly_summaries": {
+          "type": "array",
+          "items": {
+            "year": "number",
+            "month": "number",
+            "earliest_report_deadline": "string",
+            "total_chapter_count": "number",
+            "passed_chapter_count": "number",
+            "total_assessment_test": "number",
+            "passed_assessment_test_count": "number"
+          }
+        }
+      },
+      "shapeSource": "network_response"
+    },
+    {
+      "pageId": 6,
+      "reqid": 76,
+      "method": "GET",
+      "path": "/v3/dashboard/my_courses?service=basic&limit=20&offset=0",
+      "status": 200,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {
+        "services": {
+          "type": "array",
+          "items": {
+            "total_course_count": "number",
+            "courses": {
+              "type": "array",
+              "items": {
+                "id": "number",
+                "type": "string",
+                "title": "string",
+                "selection_status": "string",
+                "selected": "boolean",
+                "thumbnail_url": "string",
+                "on_calculation": "boolean",
+                "progress": {
+                  "total_count": "number",
+                  "passed_count": "number",
+                  "total_assessment_test": "number",
+                  "passed_assessment_test_count": "number"
+                },
+                "comprehension": "null"
+              }
+            },
+            "name": "string",
+            "periodic_exam_title": "null"
+          }
+        }
+      },
+      "shapeSource": "network_response"
+    },
+    {
+      "pageId": 6,
+      "reqid": 85,
+      "method": "GET",
+      "path": "/v3/dashboard/my_courses?service=advanced&limit=20&offset=0",
+      "status": 200,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {
+        "services": {
+          "type": "array",
+          "items": {
+            "total_course_count": "number",
+            "courses": {
+              "type": "array",
+              "items": {
+                "id": "number",
+                "type": "string",
+                "title": "string",
+                "selection_status": "string",
+                "selected": "boolean",
+                "thumbnail_url": "string",
+                "on_calculation": "boolean",
+                "progress": {
+                  "total_count": "number",
+                  "passed_count": "number",
+                  "total_assessment_test": "null",
+                  "passed_assessment_test_count": "null"
+                },
+                "comprehension": {
+                  "total_count": "number",
+                  "good_count": "number",
+                  "bad_count": "number"
+                }
+              }
+            },
+            "name": "string",
+            "periodic_exam_title": "null"
+          }
+        }
+      },
+      "shapeSource": "network_response"
+    },
+    {
+      "pageId": 7,
+      "reqid": 97,
+      "method": "GET",
+      "path": "/v2/material/courses/2140?revision=1",
+      "status": 200,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {
+        "course": {
+          "id": "number",
+          "title": "string",
+          "thumbnail_url": "string",
+          "outline": "string",
+          "progress": {
+            "on_calculation": "boolean",
+            "comprehension": {
+              "limit": "number",
+              "bad": "number",
+              "good": "number",
+              "perfect": "number"
+            },
+            "checkpoint": {
+              "total": "number",
+              "clear": "number"
+            }
+          },
+          "selected": "boolean",
+          "short_test": {
+            "total_short_test": "number",
+            "total_passed_short_test": "number"
+          },
+          "permission_label": "string",
+          "permission_url": "string",
+          "permission_text": "string",
+          "content_permission_label": "null",
+          "type": "string",
+          "released_at": "null",
+          "subject_category": {
+            "title": "string"
+          },
+          "permissions": {
+            "section_use": {
+              "active": "boolean",
+              "reason": "string",
+              "meta": {}
+            },
+            "package_select": {
+              "active": "boolean",
+              "reason": "string",
+              "meta": {}
+            }
+          },
+          "chapters": {
+            "type": "array",
+            "items": {
+              "id": "number",
+              "title": "string",
+              "resource_type": "string",
+              "outline": "string",
+              "permissions": {
+                "section_use": {
+                  "active": "boolean",
+                  "reason": "string",
+                  "meta": {}
+                }
+              },
+              "progress": {
+                "on_calculation": "boolean",
+                "checkpoint": {
+                  "clear": "number",
+                  "total": "number"
+                },
+                "comprehension": {
+                  "bad": "number",
+                  "good": "number",
+                  "limit": "number",
+                  "perfect": "number"
+                }
+              },
+              "released_at": "number",
+              "thumbnail_url": "null",
+              "permission_label": "string",
+              "permission_url": "string",
+              "permission_text": "string",
+              "content_permission_label": "null"
+            }
+          }
+        }
+      },
+      "shapeSource": "network_response"
+    },
+    {
+      "pageId": 7,
+      "reqid": 96,
+      "method": "GET",
+      "path": "/v2/material/courses/2140/chapters/27051?revision=1",
+      "status": 200,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {
+        "course_type": "string",
+        "subject_completed": "null",
+        "chapter": {
+          "id": "number",
+          "title": "string",
+          "outline": "string",
+          "permissions": {
+            "section_use": {
+              "active": "boolean",
+              "reason": "string",
+              "meta": {}
+            }
+          },
+          "progress": {
+            "comprehension": {
+              "limit": "number",
+              "bad": "number",
+              "good": "number",
+              "perfect": "number"
+            },
+            "checkpoint": {
+              "total": "number",
+              "clear": "number"
+            }
+          },
+          "released_at": "number",
+          "class_pattern_name": "string",
+          "thumbnail_url": "null",
+          "class_headers": {
+            "type": "array",
+            "items": {
+              "name": "string",
+              "label": "string",
+              "has_progress": "boolean",
+              "writing_mode": "string",
+              "sections": {
+                "type": "array",
+                "items": {
+                  "id": "number",
+                  "title": "string",
+                  "outline": "string",
+                  "resource_type": "string",
+                  "content_url": "string",
+                  "permissions": {
+                    "section_use": {
+                      "active": "boolean",
+                      "reason": "string",
+                      "meta": {}
+                    }
+                  },
+                  "released_at": "number",
+                  "progress": {
+                    "comprehension": {
+                      "limit": "number",
+                      "bad": "number",
+                      "good": "number",
+                      "perfect": "number"
+                    },
+                    "checkpoint": {
+                      "total": "number",
+                      "clear": "number"
+                    }
+                  },
+                  "thumbnail_url": "null"
+                }
+              }
+            }
+          },
+          "permission_label": "string",
+          "permission_url": "string",
+          "permission_text": "string",
+          "content_permission_label": "null"
+        }
+      },
+      "shapeSource": "network_response"
+    },
+    {
+      "pageId": 7,
+      "reqid": 113,
+      "method": "GET",
+      "path": "/v3/forum/material_relations/courses/2140/chapters/27051/guides/7427/threads/count",
+      "status": 200,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {
+        "thread_count": "number"
+      },
+      "shapeSource": "network_response"
+    },
+    {
+      "pageId": 8,
+      "reqid": 89,
+      "method": "GET",
+      "path": "/v3/forum/menu",
+      "status": 200,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {
+        "channel_groups": {
+          "type": "array",
+          "items": {
+            "name": "string",
+            "channels": {
+              "type": "array",
+              "items": {
+                "id": "number",
+                "name": "string",
+                "type": "string",
+                "category_tags": {
+                  "type": "array",
+                  "items": "string"
+                },
+                "category_descriptions": {
+                  "type": "array",
+                  "items": {
+                    "category_tag": "string",
+                    "description": "string"
+                  }
+                },
+                "recommended_tags": {
+                  "type": "array",
+                  "items": "string"
+                },
+                "icon_url": "string"
+              }
+            }
+          }
+        }
+      },
+      "shapeSource": "network_response"
+    },
+    {
+      "pageId": 8,
+      "reqid": 87,
+      "method": "GET",
+      "path": "/v3/forum/channels/6/threads?with_channel=true",
+      "status": 200,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {
+        "channel_threads": {
+          "cursors": {
+            "next": "string"
+          },
+          "total_thread_count": "number",
+          "threads": {
+            "type": "array",
+            "items": {
+              "id": "number",
+              "title": "string",
+              "user": {
+                "zane_user_id": "number",
+                "name": "string",
+                "icon": "string",
+                "teacher": "boolean",
+                "staff": "boolean"
+              },
+              "resolved": "boolean",
+              "resolved_at": "null",
+              "views_count": "number",
+              "reply_count": "number",
+              "thumbnails": {
+                "type": "array",
+                "items": "string"
+              },
+              "belonging_channels": {
+                "type": "array",
+                "items": {
+                  "id": "number",
+                  "name": "string",
+                  "type": "string",
+                  "category_tags": {
+                    "type": "array",
+                    "items": "string"
+                  },
+                  "icon_url": "null"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": "string"
+              },
+              "posted_at": "string",
+              "group": "string",
+              "main_message": {
+                "id": "number",
+                "user": {
+                  "zane_user_id": "number",
+                  "name": "string",
+                  "icon": "string",
+                  "teacher": "boolean",
+                  "staff": "boolean"
+                },
+                "role": "string",
+                "owner_posted": "boolean",
+                "posted_at": "string"
+              },
+              "hidden": "boolean"
+            }
+          },
+          "channel": {
+            "id": "number",
+            "name": "string",
+            "type": "string",
+            "category_tags": {
+              "type": "array",
+              "items": "string"
+            },
+            "category_descriptions": {
+              "type": "array",
+              "items": {
+                "category_tag": "string",
+                "description": "string"
+              }
+            },
+            "recommended_tags": {
+              "type": "array",
+              "items": "string"
+            },
+            "icon_url": "null"
+          },
+          "tags": {
+            "type": "array",
+            "items": "string"
+          }
+        }
+      },
+      "shapeSource": "authenticated_get_replay",
+      "replayStatus": 200
+    },
+    {
+      "pageId": 8,
+      "reqid": 123,
+      "method": "GET",
+      "path": "/v3/forum/channels/6/threads?with_channel=true&cursor=NDIwOTI%3D",
+      "status": 200,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {
+        "channel_threads": {
+          "cursors": {
+            "next": "string"
+          },
+          "total_thread_count": "number",
+          "threads": {
+            "type": "array",
+            "items": {
+              "id": "number",
+              "title": "string",
+              "user": {
+                "zane_user_id": "number",
+                "name": "string",
+                "icon": "string",
+                "teacher": "boolean",
+                "staff": "boolean"
+              },
+              "resolved": "boolean",
+              "resolved_at": "null",
+              "views_count": "number",
+              "reply_count": "number",
+              "thumbnails": {
+                "type": "array",
+                "items": "unobserved"
+              },
+              "belonging_channels": {
+                "type": "array",
+                "items": {
+                  "id": "number",
+                  "name": "string",
+                  "type": "string",
+                  "category_tags": {
+                    "type": "array",
+                    "items": "unobserved"
+                  },
+                  "icon_url": "null"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": "unobserved"
+              },
+              "posted_at": "string",
+              "group": "string",
+              "main_message": {
+                "id": "number",
+                "user": {
+                  "zane_user_id": "number",
+                  "name": "string",
+                  "icon": "string",
+                  "teacher": "boolean",
+                  "staff": "boolean"
+                },
+                "role": "string",
+                "owner_posted": "boolean",
+                "posted_at": "string"
+              },
+              "hidden": "boolean"
+            }
+          },
+          "channel": {
+            "id": "number",
+            "name": "string",
+            "type": "string",
+            "category_tags": {
+              "type": "array",
+              "items": "string"
+            },
+            "category_descriptions": {
+              "type": "array",
+              "items": {
+                "category_tag": "string",
+                "description": "string"
+              }
+            },
+            "recommended_tags": {
+              "type": "array",
+              "items": "string"
+            },
+            "icon_url": "null"
+          },
+          "tags": {
+            "type": "array",
+            "items": "string"
+          }
+        }
+      },
+      "shapeSource": "authenticated_get_replay",
+      "replayStatus": 200
+    },
+    {
+      "pageId": 9,
+      "reqid": 29,
+      "method": "GET",
+      "path": "/v1/lessons?mode=schedule&taken=false&limit=21",
+      "status": 200,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {
+        "lessons": {
+          "type": "array",
+          "items": {
+            "id": "number",
+            "title": "string",
+            "thumbnail_url": "string",
+            "tags": {
+              "type": "array",
+              "items": "string"
+            },
+            "permissions": {
+              "lesson_use": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "post_comment": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "post_ask_comment": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "join_research": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "join_quiz": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "join_correction": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              }
+            },
+            "released_at": "number",
+            "minute": "number",
+            "teacher_name": "string",
+            "start_at": "number",
+            "broadcast_status": "string",
+            "broadcast_opening_minute": "number",
+            "broadcast_ending_minute": "number",
+            "thumbnail_wide_url": "string",
+            "permission_label": "string",
+            "permission_url": "string",
+            "permission_text": "string",
+            "content_permission_label": "null",
+            "status_label": "string",
+            "real_start_at": "null",
+            "planned_start_at": "number",
+            "viewer_count": "number"
+          }
+        }
+      },
+      "shapeSource": "authenticated_get_replay",
+      "replayStatus": 200
+    },
+    {
+      "pageId": 9,
+      "reqid": 99,
+      "method": "GET",
+      "path": "/v1/tags/lesson_search",
+      "status": 200,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {
+        "tags": {
+          "type": "array",
+          "items": "string"
+        }
+      },
+      "shapeSource": "network_response"
+    },
+    {
+      "pageId": 9,
+      "reqid": 58,
+      "method": "GET",
+      "path": "/v1/lessons?mode=schedule&taken=false&limit=21&base_id=482533505",
+      "status": 200,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {
+        "lessons": {
+          "type": "array",
+          "items": {
+            "id": "number",
+            "title": "string",
+            "outline": "string",
+            "thumbnail_url": "string",
+            "tags": {
+              "type": "array",
+              "items": "string"
+            },
+            "permissions": {
+              "lesson_use": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "post_comment": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "post_ask_comment": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "join_research": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "join_quiz": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "join_correction": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              }
+            },
+            "released_at": "number",
+            "minute": "number",
+            "teacher_name": "string",
+            "start_at": "number",
+            "broadcast_status": "string",
+            "broadcast_opening_minute": "number",
+            "broadcast_ending_minute": "number",
+            "thumbnail_wide_url": "string",
+            "permission_label": "string",
+            "permission_url": "string",
+            "permission_text": "string",
+            "content_permission_label": "null",
+            "status_label": "string",
+            "real_start_at": "null",
+            "planned_start_at": "number",
+            "viewer_count": "number"
+          }
+        }
+      },
+      "shapeSource": "authenticated_get_replay",
+      "replayStatus": 200
+    },
+    {
+      "pageId": 9,
+      "reqid": 98,
+      "method": "GET",
+      "path": "/v1/lessons/search?q=%E7%89%B9%E7%95%AA&limit=20&offset=0",
+      "status": 200,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {
+        "total": "number",
+        "lessons": {
+          "type": "array",
+          "items": {
+            "id": "number",
+            "title": "string",
+            "outline": "string",
+            "thumbnail_url": "string",
+            "tags": {
+              "type": "array",
+              "items": "string"
+            },
+            "permissions": {
+              "lesson_use": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "post_comment": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "post_ask_comment": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "join_research": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "join_quiz": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "join_correction": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              }
+            },
+            "released_at": "number",
+            "minute": "number",
+            "archive": {
+              "total_audience": "number",
+              "second": "number",
+              "start_offset": "number",
+              "show_comment": "boolean"
+            },
+            "teacher_name": "string",
+            "start_at": "number",
+            "broadcast_status": "string",
+            "broadcast_opening_minute": "number",
+            "broadcast_ending_minute": "number",
+            "thumbnail_wide_url": "string",
+            "permission_label": "string",
+            "permission_url": "string",
+            "permission_text": "string",
+            "content_permission_label": "null",
+            "status_label": "string",
+            "real_start_at": "number",
+            "planned_start_at": "number",
+            "viewer_count": "number"
+          }
+        }
+      },
+      "shapeSource": "authenticated_get_replay",
+      "replayStatus": 200
+    },
+    {
+      "pageId": 9,
+      "reqid": 129,
+      "method": "GET",
+      "path": "/v1/lessons/search?q=%E7%89%B9%E7%95%AA&limit=20&offset=20",
+      "status": 200,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {
+        "total": "number",
+        "lessons": {
+          "type": "array",
+          "items": {
+            "id": "number",
+            "title": "string",
+            "outline": "string",
+            "thumbnail_url": "string",
+            "tags": {
+              "type": "array",
+              "items": "string"
+            },
+            "permissions": {
+              "lesson_use": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "post_comment": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "post_ask_comment": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "join_research": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "join_quiz": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "join_correction": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              }
+            },
+            "released_at": "number",
+            "minute": "number",
+            "archive": {
+              "total_audience": "number",
+              "second": "number",
+              "start_offset": "number",
+              "show_comment": "boolean"
+            },
+            "teacher_name": "string",
+            "start_at": "number",
+            "broadcast_status": "string",
+            "broadcast_opening_minute": "number",
+            "broadcast_ending_minute": "number",
+            "thumbnail_wide_url": "string",
+            "permission_label": "string",
+            "permission_url": "string",
+            "permission_text": "string",
+            "content_permission_label": "null",
+            "status_label": "string",
+            "real_start_at": "number",
+            "planned_start_at": "number",
+            "viewer_count": "number"
+          }
+        }
+      },
+      "shapeSource": "authenticated_get_replay",
+      "replayStatus": 200
+    },
+    {
+      "pageId": 10,
+      "reqid": 25,
+      "method": "GET",
+      "path": "/v1/lessons/482533614",
+      "status": 200,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {
+        "lesson": {
+          "id": "number",
+          "title": "string",
+          "outline": "string",
+          "thumbnail_url": "string",
+          "tags": {
+            "type": "array",
+            "items": "string"
+          },
+          "permissions": {
+            "lesson_use": {
+              "active": "boolean",
+              "reason": "string",
+              "meta": {}
+            },
+            "post_comment": {
+              "active": "boolean",
+              "reason": "string",
+              "meta": {}
+            },
+            "post_ask_comment": {
+              "active": "boolean",
+              "reason": "string",
+              "meta": {}
+            },
+            "join_research": {
+              "active": "boolean",
+              "reason": "string",
+              "meta": {}
+            },
+            "join_quiz": {
+              "active": "boolean",
+              "reason": "string",
+              "meta": {}
+            },
+            "join_correction": {
+              "active": "boolean",
+              "reason": "string",
+              "meta": {}
+            }
+          },
+          "thumbnail_wide_url": "string",
+          "released_at": "number",
+          "minute": "number",
+          "archive": {
+            "url": {
+              "hls": "string"
+            },
+            "total_audience": "number",
+            "second": "number",
+            "start_offset": "number",
+            "show_comment": "boolean",
+            "messages": {
+              "type": "array",
+              "items": "unobserved"
+            },
+            "enquetes": {
+              "type": "array",
+              "items": {
+                "id": "number",
+                "type": "string",
+                "description": "string",
+                "choices": {
+                  "type": "array",
+                  "items": {
+                    "id": "number",
+                    "text": "string",
+                    "rate": "number"
+                  }
+                }
+              }
+            },
+            "controls": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "cmd": "string",
+                "enquete_id": "number",
+                "vpos": "number"
+              }
+            },
+            "message_server": {
+              "recv_thread": "number",
+              "recv_arena_thread_id": "string",
+              "recv_store_thread_id": "string",
+              "recv_websocket_host": "string",
+              "recv_websocket_port": "number",
+              "recv_websocket_protocol": "string",
+              "ndgr_view_url": "null",
+              "forks": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "id": "number"
+                }
+              }
+            }
+          },
+          "teacher_name": "string",
+          "start_at": "number",
+          "planned_start_at": "number",
+          "real_start_at": "number",
+          "broadcast_status": "string",
+          "broadcast_opening_minute": "number",
+          "broadcast_ending_minute": "number",
+          "references": {
+            "type": "array",
+            "items": {
+              "id": "number",
+              "title": "string",
+              "outline": "string",
+              "released_at": "number",
+              "content": "string",
+              "content_url": "string"
+            }
+          },
+          "subjects": {
+            "type": "array",
+            "items": {
+              "id": "number",
+              "title": "string",
+              "subject_categories": {
+                "type": "array",
+                "items": {
+                  "id": "number",
+                  "title": "string",
+                  "courses": {
+                    "type": "array",
+                    "items": {
+                      "id": "number",
+                      "title": "string",
+                      "thumbnail_url": "string",
+                      "outline": "string",
+                      "progress": {
+                        "comprehension": {
+                          "limit": "number",
+                          "bad": "number",
+                          "good": "number",
+                          "perfect": "number"
+                        },
+                        "checkpoint": {
+                          "total": "number",
+                          "clear": "number"
+                        },
+                        "on_calculation": "boolean"
+                      },
+                      "selected": "boolean",
+                      "short_test": {
+                        "total_short_test": "number",
+                        "total_passed_short_test": "number"
+                      },
+                      "permission_label": "string",
+                      "permission_url": "string",
+                      "permission_text": "string",
+                      "content_permission_label": "null",
+                      "released_at": "null",
+                      "permissions": {
+                        "section_use": {
+                          "active": "boolean",
+                          "reason": "string",
+                          "meta": {}
+                        },
+                        "package_select": {
+                          "active": "boolean",
+                          "reason": "string",
+                          "meta": {}
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "viewer_count": "number",
+          "forum_thread_count": "number",
+          "permission_label": "string",
+          "permission_url": "string",
+          "permission_text": "string",
+          "content_permission_label": "null",
+          "status_label": "string"
+        }
+      },
+      "shapeSource": "network_response"
+    },
+    {
+      "pageId": 10,
+      "reqid": 32,
+      "method": "POST",
+      "path": "/v1/tokens/csrf",
+      "status": 201,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "user-agent",
+        "accept",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "accept-encoding",
+        "accept-language",
+        "content-length",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {
+        "token": "string",
+        "expire_time": "number"
+      },
+      "shapeSource": "network_response"
+    },
+    {
+      "pageId": 10,
+      "reqid": 42,
+      "method": "POST",
+      "path": "/v3/learning_events",
+      "status": 201,
+      "requestHeaderNames": [
+        "sec-ch-ua-platform",
+        "referer",
+        "sec-ch-ua",
+        "csrf-token",
+        "sec-ch-ua-mobile",
+        "user-agent",
+        "accept",
+        "content-type",
+        "accept-encoding",
+        "accept-language",
+        "content-length",
+        "cookie",
+        "origin",
+        "priority",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site"
+      ],
+      "responseShape": {},
+      "shapeSource": "network_response",
+      "requestBody": {
+        "learning_material_type": "lessons",
+        "learning_material_id": "{lessonId}",
+        "service": "advanced"
+      }
+    },
+    {
+      "pageId": 8,
+      "reqid": 165,
+      "method": "GET",
+      "path": "/v3/forum/threads/42416",
+      "status": 200,
+      "responseShape": {
+        "thread": {
+          "id": "number",
+          "title": "string",
+          "user": {
+            "zane_user_id": "number",
+            "name": "string",
+            "icon": "string",
+            "teacher": "boolean",
+            "staff": "boolean"
+          },
+          "resolved": "boolean",
+          "resolved_at": "null",
+          "views_count": "number",
+          "reply_count": "number",
+          "thumbnails": {
+            "type": "array",
+            "items": "unobserved"
+          },
+          "belonging_channels": {
+            "type": "array",
+            "items": {
+              "id": "number",
+              "name": "string",
+              "type": "string",
+              "category_tags": {
+                "type": "array",
+                "items": "string"
+              },
+              "icon_url": "null"
+            }
+          },
+          "main_material_relation": "null",
+          "sub_material_relations": {
+            "type": "array",
+            "items": "unobserved"
+          },
+          "tags": {
+            "type": "array",
+            "items": "string"
+          },
+          "main_message": {
+            "id": "number",
+            "user": {
+              "zane_user_id": "number",
+              "name": "string",
+              "icon": "string",
+              "teacher": "boolean",
+              "staff": "boolean"
+            },
+            "role": "string",
+            "owner_posted": "boolean",
+            "blocks": {
+              "type": "array",
+              "items": {
+                "id": "number",
+                "content_type": "string",
+                "content_metadata": "null",
+                "content": "string",
+                "deleted": "boolean",
+                "report_url": "string"
+              }
+            },
+            "posted_at": "string"
+          },
+          "reply_messages": {
+            "type": "array",
+            "items": "unobserved"
+          },
+          "posted_at": "string",
+          "group": "string"
+        },
+        "permissions": {
+          "reply": {
+            "allowed": "boolean",
+            "problem_type": "null"
+          },
+          "resolve": {
+            "allowed": "boolean",
+            "problem_type": "string"
+          }
+        },
+        "allowed_channel_ids": {
+          "type": "array",
+          "items": "number"
+        }
+      },
+      "shapeSource": "authenticated_get_replay",
+      "replayStatus": 200
+    },
+    {
+      "pageId": 3,
+      "reqid": 349,
+      "method": "GET",
+      "path": "/v2/material/courses/2459/chapters/32018?revision=1",
+      "status": 200,
+      "responseShape": {
+        "course_type": "string",
+        "subject_completed": "null",
+        "chapter": {
+          "id": "number",
+          "title": "string",
+          "outline": "string",
+          "thumbnail_url": "null",
+          "open_section_index": "number",
+          "progress": {
+            "total_count": "number",
+            "passed_count": "number",
+            "status": "string"
+          },
+          "sections": {
+            "type": "array",
+            "items": {
+              "resource_type": "string",
+              "id": "number",
+              "title": "string",
+              "passed": "boolean",
+              "textbook_info": "string",
+              "length": "number",
+              "content_url": "string",
+              "material_type": "string",
+              "thumbnail_url": "null",
+              "vr_rank": "string",
+              "vr_length": "number",
+              "permissions": {
+                "vr_use": {
+                  "active": "boolean"
+                }
+              },
+              "playback_position": "number"
+            }
+          }
+        }
+      },
+      "shapeSource": "authenticated_get_replay",
+      "replayStatus": 200
+    },
+    {
+      "pageId": 3,
+      "reqid": 350,
+      "method": "GET",
+      "path": "/v2/material/courses/2459?revision=1",
+      "status": 200,
+      "responseShape": {
+        "course": {
+          "id": "number",
+          "type": "string",
+          "title": "string",
+          "selected": "boolean",
+          "progress": {
+            "total_count": "number",
+            "passed_count": "number",
+            "total_chapters": "number",
+            "passed_chapters": "number",
+            "total_assessment_test": "number",
+            "passed_assessment_test_count": "number",
+            "total_materials": "number",
+            "passed_materials": "number",
+            "on_calculation": "boolean"
+          },
+          "thumbnail_url": "string",
+          "outline": "string",
+          "subject_category": {
+            "title": "string"
+          },
+          "chapters": {
+            "type": "array",
+            "items": {
+              "id": "number",
+              "title": "string",
+              "thumbnail_url": "null",
+              "outline": "string",
+              "progress": {
+                "total_count": "number",
+                "passed_count": "number",
+                "on_calculation": "boolean",
+                "status": "string"
+              },
+              "resource_type": "string",
+              "label": "string"
+            }
+          }
+        }
+      },
+      "shapeSource": "network_response"
+    },
+    {
+      "pageId": 7,
+      "reqid": 229,
+      "method": "GET",
+      "path": "/v3/forum/material_relations/courses/2140/chapters/27051/exercises/32820/threads/count",
+      "status": 200,
+      "responseShape": {
+        "thread_count": "number"
+      },
+      "shapeSource": "network_response"
+    },
+    {
+      "pageId": 5,
+      "reqid": 301,
+      "method": "GET",
+      "path": "/v1/notices",
+      "status": 200,
+      "responseShape": {
+        "notices": {
+          "type": "array",
+          "items": {
+            "id": "number",
+            "notice_type": "string",
+            "target_id": "number",
+            "target_type": "string",
+            "title": "string",
+            "description": "string",
+            "resource": "string",
+            "created_at": "number"
+          }
+        }
+      },
+      "shapeSource": "network_response"
+    },
+    {
+      "pageId": 5,
+      "reqid": 304,
+      "method": "PUT",
+      "path": "/v1/notices/{noticeId}/mark",
+      "status": 204,
+      "responseShape": "empty",
+      "shapeSource": "network_response",
+      "requestBody": {}
+    },
+    {
+      "pageId": 8,
+      "reqid": 235,
+      "method": "GET",
+      "path": "/v3/forum/channels/6/threads?with_channel=true&resolved=false",
+      "status": 200,
+      "responseShape": {
+        "capture": "truncated; inspect unfiltered channel shape; filtered shape not verified"
+      },
+      "shapeSource": "network_response"
+    },
+    {
+      "pageId": 9,
+      "reqid": 184,
+      "method": "GET",
+      "path": "/v1/lessons?mode=after&taken=false&limit=21",
+      "status": 200,
+      "responseShape": {
+        "lessons": {
+          "type": "array",
+          "items": {
+            "id": "number",
+            "title": "string",
+            "outline": "string",
+            "thumbnail_url": "string",
+            "tags": {
+              "type": "array",
+              "items": "string"
+            },
+            "permissions": {
+              "lesson_use": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "post_comment": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "post_ask_comment": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "join_research": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "join_quiz": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              },
+              "join_correction": {
+                "active": "boolean",
+                "reason": "string",
+                "meta": {}
+              }
+            },
+            "released_at": "number",
+            "minute": "number",
+            "archive": {
+              "total_audience": "number",
+              "second": "number",
+              "start_offset": "number",
+              "show_comment": "boolean"
+            },
+            "teacher_name": "string",
+            "start_at": "number",
+            "broadcast_status": "string",
+            "broadcast_opening_minute": "number",
+            "broadcast_ending_minute": "number",
+            "thumbnail_wide_url": "string",
+            "permission_label": "string",
+            "permission_url": "string",
+            "permission_text": "string",
+            "content_permission_label": "null",
+            "status_label": "string",
+            "real_start_at": "number",
+            "planned_start_at": "number",
+            "viewer_count": "number"
+          }
+        }
+      },
+      "shapeSource": "same_endpoint_other_limit"
+    }
+  ]
+}
